@@ -26,8 +26,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans:wght@500&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/destyle.min.css" media="all">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/destyle.min.css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -69,8 +69,8 @@
   <main>
     <div class="mv__image"></div>
   </main>
-  <footer>
-    フッター
+  <footer class="footer">
+    フッター2
   </footer>
 
   <!-- JS -->

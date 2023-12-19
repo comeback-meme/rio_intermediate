@@ -554,4 +554,11 @@ a {
     height: 59.6875vw;
   }
 }
+
+.footer {
+  color: #fff;
+  background: #000;
+  width: 100px;
+  height: 100px;
+}
 /*# sourceMappingURL=style.css.map */
