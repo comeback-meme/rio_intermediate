@@ -1,0 +1,46 @@
+@use "sass:math";
+@use 'variables' as *;
+
+/*****************************************
+ * 数値から単位を取り除く
+ * 参考
+ * https://css-tricks.com/snippets/sass/
+******************************************/
+// @function strip-unit($number) {
+//   @if type-of($number)=="number" and not unitless($number) {
+//     @return math.div($number, $number * 0 + 1);
+//   }
+//   @return $number;
+// }
+// ↑これは要らない。
+
+/*****************************************
+ * px→remの計算
+ * 参考
+ * https://webdou.net/sass-rem/
+ * Sassではmath.div関数の使用が推奨のため、スラッシュ(/)演算子から変更
+******************************************/
+@function rm($pixels) {
+  @return math.div($pixels , $base-font-size) * 1rem;
+  // @return math.div($pixels , strip-unit($base-font-size)) * 1rem;
+  // ↑↑ prem(32) >> 32 / （16pxから「px」を除いたもの） >> 2 * 1rem という意味。...これも要らない。
+}
+
+
+/*****************************************
+ * vwの計算
+ * 参考
+ * https://webdou.net/sass-vw/
+ * Sassではmath.div関数の使用が推奨のため、スラッシュ(/)演算子から変更
+******************************************/
+
+//////// スマホ版////////////
+@function vw-sp($pixels) {
+  // @return math.div($pixels , $screen-size) * 100vw;
+  @return math.div($pixels , $screen-size-sp) * 100vw;
+}
+//////// ＰＣ版 //////////////
+@function vw($pixels) {
+  // @return math.div($pixels , $screen-size) * 100vw;
+  @return math.div($pixels , $screen-size-pc) * 100vw;
+}

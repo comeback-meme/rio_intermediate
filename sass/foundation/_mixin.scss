@@ -1,0 +1,25 @@
+@use "sass:math";
+@use 'variables' as *;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+  }
+}
+
+//Figmaの時はこちら ===============
+
+@mixin font($size: null, $weight: null, $height: null, $spacing: null) {
+	@if $size {
+		font-size: math.div($size , 16) * 1rem; // ①
+	}
+	@if $weight {
+		font-weight: $weight; // ②
+	}
+	@if $height {
+		line-height: math.div($height , $size); // ③
+	}
+	@if $spacing {
+		letter-spacing: math.div($spacing , $size) * 1em; // ④
+	}
+}

@@ -1,0 +1,74 @@
+@use "../foundation" as *;
+@use "sass:math";
+
+// .c-btn {
+//   padding: rm(14) rm(60);
+//   display: inline-block;
+//   font-size: rm(15);
+//   line-height: 1;
+//   letter-spacing: 0.1em;
+//   text-transform: uppercase;
+//   border: 1px solid #000;
+//   border-radius: rm(50);
+//   background-color: #fff;
+// }
+
+.c-btn {
+  padding: rm(21) rm(19);
+  color: $color-white;
+  display: inline-block;
+  font-size: clamp(12px, vw(36), 36px);
+  line-height: 1;
+  letter-spacing: math.div(0.96px, 12px) * 1em;
+  border-radius: rm(24);
+  background-color: $color-black;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  @include mq(lg) {
+      padding: rm(18) rm(19);
+  }
+}
+
+@include mq(lg) {
+  .c-btn.c-btn--colorChange {
+    font-size: 0;
+    background: $color-F4F0F0;
+    max-width: 208px;
+    width: vw(220);
+
+    // min-width: 150px;
+    &::before {
+      font-size: rm(16);
+      content: "無料体験お申込み";
+      color: $color-black;
+      // width: vw(180);
+      // width: 100%;
+      font-family: $font-family-notosans;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: math.div(1.28px, 16px) * 1em;
+      // display: flex;
+      // justify-content: center;
+      // left: 50%;
+      // transform: translateX(-20%);
+
+    }
+  }
+}
+
+// Modifier
+.c-btn.c-btn--white {
+  display: none;
+  background: $color-white;
+  color: $color-black;
+}
+
+.c-btn.c-btn--black {
+  color: #fff;
+  background-color: #000;
+}
+
+// @include mq(lg) {
+//   .header__contact.btn-sp-only {
+//     display: none;
+//   }
+// }

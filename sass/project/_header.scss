@@ -1,0 +1,381 @@
+@use "sass:math";
+@use "../foundation" as *;
+
+.header {
+  height: 72px;
+  background: $color-bg-7FB0BF;
+  padding-left: vw-sp(24);
+  padding-right: vw-sp(34);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+  @include mq(sm) {
+    height: 86px;
+  }
+  @include mq(md) {
+    height: 100px;
+  }
+  @include mq(lg) {
+    padding-left: vw(140);
+    padding-right: vw(140);
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: calc(1280px - 140px * 2);
+  margin: 0 auto;
+}
+
+.header__logo img {
+  display: inline-block;
+  width: vw-sp(40);
+  min-width: 40px;
+  height: 100%;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+
+  @include mq(sm) {
+    max-width: 50px;
+    width: vw-sp(44);
+  }
+  @include mq(md) {
+    width: vw(61);
+    min-width: 50px;
+  }
+}
+
+.header__logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__title {
+  font-family: $font-family-base;
+  // font-size: rm(24);
+  font-size: clamp(24px, vw(40), 40px);
+  color: $color-black;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: math.div(1.92px, 24px) * 1em;
+}
+
+.header__contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: vw-sp(18);
+  @include mq(lg) {
+    display: none;
+  }
+}
+
+// ハンバーガーメニューを押される前の状態（右に移動させておく）
+.header__nav {
+  position: fixed;
+  // opacity: 0;
+  // pointer-events: none;
+  top: 0;
+  right: 0px;
+  width: 76.5vw;
+  height: 100vh;
+  padding-top: vw-sp(160);
+  background: $color-white;
+  z-index: 1001;
+  transform: translateX(100vw);
+  transition: all 0.5s;
+
+
+  @include mq(lg) {
+    transform: translateX(0);
+    // opacity: 1;
+    // pointer-events: auto;
+    width: auto;
+    height: 100%;
+    padding-top: 0;
+    position: static;
+    background: inherit;
+  }
+}
+
+// ハンバーガーメニューを押された時に出てくるメニュー
+.header__nav.is_active {
+  transform: translateX(0);
+
+  & .header__nav-item:not(:last-child) {
+    height: vw-sp(54);
+  }
+
+  & .header__nav-item:last-child{
+    margin-top: vw-sp(44);
+  }
+
+  & .header__nav-item:not(:last-child) a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+}
+
+// @keyframes frameInFromRight{
+//   from{
+//     opacity: 0;
+//     transform: translateX(100px);
+//   }
+//   to {
+//     opacity: 1;
+//     pointer-events: auto;
+//     transform: translateX(0);
+//   }
+// }
+
+.header__nav-list {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0;
+
+  @include mq(lg) {
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.header__nav-item {
+  text-transform: uppercase;
+  width: 100%;
+
+
+  @include mq(lg) {
+    height: inherit;
+    &:not(:last-child) a {
+      padding-right: vw(16);
+    }
+
+    &:not(:first-child) a {
+      padding-left: vw(16);
+    }
+    &:last-child {
+      margin-left: vw(32);
+    }
+  }
+}
+
+// pcの時のnavの挙動
+.header__nav-item a {
+  transition: background-color 0.4s ease-in, color 0.4s ease-in;
+}
+
+// リストのhoverできる領域を広く設定
+.header__nav-item:not(:last-child) a {
+  @include mq(lg) {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: inherit;
+  }
+}
+
+// 「無料体験お申込み」の文字を中央に配置
+.header__nav-item:last-child {
+  @include mq(lg) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// リストとボタンのhoverとfocus時の挙動
+@media (hover: hover) {
+  @include mq(lg) {
+    .header__nav-item:not(:last-child) a:focus,
+    .header__nav-item:not(:last-child) a:hover {
+      color: $color-white;
+    }
+    .header__nav-item:last-child a:focus,
+    .header__nav-item:last-child a:hover {
+      background: $color-black;
+      &::before {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+// 丸いお問い合わせとメニューボタン
+.header__contact,
+.hamburger_menu {
+  width: vw-sp(37);
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: (0px 3px 6px rgba(0, 0, 0, 0.16));
+  transform: translateY(-10%);
+  flex-shrink: 0;
+
+  @include mq(sm) {
+    width: vw-sp(42);
+    max-width: 42px;
+  }
+  @include mq(md) {
+    width: vw-sp(52);
+    max-width: 52px;
+  }
+}
+
+.header__contact {
+  background: #f1f7f8 url(../images/top/mail_icon.png) no-repeat center center /
+    60%;
+}
+
+.hamburger_menu {
+  background: $color-CFDBE1;
+}
+
+// 丸いお問い合わせとハンバーガーメニューの下の小さい文字
+.header__contact::after,
+.hamburger_menu::after {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  color: $color-black;
+  // text-align: center;
+  font-family: $font-family-base;
+  font-size: rm(5);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: math.div(0.48px, 5px) * 1em;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-48%);
+  display: block;
+
+  @include mq(sm) {
+    font-size: rm(6);
+    top: calc(100% + 6px);
+  }
+  @include mq(md) {
+    transform: translateX(-40%);
+  }
+}
+
+.header__contact::after {
+  content: "お問い合わせ";
+}
+
+.hamburger_menu::after {
+  content: "メニュー";
+  width: 70%;
+  transform: translateX(-42%);
+  @include mq(md) {
+    transform: translateX(-36%);
+  }
+}
+
+
+// ハンバーガーメニューの三本線
+.hamburger_bar1,
+.hamburger_bar2,
+.hamburger_bar3 {
+  display: block;
+  background: $color-black;
+  width: vw-sp(13.88);
+  height: 2px;
+  margin: 0 auto;
+  transition: transform 0.3s , width 0.2s , opacity 0.2s;
+  // transform-origin: 1px 1px;
+  @include mq(sm) {
+    max-width: 20px;
+  }
+  @include mq(md) {
+    max-width: 24px;
+  }
+}
+
+.hamburger_bar2,
+.hamburger_bar3 {
+  margin-top: rm(2);
+
+  @include mq(sm) {
+    margin-top: rm(4);
+  }
+  @include mq(md) {
+    margin-top: rm(6);
+  }
+}
+
+// ハンバーガーメニューが押された時
+.hamburger_menu.is_active{
+  position: relative;
+  z-index: 1002;
+  &::after{
+    content: "";
+  }
+}
+
+.hamburger_menu.is_active .hamburger_bar1 {
+  transform: translateY(4px) rotate(-45deg);
+  width: vw-sp(13.88);
+
+  @include mq(sm) {
+    transform: translateY(6px) rotate(-45deg);
+  }
+
+  @include mq(md) {
+    transform: translateY(8px) rotate(-45deg);
+  }
+}
+
+.hamburger_menu.is_active .hamburger_bar2 {
+  opacity: 0;
+}
+
+.hamburger_menu.is_active .hamburger_bar3 {
+  transform: translateY(-4px) rotate(45deg);
+  width: vw-sp(13.88);
+  @include mq(sm) {
+    transform: translateY(-6px) rotate(45deg);
+  }
+
+  @include mq(md) {
+    transform: translateY(-8px) rotate(45deg);
+  }
+}
+
+// ハンバーガーメニューの後ろのページを覆って操作できなくする
+.hamburger_bg{
+  opacity: 0;
+  pointer-events: none;
+// display: none;
+  // position: fixed;
+  // top: 0px;
+  // left: 0px;
+  // width: 100vw;
+  // height: 100vh;
+  // background:$color-bg-7FB0BF;
+  // transition: opacity 0.4s ease-out;
+  // z-index:1000;
+  transition: opacity 0.6s;
+}
+
+.hamburger_bg.is_active{
+  opacity: 1;
+  pointer-events: auto;
+  // display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: $color-bg-7FB0BF;
+  z-index:1000;
+}

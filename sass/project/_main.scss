@@ -1,0 +1,14 @@
+@use "sass:math";
+@use "../foundation" as *;
+
+.mv__image{
+  background: url(../images/top/mv@2x.jpg) no-repeat center center / cover;
+  width: 100vw;
+  height: vw-sp(667);
+  @include mq(md) {
+      height: vw(710);
+  }
+  @include mq(lg) {
+      height: vw(764);
+  }
+}
