@@ -69,6 +69,9 @@
   <main>
     <div class="mv__image"></div>
   </main>
+  <footer>
+    フッター
+  </footer>
 
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
