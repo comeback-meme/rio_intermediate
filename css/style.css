@@ -540,25 +540,48 @@ a {
 }
 
 .mv__image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   background: url(../images/top/mv@2x.jpg) no-repeat center center/cover;
   width: 100vw;
-  height: 177.8666666667vw;
+  height: 667px;
+  padding-top: 228px;
 }
 @media screen and (min-width: 769px) {
   .mv__image {
-    height: 55.46875vw;
+    height: 710px;
+    padding: 100px;
   }
 }
 @media screen and (min-width: 1000px) {
   .mv__image {
-    height: 59.6875vw;
+    height: 864px;
+    margin-top: 100px;
   }
+}
+
+.mv__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 191px;
+  width: 50.9333333333vw;
+  height: 155px;
+  aspect-ratio: 191/155;
+  flex-shrink: 0;
+  color: #4E4E4E;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  background: url(/images/top/beyouself.png) no-repeat center center/contain;
 }
 
 .footer {
   color: #fff;
   background: #000;
   width: 100px;
-  height: 100px;
+  height: 500px;
 }
 /*# sourceMappingURL=style.css.map */

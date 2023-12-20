@@ -2,13 +2,39 @@
 @use "../foundation" as *;
 
 .mv__image{
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end;
   background: url(../images/top/mv@2x.jpg) no-repeat center center / cover;
+
   width: 100vw;
-  height: vw-sp(667);
+  // height: calc(667px - 72px);
+  height: calc(667px - 0px);
+  padding-top: calc(300px - 72px);
+ 
   @include mq(md) {
-      height: vw(710);
+      height: 710px;
+      padding: 100px;
   }
   @include mq(lg) {
-      height: vw(764);
+      height: 864px;
+      margin-top: 100px;
   }
+}
+
+.mv__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 191px;
+  width: vw-sp(191);
+  height: 155px;
+  aspect-ratio: 191/155;
+  flex-shrink: 0;
+  color: $color-black;
+  font-size: rm(40);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: math.div(3.2px , 40px) * 1em;
+  background: url(/images/top/beyouself.png) no-repeat center center / contain;
 }

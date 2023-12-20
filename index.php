@@ -67,10 +67,12 @@
   </header>
   <!-- <main style="background: #fff;width: 100%;height: 5000px;"></main> -->
   <main>
-    <div class="mv__image"></div>
+    <div class="mv__image">
+      <p class="mv__title">U FIT</p>
+    </div>
   </main>
   <footer class="footer">
-    フッター2
+  フッター2
   </footer>
 
   <!-- JS -->
