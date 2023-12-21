@@ -22,9 +22,7 @@
   <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans:wght@500&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="/css/destyle.min.css" media="all">
   <link rel="stylesheet" href="/css/style.css">
@@ -46,12 +44,11 @@
           <li class="header__nav-item"><a href="#">voice</a></li>
           <li class="header__nav-item"><a href="#">plan</a></li>
           <li class="header__nav-item"><a href="#">faq</a></li>
-          <li class="header__nav-item"><a class="c-btn c-btn--colorChange" href="#" target="_blank"
-              rel="noopener">無料体験の申し込みはこちら</a></li>
+          <li class="header__nav-item"><a class="c-btn c-btn--colorChange" href="#" target="_blank" rel="noopener">無料体験の申し込みはこちら</a></li>
         </ul>
       </nav>
       <!-- <a href="" class="c-btn c-btn--white">無料体験お申込み</a> -->
-      
+
       <div class="header__contact-wrapper">
         <a href="#">
           <div class="header__contact"></div>
@@ -63,18 +60,37 @@
           <span class="hamburger_bar3"></span>
         </button>
       </div>
-     
+
   </header>
   <!-- <main style="background: #fff;width: 100%;height: 5000px;"></main> -->
   <main>
     <div class="mv__image">
       <div class="mv__inner">
-      <p class="mv__title">U FIT</p>
+        <p class="mv__title">U FIT</p>
       </div>
     </div>
   </main>
   <footer class="footer">
-  フッター2
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <a href="/">
+          <img src="images/top/logo_header.png" alt="u fit" width="61" height="61">
+          <span class="footer__title">U FIT</span>
+        </a>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="/">feature</a></li>
+          <li class="footer__nav-item"><a href="#">voice</a></li>
+          <li class="footer__nav-item"><a href="#">plan</a></li>
+          <li class="footer__nav-item"><a href="#">faq</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy">
+          <small class="footer__copy-text">Copyright &copy; U FIT All Rights Reserved.</small>
+        </p>
   </footer>
 
   <!-- JS -->

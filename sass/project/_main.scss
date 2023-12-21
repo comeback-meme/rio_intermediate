@@ -22,6 +22,8 @@ background-position: 47% 0;
       height: 710px;
       padding-top: 200px;
       // padding-top: calc(380px - 72px);
+      padding-right:3%;
+      padding-left:3%;
   }
   @include mq(lg) {
 
@@ -34,7 +36,7 @@ background-position: 47% 0;
 
   @include mq(xl) {
     margin-top: 100px;
-    padding-top: 8vh;
+    // padding-top: 8vh;
   }
 }
 
@@ -76,12 +78,13 @@ font-size: clamp(40px, vw(96), 96px);
 }
 
   @include mq(lg) {
-      width: vw(459); 
+      width: vw(460); 
       max-width: 459px; 
+      padding-right: 18px;
   }
 
   @include mq(xl) {
-    width: vw(430); 
+    width: vw(460); 
     max-width: 459px; 
 }
 }
