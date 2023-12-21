@@ -68,7 +68,9 @@
   <!-- <main style="background: #fff;width: 100%;height: 5000px;"></main> -->
   <main>
     <div class="mv__image">
+      <div class="mv__inner">
       <p class="mv__title">U FIT</p>
+      </div>
     </div>
   </main>
   <footer class="footer">
