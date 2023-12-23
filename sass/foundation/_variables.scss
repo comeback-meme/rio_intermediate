@@ -27,10 +27,10 @@ $break-flg: 0 !default; //0:SPファースト、1：PCファースト
 $breakpoints: null;
 @if $break-flg == 0 {
   $breakpoints: (
-    "sm": "screen and (min-width: 400px)",
+    "sm": "screen and (min-width: 577px)",
     "md": "screen and (min-width: 769px)",
-    "lg": "screen and (min-width: 1000px)",
-    "xl": "screen and (min-width: 1200px)",
+    "lg": "screen and (min-width: 993px)",
+    "xl": "screen and (min-width: 1201px)",
   );
 } @else {
   // ブレイクポイントの設定

@@ -76,10 +76,10 @@
         <div class="about__content">
           <h3 class="about__title">Be yourself</h3>
           <p class="about__text">U FITは、自分の好きな自分になれる場所
-一時的なボディメイクのサポートではなく、お客様1人1人に寄り添い、長期間における身体のあり方を「共に」作り上げていきます。</p>
+            一時的なボディメイクのサポートではなく、お客様1人1人に寄り添い、長期間における身体のあり方を「共に」作り上げていきます。</p>
         </div>
         <div class="about__image">
-          <img src="/images/top/about_img@2x.jpg" alt="トレーニングをする女性" width="328" height="328">
+          <!-- <img src="/images/top/about_img@2x.jpg" alt="トレーニングをする女性" width="328" height="328"> -->
         </div>
       </div>
     </section>

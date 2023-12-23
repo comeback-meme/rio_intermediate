@@ -2,23 +2,39 @@
 @use "../foundation" as *;
 
 .header {
-  height: 72px;
+  // height: 72px;
+  height: rm(72);
   background: $color-bg-7FB0BF;
-  padding-left: vw-sp(24);
-  padding-right: vw-sp(34);
+  padding-left:rm(24);
+  padding-right:rm(34);
   position: fixed;
   width: 100%;
   top: 0px;
   z-index: 999;
   @include mq(sm) {
-    height: 86px;
+    height: rm(86);
+    padding-left:rm(34);
+    padding-right:rm(44);
   }
   @include mq(md) {
-    height: 100px;
+    // height: 100px;
+    height: rm(100);
+    padding-left:rm(64);
+    padding-right:rm(74);
+    
   }
   @include mq(lg) {
-    padding-left: vw(140);
-    padding-right: vw(140);
+    // padding-left: vw(140);
+    padding-left: rm(92);
+    // padding-right: vw(140);
+    padding-right: rm(102);
+  }
+  
+  @include mq(xl) {
+    // padding-left: vw(140);
+    padding-left: rm(140);
+    // padding-right: vw(140);
+    padding-right: rm(140);
   }
 }
 
@@ -33,18 +49,18 @@
 
 .header__logo img {
   display: inline-block;
-  width: vw-sp(40);
+  width: rm(40);
   min-width: 40px;
   height: 100%;
   aspect-ratio: 1/1;
   flex-shrink: 0;
 
   @include mq(sm) {
+    width: rm(50);
     max-width: 50px;
-    width: vw-sp(44);
   }
   @include mq(md) {
-    width: vw(61);
+    width: rm(61);
     max-width: 61px;
   }
 }
@@ -52,26 +68,27 @@
 .header__logo a {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: rm(10);
   @include mq(md) {
-      gap: 24px;
+      gap: rm(14);
   }
 }
 
 .header__title {
   font-family: $font-family-base;
   // font-size: rm(24);
-  font-size: clamp(24px, vw(40), 40px);
+  font-size: clamp(24px, vw(48), 40px);
   color: $color-black;
   font-weight: 400;
   line-height: 1;
   letter-spacing: math.div(1.92px, 24px) * 1em;
+  flex-shrink: 0;
 }
 
 .header__contact-wrapper {
   display: flex;
   align-items: center;
-  gap: vw-sp(18);
+  gap: rm(18);
   @include mq(lg) {
     display: none;
   }
@@ -86,17 +103,16 @@
   right: 0px;
   width: 76.5vw;
   height: 100vh;
-  padding-top: vw-sp(160);
+  padding-top: rm(180);
   background: $color-white;
   z-index: 1001;
   transform: translateX(100vw);
   transition: all 0.5s;
 
-
   @include mq(lg) {
     transform: translateX(0);
     // opacity: 1;
-    // pointer-events: auto;
+    // pointer-events: auto; 
     width: auto;
     height: 100%;
     padding-top: 0;
@@ -110,11 +126,11 @@
   transform: translateX(0);
 
   & .header__nav-item:not(:last-child) {
-    height: vw-sp(54);
+    height: rm(66);
   }
 
   & .header__nav-item:last-child{
-    margin-top: vw-sp(44);
+    margin-top: rm(18);
   }
 
   & .header__nav-item:not(:last-child) a {
@@ -157,19 +173,33 @@
   text-transform: uppercase;
   width: 100%;
 
-
   @include mq(lg) {
     height: inherit;
     &:not(:last-child) a {
       // padding-right: vw(16);
-      padding-right: vw(16                      );
+      padding-right: rm(12);
     }
 
     &:not(:first-child) a {
-      padding-left: vw(16);
+      padding-left: rm(12);
     }
     &:last-child {
-      margin-left: vw(32);
+      margin-left: rm(24);
+    }
+  }
+
+  @include mq(xl) {
+    height: inherit;
+    &:not(:last-child) a {
+      // padding-right: vw(16);
+      padding-right: rm(16);
+    }
+  
+    &:not(:first-child) a {
+      padding-left: rm(16);
+    }
+    &:last-child {
+      margin-left: rm(32);
     }
   }
 }
@@ -222,7 +252,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 // 丸いお問い合わせとメニューボタン
 .header__contact,
 .hamburger_menu {
-  width: vw-sp(37);
+  width: rm(37);
   height: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -232,11 +262,11 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   flex-shrink: 0;
 
   @include mq(sm) {
-    width: vw-sp(42);
+    width: rm(42);
     max-width: 42px;
   }
   @include mq(md) {
-    width: vw-sp(52);
+    width: rm(52);
     max-width: 52px;
   }
 }
@@ -254,12 +284,12 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 .header__contact::after,
 .hamburger_menu::after {
   position: absolute;
-  width: 100%;
+  width: 110%;
   height: 10px;
   color: $color-black;
   // text-align: center;
   font-family: $font-family-base;
-  font-size: rm(5);
+  font-size: rm(6);
   font-weight: $bold;
   line-height: 1;
   letter-spacing: math.div(0.48px, 5px) * 1em;
@@ -283,7 +313,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 
 .hamburger_menu::after {
   content: "メニュー";
-  width: 70%;
+  width: 80%;
   transform: translateX(-42%);
   @include mq(md) {
     transform: translateX(-36%);
@@ -297,7 +327,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 .hamburger_bar3 {
   display: block;
   background: $color-black;
-  width: vw-sp(13.88);
+  width: rm(13.88);
   height: 2px;
   margin: 0 auto;
   transition: transform 0.3s , width 0.2s , opacity 0.2s;
@@ -306,6 +336,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
     max-width: 20px;
   }
   @include mq(md) {
+    width: rm(20);
     max-width: 24px;
   }
 }
@@ -326,6 +357,8 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 .hamburger_menu.is_active{
   position: relative;
   z-index: 1002;
+  top: rm(21);
+  right: rm(10);
   &::after{
     content: "";
   }
@@ -333,7 +366,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 
 .hamburger_menu.is_active .hamburger_bar1 {
   transform: translateY(4px) rotate(-45deg);
-  width: vw-sp(13.88);
+  // width: rm(13.88);
 
   @include mq(sm) {
     transform: translateY(6px) rotate(-45deg);
@@ -350,7 +383,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 
 .hamburger_menu.is_active .hamburger_bar3 {
   transform: translateY(-4px) rotate(45deg);
-  width: vw-sp(13.88);
+  // width: rm(13.88);
   @include mq(sm) {
     transform: translateY(-6px) rotate(45deg);
   }
