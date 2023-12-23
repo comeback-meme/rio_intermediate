@@ -74,3 +74,10 @@ a:hover {
   }
 }
 
+.pc-only{
+  display: none;
+  @include mq(lg) {
+      display: block;
+  }
+
+}

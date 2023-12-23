@@ -1,3 +1,109 @@
 @use "sass:math";
 @use "../foundation" as *;
 
+.about {
+}
+
+.about__inner {
+  margin-top: rm(32);
+  max-width: 920px;
+  width: 100%;
+  @include mq(lg) {
+    margin-top: rm(125);
+    margin-left: rm(144);
+  }
+}
+
+.about__content {
+  position: relative;
+  background-image: url(/images/top/beyouself.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: rm(44) 6% rm(87);
+  @include mq(lg) {
+    max-width: 651px;
+    padding: rm(92) 11% rm(86);
+  }
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: rm(178);
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: url(/images/top/about_img@2x.jpg) no-repeat center center / cover;
+    bottom: rm(-90);
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+}
+
+.about__title {
+  position: relative;
+  color: $color-white;
+  font-size: clamp(20px, vw(40), 40px);
+  font-weight: 400;
+  line-height: 2; /* 200% */
+  letter-spacing: math.div(1.6px, 20px) * 1em;
+  margin-left: calc(rm(78) - 6%);
+  z-index: 1;
+  display: inline-block;
+  @include mq(lg) {
+    line-height: 1; /* 100% */
+    letter-spacing: math.div(3.2px, 40px) * 1em;
+    margin-left: 20%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: rm(8);
+    height: auto;
+    aspect-ratio: 1;
+    border: none;
+    background: $color-white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-20%);
+    left: rm(-20);
+    z-index: 2;
+    //配置
+    @include mq(lg) {
+      width: rm(25);
+      left: rm(-57);
+      transform: translateY(-50%);
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: rm(8);
+    height: auto;
+    aspect-ratio: 1;
+    border: none;
+    background: $color-white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-20%);
+    right: rm(-20);
+    z-index: 2;
+    //配置
+    @include mq(lg) {
+      width: rm(25);
+      right: rm(-57);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.about__text {
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+  margin-top: rm(26);
+  @include mq(lg) {
+    line-height: 2.5; /* 250% */
+    margin-top: rm(50);
+  }
+}
