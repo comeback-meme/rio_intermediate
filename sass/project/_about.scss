@@ -2,12 +2,16 @@
 @use "../foundation" as *;
 
 .about {
+  @include mq(sm) {
+
+  }
 }
 
 .about__inner {
   margin-top: rm(32);
-  max-width: 920px;
+  width:rm(920);
   width: 100%;
+  // padding: rm(30) 8% rm(30);
   @include mq(lg) {
     margin-top: rm(125);
     margin-left: rm(144);
@@ -16,11 +20,22 @@
 
 .about__content {
   position: relative;
+  width: rm(479);
+  // max-width:100%;
+  left: 50% ;
+  transform: translateX(-50%);
+  top:0;
+// margin: 0 auto;
   background-image: url(/images/top/beyouself.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: rm(44) 6% rm(87);
+  background-size: contain;
+  // padding: rm(44) 6% rm(87);
+  padding: 5.75rem 0 rm(87);
+  @include mq(sm) {
+      padding: 5.75rem 18% rm(100);
+      background-size: contain;
+  }
   @include mq(lg) {
     max-width: 651px;
     padding: rm(92) 11% rm(86);
@@ -34,9 +49,10 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: url(/images/top/about_img@2x.jpg) no-repeat center center / cover;
+    // bottom: rm(-90);
     bottom: rm(-90);
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }
 
