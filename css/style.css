@@ -252,6 +252,11 @@ a {
     gap: 0.875rem;
   }
 }
+@media screen and (min-width: 993px) {
+  .header__logo a {
+    gap: 1.25rem;
+  }
+}
 
 .header__title {
   font-family: "Roboto", sans-serif;
@@ -671,19 +676,20 @@ a {
 
 .about__inner {
   margin-top: 2rem;
-  width: 57.5rem;
   width: 100%;
 }
 @media screen and (min-width: 993px) {
   .about__inner {
+    max-width: 920px;
     margin-top: 7.8125rem;
-    margin-left: 9rem;
+    margin-inline: auto;
   }
 }
 
 .about__content {
   position: relative;
   width: 29.9375rem;
+  aspect-ratio: 479/318;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
@@ -691,18 +697,16 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 5.75rem 0 5.4375rem;
 }
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 769px) {
   .about__content {
-    padding: 5.75rem 18% 6.25rem;
-    background-size: contain;
+    width: 35rem;
   }
 }
 @media screen and (min-width: 993px) {
   .about__content {
-    max-width: 651px;
-    padding: 5.75rem 11% 5.375rem;
+    width: 40.6875rem;
+    left: 32%;
   }
 }
 .about__content::after {
@@ -718,6 +722,36 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (min-width: 769px) {
+  .about__content::after {
+    width: 12.5rem;
+    bottom: -5rem;
+  }
+}
+@media screen and (min-width: 993px) {
+  .about__content::after {
+    left: 90%;
+    transform: translateX(0);
+    width: 20.5rem;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+}
+
+.about__body {
+  position: absolute;
+  width: 20.375rem;
+  top: 2.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+@media screen and (min-width: 993px) {
+  .about__body {
+    width: 27.25rem;
+    top: 5.625rem;
+  }
+}
 
 .about__title {
   position: relative;
@@ -727,14 +761,13 @@ a {
   line-height: 2; /* 200% */
   letter-spacing: 0.08em;
   margin-left: calc(4.875rem - 6%);
-  z-index: 1;
   display: inline-block;
 }
 @media screen and (min-width: 993px) {
   .about__title {
     line-height: 1; /* 100% */
     letter-spacing: 0.08em;
-    margin-left: 20%;
+    margin-left: 18%;
   }
 }
 .about__title::before {
@@ -749,7 +782,6 @@ a {
   top: 50%;
   transform: translateY(-20%);
   left: -1.25rem;
-  z-index: 2;
 }
 @media screen and (min-width: 993px) {
   .about__title::before {

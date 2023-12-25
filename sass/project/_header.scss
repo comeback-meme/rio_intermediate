@@ -72,6 +72,9 @@
   @include mq(md) {
       gap: rm(14);
   }
+  @include mq(lg) {
+    gap: rm(20);
+  }
 }
 
 .header__title {

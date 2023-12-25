@@ -17,8 +17,8 @@
   <meta property="og:site_name" content="サイトのドメイン" />
   <meta property="og:description" content="トップページの説明" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="">
-  <link rel="apple-touch-icon" href="">
+  <link rel="”icon”" href="#">
+  <link rel="apple-touch-icon" href="#">
   <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,12 +74,12 @@
     <section class="about">
       <div class="about__inner">
         <div class="about__content">
-          <h3 class="about__title">Be yourself</h3>
-          <p class="about__text">U FITは、自分の好きな自分になれる場所<br class="pc-only">一時的なボディメイクのサポートではなく、お客様1人1<br class="pc-only">人に寄り添い、長期間における身体のあり方を「共に」<br class="pc-only">作り上げていきます。</p>
+          <div class="about__body">
+            <h3 class="about__title">Be yourself</h3>
+            <p class="about__text">U FITは、自分の好きな自分になれる場所<br class="pc-only">一時的なボディメイクのサポートではなく、お客様1人1<br class="pc-only">人に寄り添い、長期間における身体のあり方を「共に」<br class="pc-only">
+              作り上げていきます。</p>
         </div>
-        <!-- <div class="about__image">
-          <img src="/images/top/about_img@2x.jpg" alt="トレーニングをする女性" width="328" height="328">
-        </div> -->
+        </div>
       </div>
     </section>
 
