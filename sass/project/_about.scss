@@ -1,10 +1,6 @@
 @use "sass:math";
 @use "../foundation" as *;
 
-.about {
-  @include mq(sm) {
-  }
-}
 
 .about__inner {
   margin-top: rm(32);
@@ -21,6 +17,8 @@
 // Be yourselfの背景
 .about__content {
   position: relative;
+  display: flex;
+  justify-content: center;
   width: rm(479);
   // height: rm(318);
   aspect-ratio: 479/318;
@@ -63,7 +61,7 @@
       transform: translateX(0);
         width: rm(328);
         bottom: 50%;
-        transform: translateY(50%);
+        transform: translateY(48%);
 
     }
   }
@@ -71,15 +69,17 @@
 
 // titleとtext囲むもの
 .about__body {
-  position: absolute;
+  // position: absolute;
   width: rm(326);
-  top: rm(44);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  margin-top: rm(44);
+  // top: rm(44);
+  // left: 50%;
+  // transform: translateX(-50%);
+  // z-index: 1;
   @include mq(lg) {
+    margin-top: rm(90);
       width: rm(436);
-      top: rm(90);
+      // top: rm(90);
   }
 }
 
@@ -90,12 +90,12 @@
   font-weight: 400;
   line-height: 2; /* 200% */
   letter-spacing: math.div(1.6px, 20px) * 1em;
-  margin-left: calc(rm(78) - 6%);
+  margin-left: rm(54);
   display: inline-block;
   @include mq(lg) {
     line-height: 1; /* 100% */
     letter-spacing: math.div(3.2px, 40px) * 1em;
-    margin-left: 18%;
+    margin-left: 16%;
   }
   &::before {
     content: "";
@@ -144,8 +144,11 @@
   line-height: 1.5; /* 150% */
   letter-spacing: math.div(1.28px, 16px) * 1em;
   margin-top: rm(26);
+  @include mq(md) {
+      margin-top: rm(16);
+  }
   @include mq(lg) {
     line-height: 2.5; /* 250% */
-    margin-top: rm(50);
+    margin-top: rm(54);
   }
 }

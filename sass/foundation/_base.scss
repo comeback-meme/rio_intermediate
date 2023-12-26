@@ -46,6 +46,7 @@
 
 html {
   font-size: $base-font-size * 1px;
+  scroll-behavior: smooth;  // ページ内リンク_ゆっくりスクロールする
 }
 
 body {

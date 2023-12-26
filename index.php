@@ -40,10 +40,10 @@
       <div id="js_hamburgerBg" class="hamburger_bg"></div><!-- is activeが付くとこ -->
       <nav id="js_headerNav" class="header__nav"><!-- is activeが付くとこ -->
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="/">feature</a></li>
-          <li class="header__nav-item"><a href="#">voice</a></li>
-          <li class="header__nav-item"><a href="#">plan</a></li>
-          <li class="header__nav-item"><a href="#">faq</a></li>
+          <li class="header__nav-item"><a href="#feature">feature</a></li>
+          <li class="header__nav-item"><a href="#voice">voice</a></li>
+          <li class="header__nav-item"><a href="#plan">plan</a></li>
+          <li class="header__nav-item"><a href="#faq">faq</a></li>
           <li class="header__nav-item"><a class="c-btn c-btn--colorChange" href="#" target="_blank" rel="noopener">無料体験の申し込みはこちら</a></li>
         </ul>
       </nav>
@@ -71,16 +71,61 @@
     </div>
 
     <!-- aboutセクション -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="about__inner">
         <div class="about__content">
           <div class="about__body">
             <h3 class="about__title">Be yourself</h3>
             <p class="about__text">U FITは、自分の好きな自分になれる場所<br class="pc-only">一時的なボディメイクのサポートではなく、お客様1人1<br class="pc-only">人に寄り添い、長期間における身体のあり方を「共に」<br class="pc-only">
               作り上げていきます。</p>
-        </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- featureセクション -->
+    <section id="feature" class="feature">
+      <h2 class="feature__title title-style">feature</h2>
+      <div class="feature__inner">
+        <ul class="feature__list">
+          <li class="feature__item">
+            <div class="feature__content">
+            <h3 class="feature__item-title">種類豊富なマシーン完備</h3>
+            <p class="feature__text">幅広い種類のトレーニングマシーンで、最適なトレーニングを提供します。<br>ウエイトトレーニングHITトレーニングができる環境が整っています。
+            </p>
+            </div>
+            <div class="feature__item-image">
+              <img src="/images/top/feature01@2x.jpg" alt="" width="240" height="192">
+            </div>
+          </li>
+          <li class="feature__item">
+            <div class="feature__content">
+            <h3 class="feature__item-title">あなたに寄り添うトレーナー</h3>
+            <p class="feature__text">当ジムのトレーナーは、あなたに寄り添いながら、個別の目標に合わせたカスタムトレーニングを提供します。<br>わたしたちと一緒に最高の体作りを目指しましょう。
+            </p>
+            </div>
+            <div class="feature__item-image">
+              <img src="/images/top/feature02@2x.jpg" alt="" width="240" height="192">
+            </div>
+          </li>
+          <li class="feature__item">
+            <div class="feature__content">
+            <h3 class="feature__item-title">通いやすいロケーション</h3>
+            <p class="feature__text">駅から徒歩3分の立地で、忙しい日常の中でも、手軽にトレーニングが可能！<br>あなたのフィットネス生活をサポートします。
+            </p>
+            </div>
+            <div class="feature__item-image">
+              <img src="/images/top/feature03@2x.jpg" alt="" width="240" height="192">
+            </div>
+          </li>
+        </ul>
+
+
+      </div>
+
+
+
+
     </section>
 
 
