@@ -1,0 +1,187 @@
+@use "sass:math";
+@use "../foundation" as *;
+
+#feature {
+  scroll-margin-top: rm(72);
+  @include mq(sm) {
+    scroll-margin-top: rm(86);
+  }
+  @include mq(md) {
+    scroll-margin-top: rm(100);
+  }
+}
+
+.feature {
+  text-align: center;
+  padding: 0 7%;
+  @include mq(sm) {
+    padding: 0 10%;
+  }
+}
+
+.feature__title.title-style {
+  margin-top: rm(145);
+  @include mq(lg) {
+    margin-top: rm(144);
+  }
+}
+
+.feature__inner {
+  max-width: 672px;
+  margin: 0 auto;
+  padding-bottom: rm(40);
+  @include mq(lg) {
+      padding-bottom: rm(152);
+  }
+}
+
+.feature__list {
+  margin-top: rm(48);
+  counter-reset: count 0;
+}
+
+.feature__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #fbf7f1;
+  border-radius: 30px;
+  padding: rm(24) rm(16) rm(32);
+  @include mq(sm) {
+    padding: rm(28) rm(40) rm(32);
+  }
+  @include mq(md) {
+    align-items: center;
+    flex-wrap: nowrap;
+    background: $color-F4F0F0;
+    padding: rm(36) rm(32) rm(36) rm(88);
+    gap: rm(30);
+    margin-top: rm(78);
+  }
+  & + .feature__item {
+    margin-top: rm(46);
+    @include mq(md) {
+      margin-top: rm(70);
+    }
+  }
+  &::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: counter(count, decimal-leading-zero);
+    counter-increment: count 1;
+    font-size: clamp(16px, vw(48), 48px);
+    font-weight: 500;
+    letter-spacing: math.div(1.28px, 16px) * 1em;
+    position: absolute;
+    width: rm(48);
+    height: auto;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    background: $color-CFDBE1;
+    top: 0;
+    transform: translateY(-50%);
+    left: 0;
+    //配置
+    @include mq(sm) {
+      width: rm(68);
+    }
+    @include mq(md) {
+      font-weight: 400;
+      letter-spacing: math.div(3.84px, 48px) * 1em;
+      width: rm(100);
+      transform: translate(-38%, -50%);
+    }
+    @include mq(lg) {
+      width: rm(137);
+    }
+  }
+}
+
+.feature__content {
+  display: contents;
+  @include mq(md) {
+    text-align: left;
+    display: block;
+    width: rm(300);
+  }
+}
+
+.feature__item-title {
+  font-size: clamp(16px, vw(20), 20px);
+  font-weight: 400;
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+  order: 1;
+  width: 100%;
+  @include mq(md) {
+    letter-spacing: math.div(1.6px, 20px) * 1em;
+  }
+}
+
+.feature__text {
+  font-weight: 400;
+  line-height: 1.25; /* 125% */
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+  margin-top: rm(24);
+  text-align: left;
+  order: 3;
+  @include mq(sm) {
+    width: rm(500);
+  }
+  @include mq(md) {
+    order: 2;
+    width: rm(248);
+    margin-top: rm(24);
+    // width: 55%;
+  }
+}
+
+.feature__item-image {
+  width: rm(240);
+  aspect-ratio: 240/192;
+  margin-top: rm(24);
+  order: 2;
+  @include mq(sm) {
+    width: rm(300);
+  }
+  @include mq(md) {
+    max-width: 240px;
+    aspect-ratio: 240/192;
+    margin-top: 0;
+    order: 3;
+  }
+}
+
+.feature__item-image img {
+  width: 100%;
+  height: auto;
+  @include mq(md) {
+    height: 100%;
+  }
+  @include mq(lg) {
+  }
+}
+
+.banner-parallax {
+// margin-left: calc(50% - 50vw);
+// margin-right: calc(50% - 50vw);
+// background-color: #fff;
+  background-attachment: fixed;
+  background-image: url(/images/top/training@2x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: rm(104);
+  @include mq(lg) {
+    height: rm(347);
+// height: 347px;
+  }
+}
+
+.test{
+  height: 500px;
+  background: #000;
+}
+

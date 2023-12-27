@@ -90,9 +90,9 @@
         <ul class="feature__list">
           <li class="feature__item">
             <div class="feature__content">
-            <h3 class="feature__item-title">種類豊富なマシーン完備</h3>
-            <p class="feature__text">幅広い種類のトレーニングマシーンで、最適なトレーニングを提供します。<br>ウエイトトレーニングHITトレーニングができる環境が整っています。
-            </p>
+              <h3 class="feature__item-title">種類豊富なマシーン完備</h3>
+              <p class="feature__text">幅広い種類のトレーニングマシーンで、最適なトレーニングを提供します。<br>ウエイトトレーニングHITトレーニングができる環境が整っています。
+              </p>
             </div>
             <div class="feature__item-image">
               <img src="/images/top/feature01@2x.jpg" alt="" width="240" height="192">
@@ -100,9 +100,9 @@
           </li>
           <li class="feature__item">
             <div class="feature__content">
-            <h3 class="feature__item-title">あなたに寄り添うトレーナー</h3>
-            <p class="feature__text">当ジムのトレーナーは、あなたに寄り添いながら、個別の目標に合わせたカスタムトレーニングを提供します。<br>わたしたちと一緒に最高の体作りを目指しましょう。
-            </p>
+              <h3 class="feature__item-title">あなたに寄り添うトレーナー</h3>
+              <p class="feature__text">当ジムのトレーナーは、あなたに寄り添いながら、個別の目標に合わせたカスタムトレーニングを提供します。<br>わたしたちと一緒に最高の体作りを目指しましょう。
+              </p>
             </div>
             <div class="feature__item-image">
               <img src="/images/top/feature02@2x.jpg" alt="" width="240" height="192">
@@ -110,26 +110,24 @@
           </li>
           <li class="feature__item">
             <div class="feature__content">
-            <h3 class="feature__item-title">通いやすいロケーション</h3>
-            <p class="feature__text">駅から徒歩3分の立地で、忙しい日常の中でも、手軽にトレーニングが可能！<br>あなたのフィットネス生活をサポートします。
-            </p>
+              <h3 class="feature__item-title">通いやすいロケーション</h3>
+              <p class="feature__text">駅から徒歩3分の立地で、忙しい日常の中でも、手軽にトレーニングが可能！<br>あなたのフィットネス生活をサポートします。
+              </p>
             </div>
             <div class="feature__item-image">
               <img src="/images/top/feature03@2x.jpg" alt="" width="240" height="192">
             </div>
           </li>
         </ul>
-
-
       </div>
-
-
-
-
     </section>
 
+    <aside class="banner-parallax"></aside>
+<div class="test"></div>
 
   </main>
+
+  <!-- フッター -------------->
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__logo">
