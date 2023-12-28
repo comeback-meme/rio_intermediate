@@ -121,9 +121,72 @@
         </ul>
       </div>
     </section>
-
+    
+    <!-- パララックス -->
     <aside class="banner-parallax"></aside>
-<div class="test"></div>
+
+
+    <section class="voice" id="voice">
+      <h2 class="voice__title title-style">voice</h2>
+      <!-- スワイパー -->
+      <div class="swiper-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="swiper-head">ストレスなく続けることが出来ました！</p>
+              <div class="swiper-body">
+                <div class="swiper-info">
+                  <p class="swiper-result">53kg</p>
+                  <p class="swiper-attribute">(27歳女性)</p>
+                </div>
+                <div class="swiper-image">
+                  <img src="/images/top/voice01@2x.png" alt="" width="91" height="91">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="swiper-head">自分に自信を持てる<br> ようになりました！</p>
+              <div class="swiper-body">
+                <div class="swiper-info">
+                  <p class="swiper-result">46kg</p>
+                  <p class="swiper-attribute">(24歳女性)</p>
+                </div>
+                <div class="swiper-image">
+                  <img src="/images/top/voice02@2x.png" alt="" width="91" height="91">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="swiper-head">気付いたら運動が習<br>慣になっていました</p>
+              <div class="swiper-body">
+                <div class="swiper-info">
+                  <p class="swiper-result">60kg</p>
+                  <p class="swiper-attribute">(25歳男性)</p>
+                </div>
+                <div class="swiper-image">
+                  <img src="/images/top/voice03@2x.png" alt="" width="91" height="91">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="swiper-head">心も体も健康になり<br>ました</p>
+              <div class="swiper-body">
+                <div class="swiper-info">
+                  <p class="swiper-result">45kg</p>
+                  <p class="swiper-attribute">(23歳女性)</p>
+                </div>
+                <div class="swiper-image">
+                  <img src="/images/top/voice04@2x.png" alt="" width="91" height="91">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
 
   </main>
 

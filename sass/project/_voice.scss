@@ -1,0 +1,144 @@
+@use "sass:math";
+@use "../foundation" as *;
+
+.voice{
+  text-align: center;
+}
+
+.voice__title.title-style {
+  margin-top: rm(40);
+}
+
+.swiper-container {
+  margin-top: rm(32);
+
+}
+
+.swiper {
+}
+
+.swiper-wrapper {
+  display:flex;
+  gap: rm(18);
+
+
+}
+
+.swiper-slide {
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $color-white;
+  border-radius: 50%;
+  width: rm(248);
+  height: rm(248);
+    aspect-ratio: 1;
+}
+
+.swiper-head {
+  width: rm(155);
+  font-size: rm(16);
+fz
+  
+  font-weight: 400;
+  line-height: 1.25; /* 125% */
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+}
+
+.swiper-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-result {
+  width: 50%;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 0.625; /* 62.5% */
+  letter-spacing: math.div(2.56px, 32px) * 1em;
+}
+
+.swiper-attribute {
+}
+
+.swiper-image {
+}
+
+// .swiper-container {
+//     position: relative;
+// }
+// .swiper {
+//     position: relative;
+// }
+// .swiper-wrapper {
+//     position: relative;
+// }
+
+// // ============================
+// //     pagination について
+// // ============================
+
+// //色と大きさ指定
+// .swiper-pagination-bullet {
+//     opacity: 1;
+//     background: gray;
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%; //円にする
+// }
+// .swiper-pagination-bullet.swiper-pagination-bullet-active {
+//     background: red;
+// }
+// //paginationの余白指定
+// .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+//     margin: 0 10px;
+// }
+// //paginationの位置
+// .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+//     bottom: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+// }
+
+// //progressbarの場合
+// // .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+// //     top: calc(100% - 10px);
+// //     height: 10px;
+// //     background: gray;
+// // }
+// // //実際に変化する棒の色
+// // .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+// //     background: red;
+// // }
+
+// // ==============================
+// //     navigation について
+// // ==============================
+
+// .swiper-button-prev {
+//     //位置はここで指定
+//     // top: 50%;
+//     // transform: translateY(-50%);
+//     &::after {
+//         content: ''; //デフォルトの削除
+//     }
+// }
+
+// .swiper-button-next {
+//     //位置はここで指定
+//     // top: 50%;
+//     // transform: translateY(-50%);
+//     &::after {
+//         content: ''; //デフォルトの削除
+//     }
+// }
