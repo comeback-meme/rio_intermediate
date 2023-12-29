@@ -25,6 +25,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="/css/destyle.min.css" media="all">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css
+" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -182,10 +184,11 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- 前後の矢印 -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      </div>
+      <!-- </div> -->
     </section>
 
   </main>
@@ -215,8 +218,50 @@
   </footer>
 
   <!-- JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="./js/style.js"></script>
+
+  <!-- ローディング -->
+
+
+  <!-- スワイパー -->
+  <script>
+    const swiper = new Swiper(".swiper", {
+    // loop: true,
+    // デフォルトはfalse
+    centeredSlides: true,
+     // アクティブなスライドを中央にする
+    slidesPerView: "auto",
+    // autoにする
+
+    breakpoints: {
+        1: {
+          slidesPerView: 1.5,
+          spaceBetween: 18,
+        },
+        769: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        993: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1201: {
+          slidesPerView: 3.6,
+          spaceBetween: 40,
+        },
+      },
+
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+    });
+  </script>
+
 </body>
 
 </html>
