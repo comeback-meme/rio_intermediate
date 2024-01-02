@@ -1,86 +1,159 @@
 @use "sass:math";
 @use "../foundation" as *;
 
-.voice{
+.voice {
   text-align: center;
 }
 
 .voice__title.title-style {
   margin-top: rm(40);
   @include mq(lg) {
-      margin-top: rm(114);
+    margin-top: rm(122);
   }
 }
 
 .swiper-container {
+  position: relative;
   margin-top: rm(32);
-@include mq(lg) {
+  @include mq(lg) {
     margin-top: rm(74);
-}
-}
-
-.swiper {
-  // max-width: 1280px;
-}
-
-.swiper-wrapper {
-  // display:flex;
-  // gap: rm(18);
-  // width: 100%;
-
+  }
 }
 
 .swiper-slide {
   display: flex;
   // flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background: $color-white;
+  background: #F4F0F0;
   border-radius: 50%;
   width: rm(248);
+  max-width: 248px;
   height: auto;
-    aspect-ratio: 1;
-    // gap: rm(18);
-    @include mq(lg) {
-        width:rm(323);
-        max-width: 323px;
-    }
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  @include mq(sm) {
+      width:rm(260);
+      max-width: 260px;
+  }
+  @include mq(md) {
+      width:rm(360);
+      min-width: 280px;
+  }
+@include mq(lg) {
+  min-width: 300px;
+    // width:rm(500);
+  }
+  @include mq(xl) {
+  max-width: 323px;
+    
+}
+  // @include mq(xl) {
+  //   width: rm(400);
+  //   max-width: 323px;
+  // }
 }
 
 .swiper-head {
-  width: rm(155);
+  // width: rm(155);
+  text-align: left;
   font-size: rm(16);
   font-weight: 400;
   line-height: 1.25; /* 125% */
-  // letter-spacing: math.div(1.28px, 16px) * 1em;
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+  margin-top: rm(50);
+  position: relative;
+  @include mq(md) {
+      margin-top: rm(60);
+  }
+  @include mq(lg) {
+      margin-top: rm(64);
+  }
+  @include mq(xl) {
+    margin-top: rm(87);
+  }
+  &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 44%;
+      height: 1px;
+      background: $color-black;
+      //配置
+      bottom: rm(-16);
+      left: 50%;
+      transform: translateX(-50%);
+  }
 }
 
-// .swiper-body {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+.swiper-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: rm(30);
+  margin-left: rm(10);
+
+}
 
 .swiper-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.swiper-result {
-  width: 50%;
+.swiper-beforeWeight{
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25; /* 125% */
+  letter-spacing: math.div(1.28px , 16px) * 1em;
+}
+
+.swiper-afterWeight {
+  // width: 50%;
   font-size: 32px;
   font-weight: 400;
   line-height: 0.625; /* 62.5% */
   letter-spacing: math.div(2.56px, 32px) * 1em;
+  margin-top: rm(8);
 }
 
+
 .swiper-attribute {
+  font-size: 12px; 
+font-weight: 400;
+line-height: 1.666px; /* 166.667% */
+letter-spacing: math.div(0.96px , 12px) * 1em;
+margin-top: rm(34);
+margin-left: rm(14);
 }
 
 .swiper-image {
+  margin-left: rm(14);
+  width: 91px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  width: rm(20);
+  height: rm(20);
+  border-top: solid 2px #BBCCD1;
+  border-right: solid 2px #BBCCD1;
+  position: absolute;
+  top: rm(12);
+}
+
+.swiper-button-prev::after {
+  transform: rotate(-135deg);
+  left: rm(10);
+}
+
+.swiper-button-next::after {
+  transform: rotate(45deg);
+  right: rm(10);
 }
 
 // .swiper-container {
@@ -112,12 +185,16 @@
 // .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 //     margin: 0 10px;
 // }
-// //paginationの位置
-// .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-//     bottom: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-// }
+
+//paginationの位置
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: rm(0);
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 // //progressbarの場合
 // // .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
@@ -151,3 +228,5 @@
 //         content: ''; //デフォルトの削除
 //     }
 // }
+
+

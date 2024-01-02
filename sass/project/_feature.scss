@@ -31,7 +31,7 @@
   margin: 0 auto;
   padding-bottom: rm(40);
   @include mq(lg) {
-      padding-bottom: rm(152);
+    padding-bottom: rm(152);
   }
 }
 
@@ -47,7 +47,7 @@
   justify-content: center;
   background: #fbf7f1;
   border-radius: 30px;
-  padding: rm(24) rm(16) rm(32);
+  padding: rm(24) rm(14) rm(32);
   @include mq(sm) {
     padding: rm(28) rm(40) rm(32);
   }
@@ -82,7 +82,7 @@
     border-radius: 50%;
     background: $color-CFDBE1;
     top: 0;
-    transform: translateY(-50%);
+    transform: translateY(-32%);
     left: 0;
     //配置
     @include mq(sm) {
@@ -141,7 +141,7 @@
 .feature__item-image {
   width: rm(240);
   aspect-ratio: 240/192;
-  margin-top: rm(24);
+  margin-top: rm(22);
   order: 2;
   @include mq(sm) {
     width: rm(300);
@@ -160,22 +160,31 @@
   @include mq(md) {
     height: 100%;
   }
-  @include mq(lg) {
-  }
+
 }
 
 .banner-parallax {
-// margin-left: calc(50% - 50vw);
-// margin-right: calc(50% - 50vw);
-// background-color: #fff;
+  // margin-left: calc(50% - 50vw);
+  // margin-right: calc(50% - 50vw);
+  // background-color: #fff;
   background-attachment: fixed;
   background-image: url(/images/top/training@2x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  display: block;
+  // width:rm(375);
+  width: 100%;
   height: rm(104);
+  min-height: 104px;
+  @include mq(sm) {
+    height: rm(220);
+  }
+  @include mq(md) {
+    height: rm(280);
+  }
   @include mq(lg) {
     height: rm(347);
-// height: 347px;
+    // height: 347px;
   }
 }

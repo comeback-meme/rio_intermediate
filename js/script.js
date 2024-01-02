@@ -11,4 +11,11 @@ jQuery(function ($) { // $はjQueryを表す
     // $(".c-btn").click(function() {
     //     console.log("ボタンがクリックされました！");
     // });
+
+
+        $('.js-faq-question').on('click', function () {
+            $(this).next().slideToggle();
+            $(this).toggleClass('is-open');
+        });
+
 });

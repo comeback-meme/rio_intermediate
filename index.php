@@ -123,7 +123,7 @@
         </ul>
       </div>
     </section>
-    
+
     <!-- パララックス -->
     <aside class="banner-parallax"></aside>
 
@@ -135,10 +135,11 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <p class="swiper-head">ストレスなく続けることが出来ました！</p>
+              <p class="swiper-head">ストレスなく続ける<br>ことが出来ました！</p>
               <div class="swiper-body">
                 <div class="swiper-info">
-                  <p class="swiper-result">53kg</p>
+                  <p class="swiper-beforeWeight">72kg→</p>
+                  <p class="swiper-afterWeight">53kg</p>
                   <p class="swiper-attribute">(27歳女性)</p>
                 </div>
                 <div class="swiper-image">
@@ -150,7 +151,8 @@
               <p class="swiper-head">自分に自信を持てる<br> ようになりました！</p>
               <div class="swiper-body">
                 <div class="swiper-info">
-                  <p class="swiper-result">46kg</p>
+                  <p class="swiper-beforeWeight">68kg→</p>
+                  <p class="swiper-afterWeight">46kg</p>
                   <p class="swiper-attribute">(24歳女性)</p>
                 </div>
                 <div class="swiper-image">
@@ -162,7 +164,8 @@
               <p class="swiper-head">気付いたら運動が習<br>慣になっていました</p>
               <div class="swiper-body">
                 <div class="swiper-info">
-                  <p class="swiper-result">60kg</p>
+                  <p class="swiper-beforeWeight">81kg→</p>
+                  <p class="swiper-afterWeight">60kg</p>
                   <p class="swiper-attribute">(25歳男性)</p>
                 </div>
                 <div class="swiper-image">
@@ -174,7 +177,8 @@
               <p class="swiper-head">心も体も健康になり<br>ました</p>
               <div class="swiper-body">
                 <div class="swiper-info">
-                  <p class="swiper-result">45kg</p>
+                  <p class="swiper-beforeWeight">59kg→</p>
+                  <p class="swiper-afterWeight">45kg</p>
                   <p class="swiper-attribute">(23歳女性)</p>
                 </div>
                 <div class="swiper-image">
@@ -183,12 +187,39 @@
               </div>
             </div>
           </div>
+
+          <!-- ページネーション -->
+          <div class="swiper-pagination"></div>
+          <!-- 前後の矢印 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <!-- <div class="swiper-pagination"></div> -->
-        <!-- 前後の矢印 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      <!-- </div> -->
+      </div>
+      
+      <a class="c-btn btn-plan" href="#">
+        <span class="btn-textTop">プランを見てみる</span>
+        <p class="btn-textBottom">plan</p></a>
+    </section>
+
+    <!-- FAQ---- -->
+    <section class="faq" id="faq">
+    <h2 class="faq__title title-style">faq</h2>
+    <div class="faq__inner">
+        <ul class="faq__list faq-list">
+          <li class="faq-list__item">
+            <p class="faq-list__item-question js-faq-question"><span>Q.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="faq-list__item-answer"><span>A.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </li>
+          <li class="faq-list__item">
+            <p class="faq-list__item-question js-faq-question"><span>Q.</span>テキストテキストテキスト</p>
+            <p class="faq-list__item-answer"><span>A.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </li>
+          <li class="faq-list__item">
+            <p class="faq-list__item-question js-faq-question"><span>Q.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="faq-list__item-answer"><span>A.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
   </main>
@@ -222,6 +253,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="./js/style.js"></script>
+  <script src="./js/script.js"></script>
 
   <!-- ローディング -->
 
@@ -229,16 +261,17 @@
   <!-- スワイパー -->
   <script>
     const swiper = new Swiper(".swiper", {
-    // loop: true,
-    // デフォルトはfalse
-    centeredSlides: true,
-     // アクティブなスライドを中央にする
-    slidesPerView: "auto",
-    // autoにする
 
-    breakpoints: {
+      // loop: true,
+      // デフォルトはfalse
+      centeredSlides: true,
+      // アクティブなスライドを中央にする
+      slidesPerView: "auto",
+      // autoにする
+
+      breakpoints: {
         1: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.4,
           spaceBetween: 18,
         },
         769: {
@@ -255,10 +288,17 @@
         },
       },
 
-    navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+      // 前後の矢印
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // ページネーション
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true, // クリック有効化
+      },
     });
   </script>
 
