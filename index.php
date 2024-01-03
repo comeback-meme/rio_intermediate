@@ -195,32 +195,45 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      
+
       <a class="c-btn btn-plan" href="#">
         <span class="btn-textTop">プランを見てみる</span>
-        <p class="btn-textBottom">plan</p></a>
+        <p class="btn-textBottom">plan</p>
+      </a>
     </section>
 
     <!-- FAQ---- -->
     <section class="faq" id="faq">
-    <h2 class="faq__title title-style">faq</h2>
-    <div class="faq__inner">
+      <h2 class="faq__title title-style">faq</h2>
+      <div class="faq__inner">
         <ul class="faq__list faq-list">
           <li class="faq-list__item">
-            <p class="faq-list__item-question js-faq-question"><span>Q.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <p class="faq-list__item-answer"><span>A.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="faq-list__item-question js-faq-question"><span>Q</span>体験の持ち物はなんですか？</p>
+            <p class="faq-list__item-answer"><span>A</span>トレーニングシューズ、スポーツウェア、タオルが必要です。</p>
           </li>
           <li class="faq-list__item">
-            <p class="faq-list__item-question js-faq-question"><span>Q.</span>テキストテキストテキスト</p>
-            <p class="faq-list__item-answer"><span>A.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="faq-list__item-question js-faq-question"><span>Q</span>どのようなトレーニングを行いますか？</p>
+            <p class="faq-list__item-answer"><span>A</span>当カウンセリングでは、お客様一人ひとりの目標や理想に合わせて、専属トレーナーが最適なトレーニングプランをご提案いたします。施設には、通常の筋力トレーニングや高強度インターバルトレーニング（HIIT）にも適した設備が整っています。</p>
           </li>
           <li class="faq-list__item">
-            <p class="faq-list__item-question js-faq-question"><span>Q.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <p class="faq-list__item-answer"><span>A.</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="faq-list__item-question js-faq-question"><span>Q</span>営業時間を教えてください。</p>
+            <p class="faq-list__item-answer"><span>A</span>平日：午前5時〜午後10時　土日：午前6時〜午後11時</p>
+          </li>
+          <li class="faq-list__item">
+            <p class="faq-list__item-question js-faq-question"><span>Q</span>お支払い方法について教えて下さい。</p>
+            <p class="faq-list__item-answer"><span>A</span>現金払い、クレジットカード、電子マネーが利用可能です。</p>
+          </li>
+          <li class="faq-list__item">
+            <p class="faq-list__item-question js-faq-question"><span>Q</span>メンバーの男女比を教えてください。</p>
+            <p class="faq-list__item-answer"><span>A</span>男性約60％、女性約40％です。</p>
           </li>
         </ul>
+        <a class="c-btn btn-entry" href="#" target="_blank" rel="noopener">無料体験の申し込みはこちら</a>
       </div>
+
     </section>
+     
+
 
   </main>
 

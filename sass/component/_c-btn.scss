@@ -25,6 +25,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   @include mq(lg) {
     padding: rm(18) rm(19);
+    border-radius: rm(30);
   }
 }
 
@@ -34,37 +35,29 @@
     background: $color-F4F0F0;
     max-width: 208px;
     width: rm(220);
-
-    // min-width: 150px;
     &::before {
       font-size: rm(16);
       content: "無料体験お申込み";
       color: $color-black;
-      // width: vw(180);
-      // width: 100%;
       font-family: $font-family-notosans;
       font-weight: 400;
       line-height: 1.5;
       letter-spacing: math.div(1.28px, 16px) * 1em;
-      // display: flex;
-      // justify-content: center;
-      // left: 50%;
-      // transform: translateX(-20%);
     }
   }
 }
 
 // Modifier
-.c-btn.c-btn--white {
-  display: none;
-  background: $color-white;
-  color: $color-black;
-}
+// .c-btn.c-btn--white {
+//   display: none;
+//   background: $color-white;
+//   color: $color-black;
+// }
 
-.c-btn.c-btn--black {
-  color: #fff;
-  background-color: #000;
-}
+// .c-btn.c-btn--black {
+//   color: #fff;
+//   background-color: #000;
+// }
 
 // @include mq(lg) {
 //   .header__contact.btn-sp-only {
@@ -79,19 +72,17 @@
   padding: rm(16) rm(80);
   margin-top: rm(104);
   text-align: center;
-@media(hover: hover) {
+  @media (hover: hover) {
     &:hover {
-        opacity: 0.8;
-        cursor: pointer;
-        transition: all  0.3s ease;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: all 0.3s ease;
     }
-}
+  }
   @include mq(lg) {
     margin-top: rm(232);
     padding: rm(37) rm(182) rm(32) rm(178);
     max-width: 583px;
-  
-      
   }
 }
 
@@ -102,7 +93,6 @@
   line-height: math.div(28px, 24px);
   line-height: 1;
   letter-spacing: math.div(1.28px, 16px) * 1em;
-  margin-left: rm(14);
   @include mq(lg) {
     letter-spacing: math.div(1.92px, 24px) * 1em;
     margin-left: rm(10);
@@ -120,7 +110,7 @@
   position: relative;
   @include mq(lg) {
     letter-spacing: math.div(5.12px, 64px) * 1em;
-margin-top: rm(10);
+    margin-top: rm(10);
   }
   &::before,
   &::after {
@@ -149,5 +139,22 @@ margin-top: rm(10);
       right: rm(-96);
     }
   }
+}
 
+.c-btn.btn-entry {
+  //  margin: rm(48) auto rm(72);
+  margin-top: rm(48);
+  margin-bottom: rm(72);
+  width: 100%;
+  font-size: clamp(18px, vw(36), 36px);
+  background: #4e4e4e;
+  // max-width: 312px;
+  // width: rm(312);
+  @include mq(md) {
+    margin-top: rm(88);
+    margin-bottom: rm(136);
+    padding: rm(40) 0;
+    max-width: 720px;
+    
+  }
 }
