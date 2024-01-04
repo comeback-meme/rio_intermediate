@@ -193,7 +193,7 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <!-- <div class="btn-planWrap"> -->
+      <!-- PLAN-------->
         <div class="plan-barWrap">
         <span class="plan-bar1"></span>
         <span class="plan-bar2"></span>
