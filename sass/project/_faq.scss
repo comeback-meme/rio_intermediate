@@ -39,7 +39,6 @@
 .faq-list__item {
   background-color: $color-F4F0F0;
   box-shadow: 0 0 rm(40) 0 rgba(0, 0, 0, 0.05);
-  // width: 100%;
 }
 
 .faq-list__item + .faq-list__item {
@@ -49,6 +48,7 @@
   }
 }
 
+// Question
 .faq-list__item-question {
   font-size: clamp(14px, vw(18), 18px);
   font-weight: 700;
@@ -64,6 +64,7 @@
   }
 }
 
+// Questionの矢印
 .faq-list__item-question::before {
   content: "";
   position: absolute;
@@ -81,10 +82,12 @@
   }
 }
 
+// Questionが開いてる時の矢印
 .faq-list__item-question.is-open::before {
   transform: translateY(-50%) rotate(315deg);
 }
 
+// Questionの「Q」
 .faq-list__item-question span {
   font-size: clamp(20px, vw(24), 24px);
   font-weight: 700;
@@ -106,6 +109,7 @@
   }
 }
 
+// アンサー
 .faq-list__item-answer {
   color: $color-black;
   font-size: rm(16);
@@ -125,10 +129,11 @@
   }
 }
 
+// アンサーの「A」
 .faq-list__item-answer span {
   display: inline-block;
   position: absolute;
   margin-right: rm(20);
-  left: rm(10);
+  left: rm(20);
   font-weight: 500;
 }

@@ -52,9 +52,7 @@
       <!-- <a href="" class="c-btn c-btn--white">無料体験お申込み</a> -->
 
       <div class="header__contact-wrapper">
-        <a href="#">
-          <div class="header__contact"></div>
-        </a>
+        <a class="header__contact" href="#"></a>
 
         <button id="js_hamburgerBtn" class="hamburger_menu"><!-- is activeが付くとこ -->
           <span class="hamburger_bar1"></span>
@@ -78,7 +76,7 @@
         <div class="about__content">
           <div class="about__body">
             <h3 class="about__title">Be yourself</h3>
-            <p class="about__text">U FITは、自分の好きな自分になれる場所<br class="pc-only">一時的なボディメイクのサポートではなく、お客様1人1<br class="pc-only">人に寄り添い、長期間における身体のあり方を「共に」<br class="pc-only">
+            <p class="about__text">U FITは、<span class="marker">自分の好きな自分になれる場所</span><br class="pc-only">一時的なボディメイクのサポートではなく、お客様1人1<br class="pc-only">人に寄り添い、長期間における身体のあり方を「共に」<br class="pc-only">
               作り上げていきます。</p>
           </div>
         </div>
@@ -195,7 +193,12 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-
+      <!-- <div class="btn-planWrap"> -->
+        <div class="plan-barWrap">
+        <span class="plan-bar1"></span>
+        <span class="plan-bar2"></span>
+        <span class="plan-bar3"></span>
+        </div>
       <a class="c-btn btn-plan" href="#">
         <span class="btn-textTop">プランを見てみる</span>
         <p class="btn-textBottom">plan</p>
@@ -230,11 +233,7 @@
         </ul>
         <a class="c-btn btn-entry" href="#" target="_blank" rel="noopener">無料体験の申し込みはこちら</a>
       </div>
-
     </section>
-     
-
-
   </main>
 
   <!-- フッター -------------->

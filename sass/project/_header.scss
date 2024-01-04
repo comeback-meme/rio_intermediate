@@ -197,7 +197,6 @@
       // padding-right: vw(16);
       padding-right: rm(16);
     }
-  
     &:not(:first-child) a {
       padding-left: rm(16);
     }
@@ -275,6 +274,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 }
 
 .header__contact {
+  display: block;
   background: #f1f7f8 url(../images/top/mail_icon.png) no-repeat center center /
     60%;
 }

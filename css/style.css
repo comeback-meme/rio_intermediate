@@ -172,7 +172,6 @@ a {
   background: #edeff0;
   box-shadow: 0px 10px 10px 0px rgba(102, 158, 170, 0.25);
   padding: 1rem 5rem;
-  margin-top: 6.5rem;
   text-align: center;
 }
 @media (hover: hover) {
@@ -184,7 +183,6 @@ a {
 }
 @media screen and (min-width: 993px) {
   .c-btn.btn-plan {
-    margin-top: 14.5rem;
     padding: 2.3125rem 11.375rem 2rem 11.125rem;
     max-width: 583px;
   }
@@ -251,6 +249,56 @@ a {
   .btn-textBottom::after {
     right: -6rem;
   }
+}
+
+.btn-planWrap {
+  position: relative;
+  margin-top: 6.5rem;
+}
+
+.plan-barWrap {
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+  margin-inline: auto;
+  width: 8.5rem;
+  height: 2rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 993px) {
+  .plan-barWrap {
+    width: 16.5rem;
+    max-width: 264px;
+    height: 4rem;
+    margin-top: 7rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.plan-bar1,
+.plan-bar2,
+.plan-bar3 {
+  background: #fff;
+  width: 0.1875rem;
+  height: 1.3125rem;
+}
+@media screen and (min-width: 993px) {
+  .plan-bar1,
+  .plan-bar2,
+  .plan-bar3 {
+    height: 2.625rem;
+  }
+}
+
+.plan-bar1 {
+  transform: rotate(-45deg);
+  align-self: flex-end;
+}
+
+.plan-bar3 {
+  transform: rotate(45deg);
+  align-self: flex-end;
 }
 
 .c-btn.btn-entry {
@@ -538,6 +586,7 @@ a {
 }
 
 .header__contact {
+  display: block;
   background: #f1f7f8 url(../images/top/mail_icon.png) no-repeat center center/60%;
 }
 
@@ -935,6 +984,10 @@ a {
     line-height: 2.5; /* 250% */
     margin-top: 3.375rem;
   }
+}
+
+.about__text .marker {
+  background: linear-gradient(transparent 70%, #F4F0F0 70%);
 }
 
 #feature {
@@ -1475,7 +1528,7 @@ a {
   display: inline-block;
   position: absolute;
   margin-right: 1.25rem;
-  left: 0.625rem;
+  left: 1.25rem;
   font-weight: 500;
 }
 
