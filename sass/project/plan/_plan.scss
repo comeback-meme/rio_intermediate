@@ -1,0 +1,209 @@
+@use "sass:math";
+@use "../../foundation" as *;
+
+.plan {
+  padding: 0 5%;
+  text-align: center;
+}
+
+.plan-page-mv__image {
+  background: url(/images/plan/mv_plan_sp@2x.jpg) no-repeat center center /
+    cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 375/344;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  @include mq(sm) {
+    // height: rm(460);
+    // background: url(/images/plan/mv_plan@2x.jpg) no-repeat right center / cover;
+  }
+  @include mq(md) {
+    background: url(/images/plan/mv_plan@2x.jpg) no-repeat right center / cover;
+    margin-top: rm(100);
+    aspect-ratio: 1280/456;
+  }
+  @include mq(lg) {
+    height: 456px;
+  }
+}
+
+// MVのタイトル「PLAN」
+.plan-page__title.c-title {
+  // margin-top: rm(172);
+  position: absolute;
+  // margin-top: 45%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  color: $color-white;
+  font-size: clamp(40px, vw(96), 96px);
+  font-weight: 400;
+  line-height: 1; /* 100% */
+  letter-spacing: math.div(3.2px, 40px) * 1em;
+  @include mq(sm) {
+    // margin-top: rm(300);
+  }
+  @include mq(md) {
+    letter-spacing: math.div(7.68px, 96px) * 1em;
+    // margin-top: rm(160);
+  }
+  @include mq(lg) {
+    // margin-top: rm(20);
+    top: 40%;
+  }
+}
+
+
+
+// タイトル「3つのプラン」
+.plan-page__list_title {
+  color: $color-white;
+  font-size: clamp(20px, vw(40), 40px);
+  font-weight: 400;
+  letter-spacing: math.div(1.6px, 20px) * 1em;
+  line-height: math.div(20px, 23px);
+  margin-top: rm(56);
+  @include mq(lg) {
+    letter-spacing: math.div(3.2px, 40px) * 1em;
+  }
+}
+
+.plan-page__inner {
+  width: rm(264);
+  margin-top: rm(52);
+  margin-inline: auto;
+
+  @include mq(sm) {
+    width: 100%;
+  }
+}
+
+.plan-page__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: rm(16);
+}
+
+.plan-page__item {
+  background: $color-F4F0F0;
+  width: rm(264);
+  height: rm(176);
+  border-radius: 32px;
+  padding-top: rm(34);
+  @include mq(lg) {
+    width: rm(320);
+    height: auto;
+    aspect-ratio: 320/240;
+  }
+}
+
+.plan-page__item a {
+}
+
+.plan-page__number {
+  width: rm(56);
+  aspect-ratio: 1;
+  background: $color-bg;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36%;
+  font-size: clamp(24px, vw(40), 40px);
+  font-weight: 400;
+  letter-spacing: math.div(1.92px, 24px) * 1em;
+  line-height: 1;
+  @include mq(lg) {
+    letter-spacing: math.div(3.2px, 40px) * 1em;
+  }
+}
+
+.plan-page__text {
+  font-size: clamp(16px, vw(24), 24px);
+  font-weight: 400;
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+  margin-top: rm(25);
+  @include mq(lg) {
+    letter-spacing: math.div(1.28px, 24px) * 1em;
+    margin-top: rm(32);
+  }
+}
+
+.plan-page__card-inner {
+  margin-top: rm(76);
+  
+
+}
+
+.plan-page__card-list {
+
+}
+
+.plan-page__card-item {
+background:#FBF7F1;
+border-radius: rm(30);
+}
+
+.plan-page__card-top {
+display:flex;
+justify-content: flex-start;
+align-items: center;
+
+}
+
+.plan-page__card-number {
+  width: rm(56);
+  aspect-ratio: 1;
+  background: $color-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36%;
+  font-size: clamp(24px, vw(40), 40px);
+  font-weight: 400;
+  letter-spacing: math.div(1.92px, 24px) * 1em;
+  line-height: 1;
+  @include mq(lg) {
+    letter-spacing: math.div(3.2px, 40px) * 1em;
+    width: rm(88);
+  }
+
+}
+
+.plan-page__card-text {
+  font-size: clamp(16px, vw(32), 32px);
+  font-weight: 400;
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+  margin-top: rm(25);
+  @include mq(lg) {
+    letter-spacing: math.div(1.28px, 24px) * 1em;
+    margin-top: rm(32);
+  }
+}
+
+.plan-page__card-info {
+
+}
+
+.plan-page__card-service {
+
+}
+
+.plan-page__card-price {
+
+}
+
+.plan-page__card-textHead {
+
+}
+
+.plan-page__card-text-body {
+
+}
+

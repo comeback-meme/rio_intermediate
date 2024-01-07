@@ -4,7 +4,7 @@
 .header {
   // height: 72px;
   height: rm(72);
-  background: $color-bg-7FB0BF;
+  background: $color-bg;
   padding-left:rm(24);
   padding-right:rm(34);
   position: fixed;
@@ -406,7 +406,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   // left: 0px;
   // width: 100vw;
   // height: 100vh;
-  // background:$color-bg-7FB0BF;
+  // background:$color-bg;
   // transition: opacity 0.4s ease-out;
   // z-index:1000;
   transition: opacity 0.6s;
@@ -421,6 +421,6 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background: $color-bg-7FB0BF;
+  background: $color-bg;
   z-index:1000;
 }

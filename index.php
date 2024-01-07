@@ -40,7 +40,7 @@
 </head> -->
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="header__inner">
       <h1 class="header__logo">
         <a href="/">
@@ -48,29 +48,34 @@
           <span class="header__title">U FIT</span>
         </a>
       </h1>
-      <div id="js_hamburgerBg" class="hamburger_bg"></div><!-- is activeが付くとこ -->
-      <nav id="js_headerNav" class="header__nav"><!-- is activeが付くとこ -->
-        <ul class="header__nav-list">
+      <div id="js_hamburgerBg" class="hamburger_bg"></div> -->
+      <!-- is activeが付くとこ -->
+      <!-- <nav id="js_headerNav" class="header__nav">is activeが付くとこ -->
+        <!-- <ul class="header__nav-list">
           <li class="header__nav-item"><a href="#feature">feature</a></li>
           <li class="header__nav-item"><a href="#voice">voice</a></li>
           <li class="header__nav-item"><a href="#plan">plan</a></li>
           <li class="header__nav-item"><a href="#faq">faq</a></li>
           <li class="header__nav-item"><a class="c-btn c-btn--colorChange" href="#" target="_blank" rel="noopener">無料体験の申し込みはこちら</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <!-- <a href="" class="c-btn c-btn--white">無料体験お申込み</a> -->
 
-      <div class="header__contact-wrapper">
+      <!-- <div class="header__contact-wrapper">
         <a class="header__contact" href="#"></a>
 
-        <button id="js_hamburgerBtn" class="hamburger_menu"><!-- is activeが付くとこ -->
-          <span class="hamburger_bar1"></span>
+        <button id="js_hamburgerBtn" class="hamburger_menu"> -->
+          <!-- is activeが付くとこ -->
+          <!-- <span class="hamburger_bar1"></span>
           <span class="hamburger_bar2"></span>
           <span class="hamburger_bar3"></span>
         </button>
       </div>
 
-  </header>
+  </header> -->
+  <?php include(__DIR__ . "/inc/header.php"); ?>
+
+
   <!-- <main style="background: #fff;width: 100%;height: 5000px;"></main> -->
   <main>
     <div class="mv__image">
@@ -94,7 +99,7 @@
 
     <!-- featureセクション -->
     <section id="feature" class="feature">
-      <h2 class="feature__title title-style">feature</h2>
+      <h2 class="feature__title c-title">feature</h2>
       <div class="feature__inner">
         <ul class="feature__list">
           <li class="feature__item">
@@ -136,7 +141,7 @@
 
 
     <section class="voice" id="voice">
-      <h2 class="voice__title title-style">voice</h2>
+      <h2 class="voice__title c-title">voice</h2>
       <!-- スワイパー -->
       <div class="swiper-container">
         <div class="swiper">
@@ -208,7 +213,7 @@
         <span class="plan-bar2"></span>
         <span class="plan-bar3"></span>
       </div>
-      <a class="c-btn btn-plan" href="#">
+      <a class="c-btn btn-plan" href="/plan.php">
         <span class="btn-textTop">プランを見てみる</span>
         <p class="btn-textBottom">plan</p>
       </a>
@@ -216,7 +221,7 @@
 
     <!-- FAQ---- -->
     <section class="faq" id="faq">
-      <h2 class="faq__title title-style">faq</h2>
+      <h2 class="faq__title c-title">faq</h2>
       <div class="faq__inner">
         <ul class="faq__list faq-list">
           <li class="faq-list__item">
@@ -245,8 +250,9 @@
     </section>
   </main>
 
+  <?php include(__DIR__ . "/inc/footer.php"); ?>
   <!-- フッター -------------->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__inner">
       <div class="footer__logo">
         <a href="/">
@@ -267,7 +273,7 @@
     <p class="footer__copy">
       <small class="footer__copy-text">Copyright &copy; U FIT All Rights Reserved.</small>
     </p>
-  </footer>
+  </footer> -->
 
   <!-- JS -->
 

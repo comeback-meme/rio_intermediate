@@ -317,7 +317,7 @@ a {
   }
 }
 
-.title-style {
+.c-title {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: clamp(24px, 3.125vw, 40px);
@@ -327,7 +327,7 @@ a {
   text-transform: uppercase;
 }
 @media screen and (min-width: 993px) {
-  .title-style {
+  .c-title {
     letter-spacing: 0.08em;
   }
 }
@@ -1014,11 +1014,11 @@ a {
   }
 }
 
-.feature__title.title-style {
+.feature__title.c-title {
   margin-top: 9.0625rem;
 }
 @media screen and (min-width: 993px) {
-  .feature__title.title-style {
+  .feature__title.c-title {
     margin-top: 9rem;
   }
 }
@@ -1230,11 +1230,11 @@ a {
   text-align: center;
 }
 
-.voice__title.title-style {
+.voice__title.c-title {
   margin-top: 2.5rem;
 }
 @media screen and (min-width: 993px) {
-  .voice__title.title-style {
+  .voice__title.c-title {
     margin-top: 7.625rem;
   }
 }
@@ -1414,12 +1414,12 @@ a {
   padding: 0rem 5%;
 }
 
-.faq__title.title-style {
+.faq__title.c-title {
   margin-top: 4.875rem;
   text-align: center;
 }
 @media screen and (min-width: 769px) {
-  .faq__title.title-style {
+  .faq__title.c-title {
     margin-top: 7rem;
   }
 }
@@ -1696,6 +1696,186 @@ a {
 @media screen and (min-width: 993px) {
   .footer__copy-text {
     letter-spacing: 0.064em;
+  }
+}
+
+.plan {
+  padding: 0 5%;
+  text-align: center;
+}
+
+.plan-page-mv__image {
+  background: url(/images/plan/mv_plan_sp@2x.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 375/344;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+@media screen and (min-width: 769px) {
+  .plan-page-mv__image {
+    background: url(/images/plan/mv_plan@2x.jpg) no-repeat right center/cover;
+    margin-top: 6.25rem;
+    aspect-ratio: 1280/456;
+  }
+}
+@media screen and (min-width: 993px) {
+  .plan-page-mv__image {
+    height: 456px;
+  }
+}
+
+.plan-page__title.c-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: clamp(40px, 7.5vw, 96px);
+  font-weight: 400;
+  line-height: 1; /* 100% */
+  letter-spacing: 0.08em;
+}
+@media screen and (min-width: 769px) {
+  .plan-page__title.c-title {
+    letter-spacing: 0.08em;
+  }
+}
+@media screen and (min-width: 993px) {
+  .plan-page__title.c-title {
+    top: 40%;
+  }
+}
+
+.plan-page__list_title {
+  color: #fff;
+  font-size: clamp(20px, 3.125vw, 40px);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 0.8695652174;
+  margin-top: 3.5rem;
+}
+@media screen and (min-width: 993px) {
+  .plan-page__list_title {
+    letter-spacing: 0.08em;
+  }
+}
+
+.plan-page__inner {
+  width: 16.5rem;
+  margin-top: 3.25rem;
+  margin-inline: auto;
+}
+@media screen and (min-width: 577px) {
+  .plan-page__inner {
+    width: 100%;
+  }
+}
+
+.plan-page__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.plan-page__item {
+  background: #F4F0F0;
+  width: 16.5rem;
+  height: 11rem;
+  border-radius: 32px;
+  padding-top: 2.125rem;
+}
+@media screen and (min-width: 993px) {
+  .plan-page__item {
+    width: 20rem;
+    height: auto;
+    aspect-ratio: 320/240;
+  }
+}
+
+.plan-page__number {
+  width: 3.5rem;
+  aspect-ratio: 1;
+  background: #7FB0BF;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36%;
+  font-size: clamp(24px, 3.125vw, 40px);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+@media screen and (min-width: 993px) {
+  .plan-page__number {
+    letter-spacing: 0.08em;
+  }
+}
+
+.plan-page__text {
+  font-size: clamp(16px, 1.875vw, 24px);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-top: 1.5625rem;
+}
+@media screen and (min-width: 993px) {
+  .plan-page__text {
+    letter-spacing: 0.0533333333em;
+    margin-top: 2rem;
+  }
+}
+
+.plan-page__card-inner {
+  margin-top: 4.75rem;
+}
+
+.plan-page__card-item {
+  background: #FBF7F1;
+  border-radius: 1.875rem;
+}
+
+.plan-page__card-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.plan-page__card-number {
+  width: 3.5rem;
+  aspect-ratio: 1;
+  background: #7FB0BF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36%;
+  font-size: clamp(24px, 3.125vw, 40px);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+@media screen and (min-width: 993px) {
+  .plan-page__card-number {
+    letter-spacing: 0.08em;
+    width: 5.5rem;
+  }
+}
+
+.plan-page__card-text {
+  font-size: clamp(16px, 2.5vw, 32px);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-top: 1.5625rem;
+}
+@media screen and (min-width: 993px) {
+  .plan-page__card-text {
+    letter-spacing: 0.0533333333em;
+    margin-top: 2rem;
   }
 }
 

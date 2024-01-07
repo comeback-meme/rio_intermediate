@@ -2,5 +2,7 @@
 @use "./foundation";
 @use "./layout";
 @use "./component";
-@use "./project";
+@use "./project";// トップページ
+@use "./project/plan";//プランページ
+@use "./project/contact";//コンタクトページ
 @use "./utility";
