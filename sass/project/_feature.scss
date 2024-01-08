@@ -1,16 +1,6 @@
 @use "sass:math";
 @use "../foundation" as *;
 
-#feature {
-  scroll-margin-top: rm(72);
-  @include mq(sm) {
-    scroll-margin-top: rm(86);
-  }
-  @include mq(md) {
-    scroll-margin-top: rm(100);
-  }
-}
-
 .feature {
   text-align: center;
   padding: 0 7%;

@@ -96,7 +96,8 @@
   }
 }
 
-.plan-page__item {
+.plan-page__item a {
+  display: block;
   background: $color-F4F0F0;
   width: rm(264);
   height: rm(176);
@@ -109,8 +110,11 @@
   }
 }
 
-.plan-page__item a {
-}
+// .plan-page__item a {
+//   display: block;
+//   width: 100%;
+//   height: inherit;
+// }
 
 .plan-page__number {
   width: rm(56);
@@ -152,13 +156,12 @@
   }
 }
 
-.plan-page__card-list {
-}
+
 
 .plan-page__card-item {
   background: #fbf7f1;
   border-radius: rm(30);
-  padding: rm(29) rm(19) rm(40) rm(24);
+  padding: rm(29) rm(19 ) rm(40) rm(24);
   text-align: left;
   @include mq(md) {
     padding: rm(40) rm(64) rm(64) rm(40);
@@ -168,7 +171,7 @@
 .plan-page__card-item + .plan-page__card-item {
   margin-top: rm(40);
   @include mq(md) {
-    margin-top: rm(136);
+    margin-top: rm(134);
   }
 }
 
@@ -223,7 +226,7 @@
   font-weight: 400;
   line-height: math.div(28px, 24px);
   letter-spacing: math.div(1.92px, 24px) * 1em;
-  @include mq(lg) {
+  @include mq(md) {
     line-height: math.div(56px, 48px);
     letter-spacing: math.div(3.84px, 48px) * 1em;
     order: 2;
@@ -252,9 +255,16 @@
   justify-content: center;
   align-items: center;
   gap: rm(11);
+  width: 100%;
   order: 1;
   @include mq(md) {
+    width: 50%;
+    gap: rm(24);
+    justify-content: flex-start;
+  }
+  @include mq(lg) {
     gap: rm(38);
+      
   }
 }
 
@@ -269,7 +279,12 @@
   line-height: math.div(19px, 16px);
   letter-spacing: math.div(1.28px, 16px) * 1em;
   @include mq(md) {
-    padding: rm(25) rm(32);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:rm(152);
+    padding: rm(25) rm(0);
     line-height: math.div(23px, 20px);
     letter-spacing: math.div(1.6px, 20px) * 1em;
   }
@@ -277,7 +292,8 @@
 
 .plan-page__card-service:last-child {
   @include mq(md) {
-    padding: rm(25) rm(12);
+    // padding: rm(25) rm(12);
+    padding: rm(25) rm(0);
   }
 }
 
@@ -287,7 +303,10 @@
   line-height: math.div(19px, 16px);
   letter-spacing: math.div(1.28px, 16px) * 1em;
   margin-top: rm(16);
-
+@include mq(sm) {
+    margin-top: rm(32);
+    
+}
   @include mq(md) {
     line-height: math.div(28px, 24px);
     letter-spacing: math.div(1.92px, 24px) * 1em;
@@ -296,7 +315,11 @@
 }
 
 .plan-page__card-text-inner {
-  margin-top: rm(32);
+  margin-top: rm(33);
+  @include mq(sm) {
+      margin-top: rm(52);
+      
+  }
   @include mq(md) {
     margin-top: rm(72);
   }

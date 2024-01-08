@@ -1,15 +1,6 @@
 @use "sass:math";
 @use "../foundation" as *;
 
-#voice{
-  scroll-margin-top: rm(72);
-  @include mq(sm) {
-    scroll-margin-top: rm(86);
-  }
-  @include mq(md) {
-    scroll-margin-top: rm(100);
-  }
-}
 
 .voice {
   text-align: center;

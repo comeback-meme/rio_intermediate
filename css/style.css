@@ -132,6 +132,20 @@ a {
   }
 }
 
+.scroll-margin {
+  scroll-margin-top: 4.5rem;
+}
+@media screen and (min-width: 577px) {
+  .scroll-margin {
+    scroll-margin-top: 5.375rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .scroll-margin {
+    scroll-margin-top: 6.25rem;
+  }
+}
+
 .c-btn {
   padding: 1.3125rem 1.1875rem;
   color: #fff;
@@ -990,20 +1004,6 @@ a {
   background: linear-gradient(transparent 70%, #F4F0F0 70%);
 }
 
-#feature {
-  scroll-margin-top: 4.5rem;
-}
-@media screen and (min-width: 577px) {
-  #feature {
-    scroll-margin-top: 5.375rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  #feature {
-    scroll-margin-top: 6.25rem;
-  }
-}
-
 .feature {
   text-align: center;
   padding: 0 7%;
@@ -1212,20 +1212,6 @@ a {
   }
 }
 
-#voice {
-  scroll-margin-top: 4.5rem;
-}
-@media screen and (min-width: 577px) {
-  #voice {
-    scroll-margin-top: 5.375rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  #voice {
-    scroll-margin-top: 6.25rem;
-  }
-}
-
 .voice {
   text-align: center;
 }
@@ -1394,20 +1380,6 @@ a {
   bottom: 0rem;
   left: 50%;
   transform: translateX(-50%);
-}
-
-#faq {
-  scroll-margin-top: 4.5rem;
-}
-@media screen and (min-width: 577px) {
-  #faq {
-    scroll-margin-top: 5.375rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  #faq {
-    scroll-margin-top: 6.25rem;
-  }
 }
 
 .faq {
@@ -1794,7 +1766,8 @@ a {
   }
 }
 
-.plan-page__item {
+.plan-page__item a {
+  display: block;
   background: #F4F0F0;
   width: 16.5rem;
   height: 11rem;
@@ -1802,7 +1775,7 @@ a {
   padding-top: 2.125rem;
 }
 @media screen and (min-width: 993px) {
-  .plan-page__item {
+  .plan-page__item a {
     width: 20rem;
     height: auto;
     aspect-ratio: 320/240;
@@ -1871,7 +1844,7 @@ a {
 }
 @media screen and (min-width: 769px) {
   .plan-page__card-item + .plan-page__card-item {
-    margin-top: 8.5rem;
+    margin-top: 8.375rem;
   }
 }
 
@@ -1932,7 +1905,7 @@ a {
   line-height: 1.1666666667;
   letter-spacing: 0.08em;
 }
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 769px) {
   .plan-page__card-price {
     line-height: 1.1666666667;
     letter-spacing: 0.08em;
@@ -1964,9 +1937,17 @@ a {
   justify-content: center;
   align-items: center;
   gap: 0.6875rem;
+  width: 100%;
   order: 1;
 }
 @media screen and (min-width: 769px) {
+  .plan-page__card-info {
+    width: 50%;
+    gap: 1.5rem;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 993px) {
   .plan-page__card-info {
     gap: 2.375rem;
   }
@@ -1985,7 +1966,11 @@ a {
 }
 @media screen and (min-width: 769px) {
   .plan-page__card-service {
-    padding: 1.5625rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.5rem;
+    padding: 1.5625rem 0rem;
     line-height: 1.15;
     letter-spacing: 0.08em;
   }
@@ -1993,7 +1978,7 @@ a {
 
 @media screen and (min-width: 769px) {
   .plan-page__card-service:last-child {
-    padding: 1.5625rem 0.75rem;
+    padding: 1.5625rem 0rem;
   }
 }
 
@@ -2004,6 +1989,11 @@ a {
   letter-spacing: 0.08em;
   margin-top: 1rem;
 }
+@media screen and (min-width: 577px) {
+  .plan-page__card-textHead {
+    margin-top: 2rem;
+  }
+}
 @media screen and (min-width: 769px) {
   .plan-page__card-textHead {
     line-height: 1.1666666667;
@@ -2013,7 +2003,12 @@ a {
 }
 
 .plan-page__card-text-inner {
-  margin-top: 2rem;
+  margin-top: 2.0625rem;
+}
+@media screen and (min-width: 577px) {
+  .plan-page__card-text-inner {
+    margin-top: 3.25rem;
+  }
 }
 @media screen and (min-width: 769px) {
   .plan-page__card-text-inner {

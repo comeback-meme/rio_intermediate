@@ -83,3 +83,13 @@ a:hover {
   }
 
 }
+
+.scroll-margin{
+scroll-margin-top: rm(72);
+@include mq(sm) {
+  scroll-margin-top: rm(86);
+}
+@include mq(md) {
+  scroll-margin-top: rm(100);
+}
+}

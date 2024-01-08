@@ -98,7 +98,7 @@
     </section>
 
     <!-- featureセクション -->
-    <section id="feature" class="feature">
+    <section id="feature" class="feature scroll-margin">
       <h2 class="feature__title c-title">feature</h2>
       <div class="feature__inner">
         <ul class="feature__list">
@@ -140,7 +140,7 @@
     <aside class="banner-parallax"></aside>
 
 
-    <section class="voice" id="voice">
+    <section class="voice scroll-margin" id="voice">
       <h2 class="voice__title c-title">voice</h2>
       <!-- スワイパー -->
       <div class="swiper-container">
@@ -220,7 +220,7 @@
     </section>
 
     <!-- FAQ---- -->
-    <section class="faq" id="faq">
+    <section class="faq scroll-margin" id="faq">
       <h2 class="faq__title c-title">faq</h2>
       <div class="faq__inner">
         <ul class="faq__list faq-list">
