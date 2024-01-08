@@ -165,6 +165,13 @@
   }
 }
 
+.plan-page__card-item + .plan-page__card-item {
+  margin-top: rm(40);
+  @include mq(md) {
+    margin-top: rm(136);
+  }
+}
+
 .plan-page__card-top {
   display: flex;
   justify-content: flex-start;
@@ -189,7 +196,7 @@
   }
 }
 
-.plan-page__card-text {
+.plan-page__card-title {
   font-size: clamp(16px, vw(32), 32px);
   font-weight: 400;
   letter-spacing: math.div(1.28px, 16px) * 1em;
@@ -266,75 +273,80 @@
     line-height: math.div(23px, 20px);
     letter-spacing: math.div(1.6px, 20px) * 1em;
   }
-
 }
 
-.plan-page__card-service:last-child{
+.plan-page__card-service:last-child {
   @include mq(md) {
     padding: rm(25) rm(12);
   }
-
 }
 
 .plan-page__card-textHead {
-  color: var(--gray02, #4E4E4E);
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.28px;
-margin-top: rm(16);
-
-@include mq(md) {
-  color: var(--gray02, #4E4E4E);
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
+  font-size: clamp(16px, vw(24), 24px);
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.92px;
+  line-height: math.div(19px, 16px);
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+  margin-top: rm(16);
+
+  @include mq(md) {
+    line-height: math.div(28px, 24px);
+    letter-spacing: math.div(1.92px, 24px) * 1em;
+    margin-top: rm(48);
+  }
 }
-}
 
-
-
-.plan-page__card-text-inner{
+.plan-page__card-text-inner {
   margin-top: rm(32);
   @include mq(md) {
-      margin-top: rm(72);
+    margin-top: rm(72);
   }
 }
 
 .plan-page__card-text-body {
-
 }
 
-.plan-page__card-text{
-  color: var(--gray02, #4E4E4E);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.12px;
-
-
-@include mq(md) {
-  color: var(--gray02, #4E4E4E);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
+.plan-page__card-text {
+  font-size: clamp(14px, vw(16), 16px);
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.28px;
-
+  line-height: math.div(16px, 14px);
+  letter-spacing: math.div(1.12px, 14px) * 1em;
+  padding-left: rm(24);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: rm(16);
+    height: auto;
+    aspect-ratio: 1;
+    background: $color-bg;
+    border-radius: 50%;
+    //配置
+    left: 0;
+  }
+  @include mq(md) {
+    line-height: math.div(19px, 16px);
+    letter-spacing: math.div(1.28px, 16px) * 1em;
+    padding-left: rm(40);
+  }
 }
+
+.plan-page__card-text + .plan-page__card-text {
+  margin-top: rm(8);
 }
 
-.plan-page__card-text:first-child{
+.plan-page__card-text-body {
   margin-top: rm(16);
   @include mq(md) {
     margin-top: rm(24);
+  }
+}
+
+// 申し込みボタン
+.c-btn.btn-entry.plan-page {
+  margin-top: rm(72);
+  margin-bottom: rm(86);
+  @include mq(md) {
+    margin-top: rm(136);
+    margin-bottom: rm(128);
   }
 }

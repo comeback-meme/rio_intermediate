@@ -1866,6 +1866,15 @@ a {
   }
 }
 
+.plan-page__card-item + .plan-page__card-item {
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 769px) {
+  .plan-page__card-item + .plan-page__card-item {
+    margin-top: 8.5rem;
+  }
+}
+
 .plan-page__card-top {
   display: flex;
   justify-content: flex-start;
@@ -1892,14 +1901,14 @@ a {
   }
 }
 
-.plan-page__card-text {
+.plan-page__card-title {
   font-size: clamp(16px, 2.5vw, 32px);
   font-weight: 400;
   letter-spacing: 0.08em;
   margin-left: 1.5rem;
 }
 @media screen and (min-width: 993px) {
-  .plan-page__card-text {
+  .plan-page__card-title {
     letter-spacing: 0.0533333333em;
   }
 }
@@ -1989,24 +1998,17 @@ a {
 }
 
 .plan-page__card-textHead {
-  color: var(--gray02, #4E4E4E);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
+  font-size: clamp(16px, 1.875vw, 24px);
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.28px;
+  line-height: 1.1875;
+  letter-spacing: 0.08em;
   margin-top: 1rem;
 }
 @media screen and (min-width: 769px) {
   .plan-page__card-textHead {
-    color: var(--gray02, #4E4E4E);
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.92px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.08em;
+    margin-top: 3rem;
   }
 }
 
@@ -2020,32 +2022,52 @@ a {
 }
 
 .plan-page__card-text {
-  color: var(--gray02, #4E4E4E);
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
+  font-size: clamp(14px, 1.25vw, 16px);
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.12px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.08em;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.plan-page__card-text::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: auto;
+  aspect-ratio: 1;
+  background: #7FB0BF;
+  border-radius: 50%;
+  left: 0;
 }
 @media screen and (min-width: 769px) {
   .plan-page__card-text {
-    color: var(--gray02, #4E4E4E);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.28px;
+    line-height: 1.1875;
+    letter-spacing: 0.08em;
+    padding-left: 2.5rem;
   }
 }
 
-.plan-page__card-text:first-child {
+.plan-page__card-text + .plan-page__card-text {
+  margin-top: 0.5rem;
+}
+
+.plan-page__card-text-body {
   margin-top: 1rem;
 }
 @media screen and (min-width: 769px) {
-  .plan-page__card-text:first-child {
+  .plan-page__card-text-body {
     margin-top: 1.5rem;
+  }
+}
+
+.c-btn.btn-entry.plan-page {
+  margin-top: 4.5rem;
+  margin-bottom: 5.375rem;
+}
+@media screen and (min-width: 769px) {
+  .c-btn.btn-entry.plan-page {
+    margin-top: 8.5rem;
+    margin-bottom: 8rem;
   }
 }
 
