@@ -2,7 +2,7 @@
 @use "../../foundation" as *;
 
 .plan {
-  padding: 0 5%;
+  padding: 0 7%;
   text-align: center;
 }
 
@@ -57,8 +57,6 @@
   }
 }
 
-
-
 // タイトル「3つのプラン」
 .plan-page__list_title {
   color: $color-white;
@@ -68,17 +66,22 @@
   line-height: math.div(20px, 23px);
   margin-top: rm(56);
   @include mq(lg) {
+    margin-top: rm(104);
+
     letter-spacing: math.div(3.2px, 40px) * 1em;
   }
 }
 
 .plan-page__inner {
   width: rm(264);
-  margin-top: rm(52);
+  margin-top: rm(54);
   margin-inline: auto;
 
   @include mq(sm) {
     width: 100%;
+  }
+  @include mq(md) {
+    margin-top: rm(120);
   }
 }
 
@@ -88,6 +91,9 @@
   align-items: center;
   flex-wrap: wrap;
   gap: rm(16);
+  @include mq(md) {
+    gap: rm(36);
+  }
 }
 
 .plan-page__item {
@@ -121,6 +127,7 @@
   line-height: 1;
   @include mq(lg) {
     letter-spacing: math.div(3.2px, 40px) * 1em;
+    width: rm(72);
   }
 }
 
@@ -137,24 +144,31 @@
 
 .plan-page__card-inner {
   margin-top: rm(76);
-  
+  margin-inline: auto;
 
+  @include mq(md) {
+    max-width: 956px;
+    margin-top: rm(128);
+  }
 }
 
 .plan-page__card-list {
-
 }
 
 .plan-page__card-item {
-background:#FBF7F1;
-border-radius: rm(30);
+  background: #fbf7f1;
+  border-radius: rm(30);
+  padding: rm(29) rm(19) rm(40) rm(24);
+  text-align: left;
+  @include mq(md) {
+    padding: rm(40) rm(64) rm(64) rm(40);
+  }
 }
 
 .plan-page__card-top {
-display:flex;
-justify-content: flex-start;
-align-items: center;
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .plan-page__card-number {
@@ -173,37 +187,154 @@ align-items: center;
     letter-spacing: math.div(3.2px, 40px) * 1em;
     width: rm(88);
   }
-
 }
 
 .plan-page__card-text {
   font-size: clamp(16px, vw(32), 32px);
   font-weight: 400;
   letter-spacing: math.div(1.28px, 16px) * 1em;
-  margin-top: rm(25);
+  margin-left: rm(24);
+
   @include mq(lg) {
     letter-spacing: math.div(1.28px, 24px) * 1em;
-    margin-top: rm(32);
+  }
+}
+
+.plan-page__card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include mq(md) {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.plan-page__card-price {
+  text-align: center;
+  font-size: clamp(24px, vw(48), 48px);
+  font-weight: 400;
+  line-height: math.div(28px, 24px);
+  letter-spacing: math.div(1.92px, 24px) * 1em;
+  @include mq(lg) {
+    line-height: math.div(56px, 48px);
+    letter-spacing: math.div(3.84px, 48px) * 1em;
+    order: 2;
+  }
+}
+
+.plan-page__card-price span {
+  display: inline-block;
+  margin-left: rm(16);
+  margin-right: rm(16);
+  font-size: clamp(36px, vw(96), 96px);
+  font-weight: 400;
+  line-height: math.div(42px, 36px);
+  letter-spacing: math.div(2.88px, 36px) * 1em;
+  margin-top: rm(24);
+  @include mq(md) {
+    line-height: math.div(80px, 96px);
+    margin-left: rm(22);
+    margin-right: rm(16);
+    margin-top: rm(36);
   }
 }
 
 .plan-page__card-info {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rm(11);
+  order: 1;
+  @include mq(md) {
+    gap: rm(38);
+  }
 }
 
 .plan-page__card-service {
+  display: inline-block;
+  border-radius: rm(20);
+  background: $color-bg;
+  padding: rm(14) rm(23);
+  margin-top: rm(24);
+  font-size: clamp(16px, vw(20), 20px);
+  font-weight: 400;
+  line-height: math.div(19px, 16px);
+  letter-spacing: math.div(1.28px, 16px) * 1em;
+  @include mq(md) {
+    padding: rm(25) rm(32);
+    line-height: math.div(23px, 20px);
+    letter-spacing: math.div(1.6px, 20px) * 1em;
+  }
 
 }
 
-.plan-page__card-price {
+.plan-page__card-service:last-child{
+  @include mq(md) {
+    padding: rm(25) rm(12);
+  }
 
 }
 
 .plan-page__card-textHead {
+  color: var(--gray02, #4E4E4E);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.28px;
+margin-top: rm(16);
 
+@include mq(md) {
+  color: var(--gray02, #4E4E4E);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.92px;
+}
+}
+
+
+
+.plan-page__card-text-inner{
+  margin-top: rm(32);
+  @include mq(md) {
+      margin-top: rm(72);
+  }
 }
 
 .plan-page__card-text-body {
 
 }
 
+.plan-page__card-text{
+  color: var(--gray02, #4E4E4E);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.12px;
+
+
+@include mq(md) {
+  color: var(--gray02, #4E4E4E);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.28px;
+
+}
+}
+
+.plan-page__card-text:first-child{
+  margin-top: rm(16);
+  @include mq(md) {
+    margin-top: rm(24);
+  }
+}

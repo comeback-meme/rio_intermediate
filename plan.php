@@ -47,44 +47,52 @@
 
       <div class="plan-page__card-inner">
         <ul class="plan-page__card-list">
-          <li class="plan-page__card-item"> 
+          <!-- アイテム１ -->
+          <li class="plan-page__card-item">
             <div class="plan-page__card-top">
               <div class="plan-page__card-number">1</div>
               <h3 class="plan-page__card-text">ビギナーコース</h3>
             </div>
-            <div class="plan-page__card-info">
-              <p class="plan-page__card-service">食事指導</p>
-              <p class="plan-page__card-service">トレーニング</p>
+
+            <div class="plan-page__card-wrap">
+              <p class="plan-page__card-price">8回<span>8200</span>円</p>
+              <div class="plan-page__card-info">
+                <p class="plan-page__card-service">食事指導</p>
+                <p class="plan-page__card-service">トレーニング</p>
+              </div>
             </div>
-            <div class="plan-page__card-price">8200</div>
-            <h4 class="plan-page__card-textHead">こんな人におすすめ</h4>
-            <ul>
-              <li class="plan-page__card-text-body">
-                <p class="plan-page__card-text">運動の習慣がない方。</p>
-                <p class="plan-page__card-text">疲れやストレスを感じやすい方。</p>
-              </li>
-            </ul>
-            <h4 class="plan-page__card-textHead">トレーニング内容</h4>
-            <ul>
-              <li class="plan-page__card-text-body">
-                <p class="plan-page__card-text">専門トレーナーによるカウンセリング後、メニューを組んでいきます。</p>
-                <p class="plan-page__card-text">初心者におすすめの、継続しやすいトレーニングメニューとなっております。</p>
-              </li>
-            </ul>
-            <h4 class="plan-page__card-textHead">食事指導</h4>
-            <ul>
-              <li class="plan-page__card-text-body">
-                <p class="plan-page__card-text">無理なく痩せながら栄養素も補える食生活をサポート</p>
-                <p class="plan-page__card-text">おすすめレシピの紹介を行います。</p>
-              </li>
-            </ul>
-            <h4 class="plan-page__card-textHead">カウンセリング</h4>
-            <ul>
-              <li class="plan-page__card-text-body">
-                <p class="plan-page__card-text">専属トレーナーが、あなたの生活習慣、食習慣を詳しくヒアリングします。</p>
-                <p class="plan-page__card-text">プログラムは、どんな内容なら続けられそうかを踏まえ制作します。</p>
-              </li>
-            </ul>
+            <div class="plan-page__card-text-inner">
+              <h4 class="plan-page__card-textHead">こんな人におすすめ</h4>
+              <ul>
+                <li class="plan-page__card-text-body">
+                  <p class="plan-page__card-text">運動の習慣がない方。</p>
+                  <p class="plan-page__card-text">疲れやストレスを感じやすい方。</p>
+                </li>
+              </ul>
+              <h4 class="plan-page__card-textHead">トレーニング内容</h4>
+              <ul>
+                <li class="plan-page__card-text-body">
+                  <p class="plan-page__card-text">専門トレーナーによるカウンセリング後、メニューを組んでいきます。</p>
+                  <p class="plan-page__card-text">初心者におすすめの、継続しやすいトレーニングメニューとなっております。</p>
+                </li>
+              </ul>
+              <h4 class="plan-page__card-textHead">食事指導</h4>
+              <ul>
+                <li class="plan-page__card-text-body">
+                  <p class="plan-page__card-text">無理なく痩せながら栄養素も補える食生活をサポート</p>
+                  <p class="plan-page__card-text">おすすめレシピの紹介を行います。</p>
+                </li>
+              </ul>
+              <h4 class="plan-page__card-textHead">カウンセリング</h4>
+              <ul>
+                <li class="plan-page__card-text-body">
+                  <p class="plan-page__card-text">専属トレーナーが、あなたの生活習慣、食習慣を詳しくヒアリングします。</p>
+                  <p class="plan-page__card-text">プログラムは、どんな内容なら続けられそうかを踏まえ制作します。</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
 
 
