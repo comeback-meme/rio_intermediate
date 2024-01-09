@@ -9,10 +9,10 @@
 
       <nav class="footer__nav">
         <ul class="footer__nav-list">
-          <li class="footer__nav-item"><a href="/">feature</a></li>
-          <li class="footer__nav-item"><a href="#">voice</a></li>
-          <li class="footer__nav-item"><a href="#">plan</a></li>
-          <li class="footer__nav-item"><a href="#">faq</a></li>
+          <li class="footer__nav-item"><a href="/#feature">feature</a></li>
+          <li class="footer__nav-item"><a href="/#voice">voice</a></li>
+          <li class="footer__nav-item"><a href="/plan.php">plan</a></li>
+          <li class="footer__nav-item"><a href="/#faq">faq</a></li>
         </ul>
       </nav>
     </div>

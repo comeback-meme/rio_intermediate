@@ -31,13 +31,13 @@
           <li class="header__nav-item"><a href="/#voice">voice</a></li>
           <li class="header__nav-item"><a href="/plan.php">plan</a></li>
           <li class="header__nav-item"><a href="/#faq">faq</a></li>
-          <li class="header__nav-item"><a class="c-btn c-btn--colorChange" href="#" target="_blank" rel="noopener">無料体験の申し込みはこちら</a></li>
+          <li class="header__nav-item"><a class="c-btn c-btn--colorChange" href="/contact.php" target="_blank" rel="noopener">無料体験の申し込みはこちら</a></li>
         </ul>
       </nav>
       <!-- <a href="" class="c-btn c-btn--white">無料体験お申込み</a> -->
 
       <div class="header__contact-wrapper">
-        <a class="header__contact" href="#"></a>
+        <a class="header__contact" href="/contact.php"></a>
 
         <button id="js_hamburgerBtn" class="hamburger_menu"><!-- is activeが付くとこ -->
           <span class="hamburger_bar1"></span>
