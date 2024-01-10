@@ -213,7 +213,7 @@
         <span class="plan-bar2"></span>
         <span class="plan-bar3"></span>
       </div>
-      <a class="c-btn btn-plan" href="/plan.php">
+      <a class="c-btn btn-plan" href="/plan/">
         <span class="btn-textTop">プランを見てみる</span>
         <p class="btn-textBottom">plan</p>
       </a>
@@ -245,7 +245,7 @@
             <p class="faq-list__item-answer"><span>A</span>男性約60％、女性約40％です。</p>
           </li>
         </ul>
-        <a class="c-btn btn-entry" href="#" target="_blank" rel="noopener">無料体験の申し込みはこちら</a>
+        <a class="c-btn btn-entry" href="/contact/">無料体験の申し込みはこちら</a>
       </div>
     </section>
   </main>
