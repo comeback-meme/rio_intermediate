@@ -27,7 +27,7 @@
           <!-- 体験日程 -->
           <p class="form__wrap">
             <label class="form__label">体験日程<span>必須</span>
-              <input type="date" name="date" autocomplete="date">
+              <input type="text" name="date" autocomplete="date" placeholder="日時を選択してください">
             </label>
           </p>
           <!-- お名前 -->
@@ -36,22 +36,24 @@
               <input type="text" name="your_name" autocomplete="name">
             </label>
           </p>
-          <!-- 性別 -->
-          <p class="form__wrap">
-          <p class="form__label">性別</p>
-          <label><input type="radio" name="gender" value="女性"><span>女性</span></label>
-          <label><input type="radio" name="gender" value="男性"><span>男性</span></label>
-          </p>
+          <!-- 性別---ラジオボタン -->
+          <div class="form__wrap radio">
+            <p class="form__label">性別</p>
+            <div class="radio__wrap">
+              <label><input type="radio" name="gender" value="女性"><span>女性</span></label>
+              <label><input type="radio" name="gender" value="男性"><span>男性</span></label>
+            </div>
+          </div>
           <!-- 住所 -->
           <p class="form__wrap">
-            <label class="form__label">住所
+            <label class="form__label">ご住所<span>必須</span>
               <input type="text" name="your_address" autocomplete="name">
             </label>
           </p>
           <!-- メールアドレス -->
           <p class="form__wrap">
             <label class="form__label">メールアドレス<span>必須</span>
-              <input type="email" name="email" autocomplete="email">
+              <input type="email" name="email" autocomplete="email" placeholder="info@example.com">
             </label>
           </p>
           <!--  電話番号 -->
@@ -61,10 +63,30 @@
             </label>
           </p>
           <!-- 送信ボタン -->
-          <div class="form__submit form-submit">
-            <input type="submit" value="送信">
+          <div class="form__submit">
+            <input type="submit" value="送信する">
           </div>
         </form>
+
+        <!-- テスト -->
+        <div class="inner">
+    <h2 class="title">お問い合わせフォーム<br>No.1 input・textareaをカスタマイズしよう！</h2>
+    <form action="" class="form">
+        <div class="row">
+            <div class="head">氏名</div>
+            <div class="data"><input type="text" placeholder="ヤマダ タロウ"></div>
+        </div>
+        <div class="row">
+            <div class="head">メールアドレス</div>
+            <div class="data"><input type="email" placeholder="info@example.com"></div>
+        </div>
+        <div class="row ai-start">
+            <div class="head">お問い合わせ内容</div>
+            <div class="data"><textarea placeholder="こちらに具体的にご入力ください"></textarea></div>
+        </div>
+    </form>
+</div>
+
       </div>
     </section>
 
