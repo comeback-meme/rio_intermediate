@@ -61,12 +61,17 @@
   }
 }
 
+/*----------------------------------
+    インナー
+-----------------------------------*/
+
 .contact__inner {
   text-align: left;
-  width: rm(326);
+  // width: rm(326);
+  width: 100%;
   // max-width: 100%;
   padding: rm(48) rm(23) rm(64);
-  border-radius: rm(24);
+  border-radius: 24px;
   background: $color-F4F0F0;
   margin-top: rm(62);
   margin-bottom: rm(72);
@@ -77,11 +82,15 @@
     padding: rm(64) rm(52) rm(82);
   }
   @include mq(md) {
-    padding: rm(82) rm(80) rm(100);
+    padding: rm(82) rm(80) rm(140);
     margin-top: rm(120);
+    margin-bottom: rm(120);
   }
   @include mq(lg) {
-    padding: rm(82) rm(160) rm(100);
+    padding: rm(82) rm(160) rm(180);
+    border-radius:30px;
+    margin-bottom: rm(160);
+    
   }
   @include mq(xl) {
     padding: rm(96) rm(210);
@@ -89,6 +98,7 @@
   }
 }
 
+// タイトルと両側の丸
 .contact__title {
   width: fit-content;
   margin-inline: auto;
@@ -110,19 +120,28 @@
     aspect-ratio: 1;
     background: $color-bg;
     border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    @include mq(md) {
+        width:rm(25);
+    }
   }
   &::before {
     //配置
     left: rm(-44);
-    top: 0;
+    @include mq(md) {
+        left:rm(-80);
+    }
   }
-
   &::after {
     //配置
     right: rm(-44);
-    top: 0;
+    @include mq(md) {
+      right:rm(-80);
+  }
   }
 }
+
 
 .form__wrap {
   margin-top: rm(18);
@@ -137,12 +156,55 @@
       margin-top: rm(91);
     }
   }
-  
   @include mq(lg) {
     justify-content: space-between;
+    margin-top: rm(35);
+}
+&:nth-child(n+5) {
+    @include mq(lg) {
+        margin-top: rm(24);
+    }
 }
 }
 
+// ラベル
+.form__label {
+  font-size: clamp(14px, vw(16), 16px);
+  font-weight: 700;
+  line-height: normal;
+  line-height: math.div(16px, 14px);
+  // display: block;
+  vertical-align: baseline;
+  width: 100%;
+  @include mq(lg) {
+    line-height: math.div(19px, 16px);
+    width: 40%;
+  }
+}
+
+// 必須
+.form__label span {
+  display: inline-block;
+  font-size: clamp(12px, vw(14), 14px);
+  font-weight: 700;
+  line-height: math.div(14px, 12px);
+  padding: rm(5) rm(12);
+  background: $color-bg;
+  border-radius: rm(10);
+  margin-left: rm(16);
+
+  @include mq(md) {
+    line-height: math.div(16px, 14px);
+    padding: rm(7) rm(11);
+  }
+}
+
+.form__data {
+  width: 100%;
+  @include mq(lg) {
+    width: 57%;
+  }
+}
 
 .form__data input[type="text"],
 .form__data input[type="email"],
@@ -169,21 +231,26 @@
     padding: rm(14) rm(16) rm(14);
   }
   @include mq(lg) {
-    padding-top: rm(4);
-    padding-bottom: rm(4);
+    padding-top: rm(8);
+    padding-bottom: rm(8);
     padding-left: rm(20);
-    margin-top: 0;
+    margin-top: rm(0);
+    ;
   }
 }
+
+/*----------------------------------
+    ラジオボタン
+-----------------------------------*/
 
 .radio__wrap {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  // flex-wrap: wrap;
   margin-top: rm(8);
-  @include mq(md) {
-    margin-top: rm(35);
+  @include mq(lg) {
+   margin-top: rm(0);
+   width: 57%;
   }
   }
 
@@ -246,44 +313,11 @@
 .radio__wrap label:hover {
   cursor: pointer;
 }
-// ラベル
-.form__label {
-  font-size: clamp(14px, vw(16), 16px);
-  font-weight: 700;
-  line-height: normal;
-  line-height: math.div(16px, 14px);
-  // display: block;
-  vertical-align: baseline;
-  width: 100%;
-  @include mq(lg) {
-    line-height: math.div(19px, 16px);
-    width: 40%;
-  }
-}
-.form__label span {
-  display: inline-block;
-  font-size: clamp(12px, vw(14), 14px);
-  font-weight: 700;
-  line-height: math.div(14px, 12px);
-  padding: rm(5) rm(12);
-  background: $color-bg;
-  border-radius: rm(10);
-  margin-left: rm(16);
 
-  @include mq(md) {
-    line-height: math.div(16px, 14px);
-    padding: rm(7) rm(11);
-  }
-}
 
-.form__data {
-  width: 100%;
-  @include mq(lg) {
-    width: 57%;
-  }
-}
-
-// 送信ボタン
+/*----------------------------------
+    送信ボタン
+-----------------------------------*/
 
 .form__submit {
   text-align: center;
@@ -298,47 +332,3 @@
   font-weight: 700;
   border-radius: rm(10);
 }
-
-//======================
-// 今回のテーマ
-//======================
-
-// .row {
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 40px;
-//   &.ai-start {
-//       align-items: start;
-//       .head {
-//           margin-top: 10px;
-//       }
-//   }
-// }
-// .head {
-//   width: 20%;
-//   font-size: 20px;
-// }
-// .data {
-//   width: 80%;
-// }
-// input[type=text], input[type=email], textarea {
-//   width: 100%;
-//   height: auto;
-//   padding: 12px 20px;
-//   font-size: 16px;
-//   line-height: 1.5;
-//   background: #f4f4f4;
-//   border: none;
-//   outline: none; //focus時の枠線を消しておく
-//   &:focus {
-//       //入力をしているとき
-//       outline: 1px solid #000;
-//   }
-//   &::placeholder {
-//       color: #9f9f9f;
-//   }
-// }
-// textarea {
-//   height: 120px;
-//   resize: vertical; //自分でサイズを変えられるように
-// }
