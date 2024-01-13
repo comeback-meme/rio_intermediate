@@ -91,7 +91,7 @@
                 </li>
               </ul>
             </div>
-          </li> <!-- アイテム１ -->
+          </li> <!-- ここまでアイテム１ -->
           <!-- アイテム2 -->
           <li class="plan-page__card-item scroll-margin" id="training">
             <div class="plan-page__card-top">
