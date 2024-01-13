@@ -363,6 +363,48 @@ a {
   }
 }
 
+.loading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1003;
+}
+
+.loading__img {
+  margin: auto;
+  transform: translateY(3.75rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.75rem;
+  opacity: 0;
+  animation: loading 1.5s forwards ease-in-out;
+}
+
+.loading__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+    transform: translateY(3.75rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .header {
   height: 4.5rem;
   background: #7FB0BF;

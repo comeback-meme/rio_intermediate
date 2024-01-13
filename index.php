@@ -49,9 +49,9 @@
         </a>
       </h1>
       <div id="js_hamburgerBg" class="hamburger_bg"></div> -->
-      <!-- is activeが付くとこ -->
-      <!-- <nav id="js_headerNav" class="header__nav">is activeが付くとこ -->
-        <!-- <ul class="header__nav-list">
+  <!-- is activeが付くとこ -->
+  <!-- <nav id="js_headerNav" class="header__nav">is activeが付くとこ -->
+  <!-- <ul class="header__nav-list">
           <li class="header__nav-item"><a href="#feature">feature</a></li>
           <li class="header__nav-item"><a href="#voice">voice</a></li>
           <li class="header__nav-item"><a href="#plan">plan</a></li>
@@ -59,14 +59,14 @@
           <li class="header__nav-item"><a class="c-btn c-btn--colorChange" href="#" target="_blank" rel="noopener">無料体験の申し込みはこちら</a></li>
         </ul>
       </nav> -->
-      <!-- <a href="" class="c-btn c-btn--white">無料体験お申込み</a> -->
+  <!-- <a href="" class="c-btn c-btn--white">無料体験お申込み</a> -->
 
-      <!-- <div class="header__contact-wrapper">
+  <!-- <div class="header__contact-wrapper">
         <a class="header__contact" href="#"></a>
 
         <button id="js_hamburgerBtn" class="hamburger_menu"> -->
-          <!-- is activeが付くとこ -->
-          <!-- <span class="hamburger_bar1"></span>
+  <!-- is activeが付くとこ -->
+  <!-- <span class="hamburger_bar1"></span>
           <span class="hamburger_bar2"></span>
           <span class="hamburger_bar3"></span>
         </button>
@@ -74,6 +74,14 @@
 
   </header> -->
   <?php include(__DIR__ . "/inc/header.php"); ?>
+
+
+  <!-- ローディング -->
+  <div class="loading layout-loading js-loading">
+    <div class="loading__img">
+      <img src="/images/top/logo_header.png" alt="UFIT">
+    </div>
+  </div>
 
 
   <!-- <main style="background: #fff;width: 100%;height: 5000px;"></main> -->
@@ -281,8 +289,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="./js/style.js"></script>
   <script src="./js/script.js"></script>
-
-  <!-- ローディング -->
 
 
   <!-- スワイパー -->

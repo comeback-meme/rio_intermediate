@@ -18,4 +18,16 @@ jQuery(function ($) { // $はjQueryを表す
             $(this).toggleClass('is-open');
         });
 
+
+     // ローディング
+        $(window).on("load", function () {
+            endLoading();
+        });
+    
+        function endLoading() {
+            setTimeout(function () {
+                $(".js-loading").fadeOut(1000);
+            }, 2000);
+        }
+
 });
