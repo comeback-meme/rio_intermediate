@@ -3,8 +3,8 @@
 
 <head>
   <?php include(__DIR__ . "/inc/head.php"); ?>
-  <meta name="description" content="トップページの説明" />
-  <meta name="keywords" content="キーワード" />
+  <meta name="description" content="U FITは、自分の好きな自分になれる場所。一時的なボディメイクのサポートではなく、お客様1人1人に寄り添い、長期間における身体のあり方を「共に」作り上げていきます。" />
+  <meta name="keywords" content="フィットネス" />
   <title>U FIT</title>
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" media="all">
   <link rel="stylesheet" href="/css/style.css">
@@ -77,9 +77,10 @@
 
 
   <!-- ローディング -->
-  <div class="loading layout-loading js-loading">
+  <div class="loading">
     <div class="loading__img">
       <img src="/images/top/logo_header.png" alt="UFIT">
+      <p class="loading__title">UFIT</p>
     </div>
   </div>
 
