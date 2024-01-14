@@ -79,7 +79,7 @@
   <!-- ローディング -->
   <div class="loading">
     <div class="loading__img">
-      <img src="/images/top/logo_header.png" alt="UFIT">
+      <img src="/images/top/logo_header.png" alt="UFIT" width="61" height="61">
       <p class="loading__title">UFIT</p>
     </div>
   </div>
@@ -118,7 +118,7 @@
               </p>
             </div>
             <div class="feature__item-image">
-              <img src="/images/top/feature01@2x.jpg" alt="" width="240" height="192">
+              <img src="/images/top/feature01@2x.jpg" alt="トレーニングマシーン" width="240" height="192">
             </div>
           </li>
           <li class="feature__item">
@@ -128,7 +128,7 @@
               </p>
             </div>
             <div class="feature__item-image">
-              <img src="/images/top/feature02@2x.jpg" alt="" width="240" height="192">
+              <img src="/images/top/feature02@2x.jpg" alt="ジムのトレーナー" width="240" height="192">
             </div>
           </li>
           <li class="feature__item">
@@ -164,7 +164,7 @@
                   <p class="swiper-attribute">(27歳女性)</p>
                 </div>
                 <div class="swiper-image">
-                  <img src="/images/top/voice01@2x.png" alt="" width="91" height="91">
+                  <img src="/images/top/voice01@2x.png" alt="利用者1" width="91" height="91">
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@
                   <p class="swiper-attribute">(24歳女性)</p>
                 </div>
                 <div class="swiper-image">
-                  <img src="/images/top/voice02@2x.png" alt="" width="91" height="91">
+                  <img src="/images/top/voice02@2x.png" alt="利用者2" width="91" height="91">
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@
                   <p class="swiper-attribute">(25歳男性)</p>
                 </div>
                 <div class="swiper-image">
-                  <img src="/images/top/voice03@2x.png" alt="" width="91" height="91">
+                  <img src="/images/top/voice03@2x.png" alt="利用者3" width="91" height="91">
                 </div>
               </div>
             </div>
@@ -203,7 +203,7 @@
                   <p class="swiper-attribute">(23歳女性)</p>
                 </div>
                 <div class="swiper-image">
-                  <img src="/images/top/voice04@2x.png" alt="" width="91" height="91">
+                  <img src="/images/top/voice04@2x.png" alt="利用者4" width="91" height="91">
                 </div>
               </div>
             </div>
