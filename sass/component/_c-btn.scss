@@ -1,18 +1,6 @@
 @use "../foundation" as *;
 @use "sass:math";
 
-// .c-btn {
-//   padding: rm(14) rm(60);
-//   display: inline-block;
-//   font-size: rm(15);
-//   line-height: 1;
-//   letter-spacing: 0.1em;
-//   text-transform: uppercase;
-//   border: 1px solid #000;
-//   border-radius: rm(50);
-//   background-color: #fff;
-// }
-
 .c-btn {
   padding: rm(21) rm(19);
   color: $color-white;
@@ -48,24 +36,6 @@
   }
 }
 
-// Modifier
-// .c-btn.c-btn--white {
-//   display: none;
-//   background: $color-white;
-//   color: $color-black;
-// }
-
-// .c-btn.c-btn--black {
-//   color: #fff;
-//   background-color: #000;
-// }
-
-// @include mq(lg) {
-//   .header__contact.btn-sp-only {
-//     display: none;
-//   }
-// }
-
 // PLAN
 .c-btn.btn-plan {
   border-radius: 30px;
@@ -74,17 +44,20 @@
   padding: rm(16) rm(80);
   text-align: center;
   @media (hover: hover) {
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.8;
       cursor: pointer;
       transition: all 0.3s ease;
     }
   }
+
   @include mq(lg) {
     padding: rm(37) rm(182) rm(32) rm(178);
     max-width: 583px;
   }
 }
+
 
 // planの中の「プランを見てみる」
 .btn-textTop {
@@ -121,12 +94,12 @@
     position: absolute;
     background: $color-bg;
     width: rm(16);
-    height: auto;
-    aspect-ratio: 1;
+    height: rm(16);
     border-radius: 50%;
     top: rm(6);
     @include mq(lg) {
       width: rm(30);
+      height:rm(30);
       top: rm(0);
     }
   }
@@ -148,6 +121,7 @@
   position: relative;
   margin-top: rm(104);
 }
+
 // プランの上の三本線------------------//
 .plan-barWrap{
   margin-top: rm(56);
@@ -189,61 +163,6 @@
   transform: rotate(45deg);
   align-self: flex-end;
 }
-
-
-
-
-
-
-
-
-
-
-// .plan-bar1,
-// .plan-bar2,
-// .plan-bar3 {
-//   background: $color-white;
-//   position: absolute;
-//   width: rm(3);
-//   height: rm(21);
-// }
-
-// // 真ん中
-// .plan-bar1 {
-//   top:rm(-48);
-//   left: 50%;
-//   transform: translateX(-50%);
-//   @include mq(md) {
-//     top: rm(-38);
-//   }
-// }
-
-// // 両端
-// .plan-bar2,
-// .plan-bar3 {
-//   top: rm(-34);
-//   @include mq(md) {
-//     top: rm(-32);
-//   }
-// }
-
-// // 左
-// .plan-bar2 {
-//   transform: rotate(-45deg);
-//   left: 34%;
-//   @include mq(md) {
-//     left: 44%;
-//   }
-// }
-
-// // 右
-// .plan-bar3 {
-//   transform: rotate(45deg);
-//   left: 66%;
-//   @include mq(md) {
-//     left: 56%;
-//   }
-// }
 
 // 無料体験の申し込みはこちら（黒）
 .c-btn.btn-entry {

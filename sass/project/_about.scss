@@ -83,6 +83,7 @@
   }
 }
 
+  // 「Be yourself」
 .about__title {
   position: relative;
   color: $color-white;
@@ -97,12 +98,12 @@
     letter-spacing: math.div(3.2px, 40px) * 1em;
     margin-left: 16%;
   }
+  // 「Be yourself」の両側の丸
   &::before {
     content: "";
     position: absolute;
     width: rm(8);
-    height: auto;
-    aspect-ratio: 1;
+    height: rm(8);
     border: none;
     background: $color-white;
     border-radius: 50%;
@@ -113,6 +114,7 @@
     //配置
     @include mq(lg) {
       width: rm(25);
+      height: rm(25);
       left: rm(-57);
       transform: translateY(-50%);
     }
@@ -121,8 +123,7 @@
     content: "";
     position: absolute;
     width: rm(8);
-    height: auto;
-    aspect-ratio: 1;
+    height: rm(8);
     border: none;
     background: $color-white;
     border-radius: 50%;
@@ -133,6 +134,7 @@
     //配置
     @include mq(lg) {
       width: rm(25);
+      height: rm(25);
       right: rm(-57);
       transform: translateY(-50%);
     }

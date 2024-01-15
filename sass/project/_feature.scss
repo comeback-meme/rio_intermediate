@@ -66,8 +66,7 @@
     letter-spacing: math.div(1.28px, 16px) * 1em;
     position: absolute;
     width: rm(48);
-    height: auto;
-    aspect-ratio: 1;
+    height: rm(48);
     border: none;
     border-radius: 50%;
     background: $color-CFDBE1;
@@ -77,15 +76,18 @@
     //配置
     @include mq(sm) {
       width: rm(68);
+      height: rm(68);
     }
     @include mq(md) {
       font-weight: 400;
       letter-spacing: math.div(3.84px, 48px) * 1em;
       width: rm(100);
+      height: rm(100);
       transform: translate(-38%, -50%);
     }
     @include mq(lg) {
       width: rm(137);
+      height: rm(137);
     }
   }
 }

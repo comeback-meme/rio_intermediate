@@ -48,15 +48,10 @@
   font-weight: 400;
   line-height: 1; /* 100% */
   letter-spacing: math.div(3.2px, 40px) * 1em;
-  @include mq(sm) {
-    // margin-top: rm(300);
-  }
   @include mq(md) {
     letter-spacing: math.div(7.68px, 96px) * 1em;
-    // margin-top: rm(160);
   }
   @include mq(lg) {
-    // margin-top: rm(20);
     top: 40%;
   }
 }
@@ -116,14 +111,14 @@
     content: "";
     position: absolute;
     width: rm(12);
-    height: auto;
-    aspect-ratio: 1;
+    height: rm(12);
     background: $color-bg;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
     @include mq(md) {
         width:rm(25);
+        height:rm(25);
     }
   }
   &::before {
@@ -279,8 +274,7 @@
     content: "";
     position: absolute;
     width: 16px;
-    height: auto;
-    aspect-ratio: 1;
+    height: 16px;
     border: 2px solid #4d4237;
     border-radius: 50%;
     //配置
@@ -292,8 +286,7 @@
     content: "";
     position: absolute;
     width: 9px;
-    height: auto;
-    aspect-ratio: 1;
+    height: 9px;
     border: none;
     background: #4d4237;
     border-radius: 50%;

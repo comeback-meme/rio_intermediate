@@ -23,20 +23,23 @@
       <h2 class="plan-page__list_title">選べる３つのプラン</h2>
       <div class="plan-page__inner">
         <ul class="plan-page__list">
+          <!--ボタン_ビギナーコース -->
           <li class="plan-page__item">
-            <a href="#beginner">
+            <a href="#beginner" class="btnshine">
               <div class="plan-page__number">1</div>
               <h3 class="plan-page__text">ビギナーコース</h3>
             </a>
           </li>
+          <!-- ボタン_トレーニングコース -->
           <li class="plan-page__item">
-            <a href="#training">
+            <a href="#training" class="btnshine">
               <div class="plan-page__number">2</div>
               <h3 class="plan-page__text">トレーニングコース</h3>
             </a>
           </li>
+          <!-- ボタン_ストイックコース -->
           <li class="plan-page__item">
-            <a href="#stoic">
+            <a href="#stoic" class="btnshine">
               <div class="plan-page__number">3</div>
               <h3 class="plan-page__text">ストイックコース</h3>
             </a>
