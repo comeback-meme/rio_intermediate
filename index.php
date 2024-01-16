@@ -53,7 +53,8 @@
               </p>
             </div>
             <div class="feature__item-image">
-              <img src="/images/top/feature01@2x.jpg" alt="トレーニングマシーン" width="240" height="192">
+              <img src="/images/top/feature01@2x.jpg" loading="lazy" alt="トレーニングマシーン" width="240" height="192">
+
             </div>
           </li>
           <li class="feature__item">
@@ -63,7 +64,7 @@
               </p>
             </div>
             <div class="feature__item-image">
-              <img src="/images/top/feature02@2x.jpg" alt="ジムのトレーナー" width="240" height="192">
+              <img src="/images/top/feature02@2x.jpg" alt="ジムのトレーナー" loading="lazy" width="240" height="192">
             </div>
           </li>
           <li class="feature__item">
@@ -73,7 +74,7 @@
               </p>
             </div>
             <div class="feature__item-image">
-              <img src="/images/top/feature03@2x.jpg" alt="ジムへの道のり" width="240" height="192">
+              <img src="/images/top/feature03@2x.jpg" alt="ジムへの道のり" loading="lazy" width="240" height="192">
             </div>
           </li>
         </ul>
@@ -112,7 +113,7 @@
                   <p class="swiper-attribute">(24歳女性)</p>
                 </div>
                 <div class="swiper-image">
-                  <img src="/images/top/voice02@2x.png" alt="利用者2" width="91" height="91">
+                  <img src="/images/top/voice02@2x.png" loading="lazy" alt="利用者2" width="91" height="91">
                 </div>
               </div>
             </div>
@@ -125,7 +126,7 @@
                   <p class="swiper-attribute">(25歳男性)</p>
                 </div>
                 <div class="swiper-image">
-                  <img src="/images/top/voice03@2x.png" alt="利用者3" width="91" height="91">
+                  <img src="/images/top/voice03@2x.png" alt="利用者3" loading="lazy" width="91" height="91">
                 </div>
               </div>
             </div>
@@ -138,19 +139,22 @@
                   <p class="swiper-attribute">(23歳女性)</p>
                 </div>
                 <div class="swiper-image">
-                  <img src="/images/top/voice04@2x.png" alt="利用者4" width="91" height="91">
+                  <img src="/images/top/voice04@2x.png" alt="利用者4" loading="lazy" width="91" height="91">
                 </div>
               </div>
             </div>
           </div>
+        </div><!-- swiper -->
 
-          <!-- ページネーション -->
-          <div class="swiper-pagination"></div>
-          <!-- 前後の矢印 -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
+        <!-- ページネーション -- swiperの外に出す -->
+        <div class="swiper-pagination"></div>
+        <!-- 前後の矢印 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div><!-- swiper-container -->
+
+
       <!-- PLAN-------->
       <div class="plan-barWrap">
         <span class="plan-bar1"></span>

@@ -3,9 +3,9 @@
 
 <head>
   <?php include(__DIR__ . "/../inc/head.php"); ?>
-  <meta name="description" content="トップページの説明" />
+  <meta name="description" content="トレーニングプランには３つのコースがあります。" />
   <meta name="keywords" content="キーワード" />
-  <title>U FIT</title>
+  <title>選べる３つのプラン | U FIT</title>
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" media="all">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -25,21 +25,21 @@
         <ul class="plan-page__list">
           <!--ボタン_ビギナーコース -->
           <li class="plan-page__item">
-            <a href="#beginner" class="btnshine">
+            <a href="#beginner">
               <div class="plan-page__number">1</div>
               <h3 class="plan-page__text">ビギナーコース</h3>
             </a>
           </li>
           <!-- ボタン_トレーニングコース -->
           <li class="plan-page__item">
-            <a href="#training" class="btnshine">
+            <a href="#training">
               <div class="plan-page__number">2</div>
               <h3 class="plan-page__text">トレーニングコース</h3>
             </a>
           </li>
           <!-- ボタン_ストイックコース -->
           <li class="plan-page__item">
-            <a href="#stoic" class="btnshine">
+            <a href="#stoic">
               <div class="plan-page__number">3</div>
               <h3 class="plan-page__text">ストイックコース</h3>
             </a>

@@ -50,10 +50,6 @@
   max-width: 323px;
     
 }
-  // @include mq(xl) {
-  //   width: rm(400);
-  //   max-width: 323px;
-  // }
 }
 
 .swiper-head {
@@ -136,6 +132,11 @@ margin-left: rm(14);
   width: 91px;
 }
 
+// .swiper-pagination{
+//   bottom:-40px  !important;
+// }
+
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: "";
@@ -157,77 +158,13 @@ margin-left: rm(14);
   right: rm(10);
 }
 
-// .swiper-container {
-//     position: relative;
-// }
-// .swiper {
-//     position: relative;
-// }
-// .swiper-wrapper {
-//     position: relative;
-// }
-
-// // ============================
-// //     pagination について
-// // ============================
-
-// //色と大きさ指定
-// .swiper-pagination-bullet {
-//     opacity: 1;
-//     background: gray;
-//     width: 20px;
-//     height: 20px;
-//     border-radius: 50%; //円にする
-// }
-// .swiper-pagination-bullet.swiper-pagination-bullet-active {
-//     background: red;
-// }
-// //paginationの余白指定
-// .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-//     margin: 0 10px;
-// }
-
 //paginationの位置
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: rm(0);
+  bottom: rm(-40);
   left: 50%;
   transform: translateX(-50%);
 }
-
-// //progressbarの場合
-// // .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
-// //     top: calc(100% - 10px);
-// //     height: 10px;
-// //     background: gray;
-// // }
-// // //実際に変化する棒の色
-// // .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-// //     background: red;
-// // }
-
-// // ==============================
-// //     navigation について
-// // ==============================
-
-// .swiper-button-prev {
-//     //位置はここで指定
-//     // top: 50%;
-//     // transform: translateY(-50%);
-//     &::after {
-//         content: ''; //デフォルトの削除
-//     }
-// }
-
-// .swiper-button-next {
-//     //位置はここで指定
-//     // top: 50%;
-//     // transform: translateY(-50%);
-//     &::after {
-//         content: ''; //デフォルトの削除
-//     }
-// }
-
 

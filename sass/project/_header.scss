@@ -249,6 +249,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   transform: translateY(-10%);
   flex-shrink: 0;
 
+
   @include mq(sm) {
     width: rm(42);
     max-width: 42px;
@@ -257,6 +258,16 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
     width: rm(52);
     max-width: 52px;
   }
+
+  @media(hover: hover) {
+      &:hover,
+      &:focus {
+      opacity: 0.7;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      }
+  }
+
 }
 
 .header__contact {

@@ -11,14 +11,13 @@ $isTopPage = ($_SERVER['PHP_SELF'] == '/index.php');
 <?php if ($isTopPage) : ?>
   <meta property="og:title" content="U FIT" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="サイトのドメイン 絶対パスで指定！" />
-  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:url" content="サイトのURL 絶対パスで指定！" />
   <meta property="og:site_name" content="サイトのドメイン" />
   <meta property="og:description" content="U FITは、自分の好きな自分になれる場所。一時的なボディメイクのサポートではなく、お客様1人1人に寄り添い、長期間における身体のあり方を「共に」作り上げていきます。" />
 <?php else : ?>
   <meta property="og:type" content="article">
 <?php endif; ?>
-<meta property="og:image" content="/images/ogp_image.png">
+<meta property="og:image" content="/images/ogp_image.png 絶対パスで指定！">
 <meta property="twitter:card" content="summary_large_image">
 <!-- ファビコン -->
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -30,5 +29,4 @@ $isTopPage = ($_SERVER['PHP_SELF'] == '/index.php');
 
 <!-- CSS -->
 <link rel="stylesheet" href="/css/destyle.min.css" media="all">
-
 <link rel="stylesheet" href="/css/style.css">

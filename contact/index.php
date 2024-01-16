@@ -3,9 +3,9 @@
 
 <head>
   <?php include(__DIR__ . "/../inc/head.php"); ?>
-  <meta name="description" content="トップページの説明" />
+  <meta name="description" content="無料体験受付中　ご希望の日程をお選びください。" />
   <meta name="keywords" content="キーワード" />
-  <title>U FIT</title>
+  <title>無料体験受付 | U FIT</title>
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" media="all">
   <link rel="stylesheet" href="/css/style.css">
 </head>
