@@ -11,7 +11,7 @@ $isTopPage = ($_SERVER['PHP_SELF'] == '/index.php');
 <?php if ($isTopPage) : ?>
   <meta property="og:title" content="U FIT" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="サイトのURL 絶対パスで指定！" />
+  <meta property="og:url" content="https://wp538467.wpx.jp/ufit/" />
   <meta property="og:site_name" content="サイトのドメイン" />
   <meta property="og:description" content="U FITは、自分の好きな自分になれる場所。一時的なボディメイクのサポートではなく、お客様1人1人に寄り添い、長期間における身体のあり方を「共に」作り上げていきます。" />
 <?php else : ?>
