@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <?php include(__DIR__ . "/inc/header.php"); ?>
 
   <!-- ローディング -->
@@ -198,33 +199,12 @@
     </section>
   </main>
 
-  <?php include(__DIR__ . "/inc/footer.php"); ?>
   <!-- フッター -------------->
-  <!-- <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__logo">
-        <a href="/">
-          <img src="images/top/logo_header.png" alt="u fit" width="61" height="61">
-          <span class="footer__title">U FIT</span>
-        </a>
-      </div>
+  <?php include(__DIR__ . "/inc/footer.php"); ?>
 
-      <nav class="footer__nav">
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item"><a href="/">feature</a></li>
-          <li class="footer__nav-item"><a href="#">voice</a></li>
-          <li class="footer__nav-item"><a href="#">plan</a></li>
-          <li class="footer__nav-item"><a href="#">faq</a></li>
-        </ul>
-      </nav>
-    </div>
-    <p class="footer__copy">
-      <small class="footer__copy-text">Copyright &copy; U FIT All Rights Reserved.</small>
-    </p>
-  </footer> -->
+
 
   <!-- JS -->
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="./js/style.js"></script>

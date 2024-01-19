@@ -102,6 +102,8 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -924,6 +926,7 @@ a {
 .about__inner {
   margin-top: 2rem;
   width: 100%;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 993px) {
   .about__inner {
