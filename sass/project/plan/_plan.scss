@@ -2,7 +2,7 @@
 @use "../../foundation" as *;
 
 .plan {
-  padding: 0 7%;
+  padding: 0 5%;
   text-align: center;
 }
 
@@ -16,10 +16,6 @@
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  @include mq(sm) {
-    // height: rm(460);
-    // background: url(/images/plan/mv_plan@2x.jpg) no-repeat right center / cover;
-  }
   @include mq(md) {
     background: url(/images/plan/mv_plan@2x.jpg) no-repeat right center / cover;
     margin-top: rm(100);
@@ -44,9 +40,6 @@
   font-weight: 400;
   line-height: 1; /* 100% */
   letter-spacing: math.div(3.2px, 40px) * 1em;
-  @include mq(sm) {
-    // margin-top: rm(300);
-  }
   @include mq(md) {
     letter-spacing: math.div(7.68px, 96px) * 1em;
     // margin-top: rm(160);
@@ -67,7 +60,6 @@
   margin-top: rm(56);
   @include mq(lg) {
     margin-top: rm(104);
-
     letter-spacing: math.div(3.2px, 40px) * 1em;
   }
 }
@@ -111,6 +103,16 @@
       background: $color-black;
       color: #fff;
       opacity: 0.7;
+    }
+  }
+  @media (hover: none){
+    &:active{
+      background: $color-F4F0F0;
+      color: $color-black;
+      opacity: 1;
+  //     color: $color-black;
+  // background: $color-F4F0F0;
+
     }
   }
   @include mq(lg) {
@@ -178,7 +180,7 @@
 .plan-page__card-item {
   background: #fbf7f1;
   border-radius: rm(30);
-  padding: rm(29) rm(19) rm(40) rm(24);
+  padding: rm(29) rm(16) rm(40) rm(24);
   text-align: left;
   @include mq(md) {
     padding: rm(40) rm(64) rm(64) rm(40);
@@ -380,7 +382,7 @@
 // 申し込みボタン
 .c-btn.btn-entry.plan-page {
   margin-top: rm(72);
-  margin-bottom: rm(86);
+  margin-bottom: rm(72);
   @include mq(md) {
     margin-top: rm(136);
     margin-bottom: rm(128);

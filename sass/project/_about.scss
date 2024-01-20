@@ -5,7 +5,7 @@
 .about__inner {
   margin-top: rm(32);
   width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   // padding: rm(30) 8% rm(30);
   @include mq(lg) {
     max-width: 920px;

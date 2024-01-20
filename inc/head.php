@@ -4,7 +4,7 @@ $isTopPage = ($_SERVER['PHP_SELF'] == '/index.php');
 
 <meta charset="UTF-8">
 <meta name="robots" content="noindex">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no" />
 
 <!-- ogp -->

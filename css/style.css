@@ -150,7 +150,7 @@ a {
 }
 
 .c-btn {
-  padding: 1.3125rem 1.1875rem;
+  padding: 1.3125rem 1.125rem;
   color: #fff;
   display: inline-block;
   font-size: clamp(12px, 2.8125vw, 36px);
@@ -926,7 +926,6 @@ a {
 .about__inner {
   margin-top: 2rem;
   width: 100%;
-  overflow-x: hidden;
 }
 @media screen and (min-width: 993px) {
   .about__inner {
@@ -1752,7 +1751,7 @@ a {
 }
 
 .plan {
-  padding: 0 7%;
+  padding: 0 5%;
   text-align: center;
 }
 
@@ -1862,6 +1861,13 @@ a {
     opacity: 0.7;
   }
 }
+@media (hover: none) {
+  .plan-page__item a:active {
+    background: #F4F0F0;
+    color: #4E4E4E;
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 993px) {
   .plan-page__item a {
     width: 20rem;
@@ -1932,7 +1938,7 @@ a {
 .plan-page__card-item {
   background: #fbf7f1;
   border-radius: 1.875rem;
-  padding: 1.8125rem 1.1875rem 2.5rem 1.5rem;
+  padding: 1.8125rem 1rem 2.5rem 1.5rem;
   text-align: left;
 }
 @media screen and (min-width: 769px) {
@@ -2158,7 +2164,7 @@ a {
 
 .c-btn.btn-entry.plan-page {
   margin-top: 4.5rem;
-  margin-bottom: 5.375rem;
+  margin-bottom: 4.5rem;
 }
 @media screen and (min-width: 769px) {
   .c-btn.btn-entry.plan-page {
