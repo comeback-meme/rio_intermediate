@@ -10,7 +10,9 @@
 }
 
 .feature__title.c-title {
-  margin-top: rm(145);
+  // margin-top: rm(145);
+  margin-top: rm(56);
+  
   @include mq(lg) {
     margin-top: rm(144);
   }

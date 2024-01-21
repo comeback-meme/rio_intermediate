@@ -3,10 +3,16 @@
 
 
 .about__inner {
+  position: relative;
   margin-top: rm(32);
   width: 100%;
+  // 追記
+ height:rm(407);
   // overflow-x: hidden;
   // padding: rm(30) 8% rm(30);
+  @include mq(md) {
+      height:rm(480);
+  }
   @include mq(lg) {
     max-width: 920px;
     margin-top: rm(125);
@@ -17,7 +23,7 @@
 
 // Be yourselfの背景
 .about__content {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   width: rm(479);
