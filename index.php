@@ -83,7 +83,7 @@
     </section>
 
     <!-- パララックス -->
-    <aside class="banner-parallax"></aside>
+    <aside id="parallax" class="parallax"></aside>
 
 
     <section class="voice scroll-margin" id="voice">
@@ -221,6 +221,7 @@
       // アクティブなスライドを中央にする
       slidesPerView: "auto",
       // autoにする
+      initialSlide: 1, // スライドの開始位置
 
       breakpoints: {
         1: {

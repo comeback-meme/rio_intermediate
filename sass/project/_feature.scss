@@ -157,17 +157,45 @@
 
 }
 
-.banner-parallax {
-  // margin-left: calc(50% - 50vw);
-  // margin-right: calc(50% - 50vw);
-  // background-color: #fff;
+// .banner__parallax-inner{
+//   position: relative;
+//   width: 100%;
+//   height: rm(104);
+//   background: pink;
+//   // min-height: 104px;
+//   // display: block;
+//   clip: rect(auto, auto, auto, auto);
+//   @include mq(sm) {
+//     height: rm(220);
+//   }
+//   @include mq(md) {
+//     height: rm(280);
+//   }
+//   @include mq(lg) {
+//     height: rm(347);
+//   }
+// }
+
+// .banner__parallax-image{
+//   position: fixed; /* fixedに変更する。それ以外は同じ。 */
+//   top: 0;
+//   left: 0;
+//   display: block;
+//   z-index: -1;
+//   width: 100%;
+//   height: rm(104);
+//   background-image: url(/images/top/training@2x.jpg);
+//   background-size: cover;
+//   background-position: center;
+// }
+
+.parallax {
   background-attachment: fixed;
   background-image: url(/images/top/training@2x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
-  // width:rm(375);
   width: 100%;
   height: rm(104);
   min-height: 104px;
@@ -179,6 +207,5 @@
   }
   @include mq(lg) {
     height: rm(347);
-    // height: 347px;
   }
 }

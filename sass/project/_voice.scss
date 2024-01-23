@@ -1,7 +1,6 @@
 @use "sass:math";
 @use "../foundation" as *;
 
-
 .voice {
   text-align: center;
 }
@@ -27,7 +26,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: #F4F0F0;
+  background: #f4f0f0;
   border-radius: 50%;
   width: rm(248);
   max-width: 248px;
@@ -35,21 +34,20 @@
   aspect-ratio: 1;
   flex-shrink: 0;
   @include mq(sm) {
-      width:rm(260);
-      max-width: 260px;
+    width: rm(260);
+    max-width: 260px;
   }
   @include mq(md) {
-      width:rm(360);
-      min-width: 280px;
+    width: rm(360);
+    min-width: 280px;
   }
-@include mq(lg) {
-  min-width: 300px;
+  @include mq(lg) {
+    min-width: 300px;
     // width:rm(500);
   }
   @include mq(xl) {
-  max-width: 323px;
-    
-}
+    max-width: 323px;
+  }
 }
 
 .swiper-head {
@@ -62,25 +60,25 @@
   margin-top: rm(50);
   position: relative;
   @include mq(md) {
-      margin-top: rm(60);
+    margin-top: rm(60);
   }
   @include mq(lg) {
-      margin-top: rm(64);
+    margin-top: rm(64);
   }
   @include mq(xl) {
     margin-top: rm(87);
   }
   &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 44%;
-      height: 1px;
-      background: $color-black;
-      //配置
-      bottom: rm(-16);
-      left: 50%;
-      transform: translateX(-50%);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 44%;
+    height: 1px;
+    background: $color-black;
+    //配置
+    bottom: rm(-16);
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -90,7 +88,6 @@
   align-items: flex-start;
   margin-top: rm(30);
   margin-left: rm(10);
-
 }
 
 .swiper-info {
@@ -100,12 +97,12 @@
   align-items: flex-start;
 }
 
-.swiper-beforeWeight{
+.swiper-beforeWeight {
   text-align: left;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25; /* 125% */
-  letter-spacing: math.div(1.28px , 16px) * 1em;
+  letter-spacing: math.div(1.28px, 16px) * 1em;
 }
 
 .swiper-afterWeight {
@@ -117,33 +114,32 @@
   margin-top: rm(8);
 }
 
-
 .swiper-attribute {
-  font-size: 12px; 
-font-weight: 400;
-line-height: 1.666px; /* 166.667% */
-letter-spacing: math.div(0.96px , 12px) * 1em;
-margin-top: rm(34);
-margin-left: rm(14);
+  font-size: rm(12);
+  font-weight: 400;
+  line-height: 1.66; /* 166.667% */
+  letter-spacing: math.div(0.96px, 12px) * 1em;
+  margin-top: rm(30);
+  margin-left: rm(14);
 }
 
 .swiper-image {
   margin-left: rm(14);
-  width: 91px;
+  // width: 91px;
+  width: rm(91);
 }
 
 // .swiper-pagination{
 //   bottom:-40px  !important;
 // }
 
-
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: "";
   width: rm(20);
   height: rm(20);
-  border-top: solid 2px #BBCCD1;
-  border-right: solid 2px #BBCCD1;
+  border-top: solid 2px #bbccd1;
+  border-right: solid 2px #bbccd1;
   position: absolute;
   top: rm(12);
 }
@@ -167,4 +163,3 @@ margin-left: rm(14);
   left: 50%;
   transform: translateX(-50%);
 }
-

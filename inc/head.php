@@ -12,12 +12,12 @@ $isTopPage = ($_SERVER['PHP_SELF'] == '/index.php');
   <meta property="og:title" content="U FIT" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wp538467.wpx.jp/ufit/" />
-  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:site_name" content="U FIT" />
   <meta property="og:description" content="U FITは、自分の好きな自分になれる場所。一時的なボディメイクのサポートではなく、お客様1人1人に寄り添い、長期間における身体のあり方を「共に」作り上げていきます。" />
 <?php else : ?>
   <meta property="og:type" content="article">
 <?php endif; ?>
-<meta property="og:image" content="/images/ogp_image.png 絶対パスで指定！">
+<meta property="og:image" content="/images/ogp_image.png">
 <meta property="twitter:card" content="summary_large_image">
 <!-- ファビコン -->
 <link rel="icon" href="/images/favicon.ico" type="image/x-icon">

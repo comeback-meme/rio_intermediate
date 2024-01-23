@@ -111,6 +111,7 @@ body {
   font-weight: 400;
   color: #4E4E4E;
   background-color: #7FB0BF;
+  -webkit-text-size-adjust: "none" "100%" "auto";
 }
 
 a {
@@ -1271,7 +1272,7 @@ a {
   }
 }
 
-.banner-parallax {
+.parallax {
   background-attachment: fixed;
   background-image: url(/images/top/training@2x.jpg);
   background-position: center;
@@ -1283,17 +1284,17 @@ a {
   min-height: 104px;
 }
 @media screen and (min-width: 577px) {
-  .banner-parallax {
+  .parallax {
     height: 13.75rem;
   }
 }
 @media screen and (min-width: 769px) {
-  .banner-parallax {
+  .parallax {
     height: 17.5rem;
   }
 }
 @media screen and (min-width: 993px) {
-  .banner-parallax {
+  .parallax {
     height: 21.6875rem;
   }
 }
@@ -1326,7 +1327,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: #F4F0F0;
+  background: #f4f0f0;
   border-radius: 50%;
   width: 15.5rem;
   max-width: 248px;
@@ -1425,17 +1426,17 @@ a {
 }
 
 .swiper-attribute {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 1.666px; /* 166.667% */
+  line-height: 1.66; /* 166.667% */
   letter-spacing: 0.08em;
-  margin-top: 2.125rem;
+  margin-top: 1.875rem;
   margin-left: 0.875rem;
 }
 
 .swiper-image {
   margin-left: 0.875rem;
-  width: 91px;
+  width: 5.6875rem;
 }
 
 .swiper-button-prev::after,
@@ -1443,8 +1444,8 @@ a {
   content: "";
   width: 1.25rem;
   height: 1.25rem;
-  border-top: solid 2px #BBCCD1;
-  border-right: solid 2px #BBCCD1;
+  border-top: solid 2px #bbccd1;
+  border-right: solid 2px #bbccd1;
   position: absolute;
   top: 0.75rem;
 }
