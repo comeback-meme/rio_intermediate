@@ -88,7 +88,6 @@
   }
 }
 
-
 .plan-page__item a {
   display: block;
   background: $color-F4F0F0;
@@ -102,19 +101,27 @@
     &:focus {
       background: $color-black;
       color: #fff;
-      opacity: 0.7;
+      & .plan-page__number {
+        background: $color-black;
+        color: $color-white;
+        border: 1px solid $color-white;
+        transition: all 0.3s ease-in;
+      }
     }
   }
-  @media (hover: none){
-    &:active{
-      background: $color-F4F0F0;
-      color: $color-black;
-      opacity: 1;
-  //     color: $color-black;
-  // background: $color-F4F0F0;
+  @media (hover: none) and (any-pointer: coarse) {
+    &:active {
+      background: $color-black;
+      color: #fff;
+      & .plan-page__number {
+        background: $color-black;
+        color: $color-white;
+        border: 1px solid $color-white;
+        transition: all 0.3s ease-in;
+      }
+    }
+  }
 
-    }
-  }
   @include mq(lg) {
     width: rm(320);
     height: auto;
@@ -122,19 +129,19 @@
   }
 }
 
-.plan-page__item a:hover .plan-page__number,
-.plan-page__item a:focus .plan-page__number {
-  background: $color-black;
-  color: $color-white;
-  border: 1px solid $color-white;
-  transition: all  0.3s ease-in;
-}
+// .plan-page__item a:hover .plan-page__number,
+// .plan-page__item a:focus .plan-page__number {
+//   background: $color-black;
+//   color: $color-white;
+//   border: 1px solid $color-white;
+//   transition: all 0.3s ease-in;
+// }
 
-.plan-page__item a:hover .plan-page__text,
-.plan-page__item a:focus .plan-page__text{
-  color: $color-white;
-  transition: all  0.3s ease-in;
-}
+// .plan-page__item a:hover .plan-page__text,
+// .plan-page__item a:focus .plan-page__text {
+//   color: $color-white;
+//   transition: all 0.3s ease-in;
+// }
 
 .plan-page__number {
   width: rm(56);
@@ -273,7 +280,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: rm(11);
   width: 100%;
   order: 1;
   @include mq(md) {
@@ -290,7 +296,7 @@
   display: inline-block;
   border-radius: rm(20);
   background: $color-bg;
-  padding: rm(14) rm(23);
+  padding: rm(14) rm(10);
   margin-top: rm(24);
   font-size: clamp(16px, vw(20), 20px);
   font-weight: 400;
@@ -300,11 +306,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: rm(152);
     padding: rm(25) rm(0);
     line-height: math.div(23px, 20px);
     letter-spacing: math.div(1.6px, 20px) * 1em;
+  }
+}
+
+.plan-page__card-service + .plan-page__card-service {
+  margin-left: rm(11);
+  @include mq(md) {
+    margin-left: rm(24);
+  }
+  @include mq(lg) {
+    margin-left: rm(38);
   }
 }
 
@@ -339,9 +354,6 @@
   @include mq(md) {
     margin-top: rm(72);
   }
-}
-
-.plan-page__card-text-body {
 }
 
 .plan-page__card-text {
