@@ -23,16 +23,13 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  // width: rm(479);
   width: 100%;
-  // height: rm(318);
   height:rm(318);
-  // aspect-ratio: 479/318;
-  // max-width:100%;
-  left: 50%;
-  transform: translateX(-50%);
   top: 0;
   // margin: 0 auto;←これだとSPで左をはみ出させることができない！！
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 rm(24);
   background-image: url(/images/top/beyouself.png);
   background-position: center;
   background-repeat: no-repeat;

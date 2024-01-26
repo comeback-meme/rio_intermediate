@@ -225,23 +225,19 @@
 
       breakpoints: {
         1: {
-          slidesPerView: 1.4,
           spaceBetween: 18,
         },
         769: {
-          slidesPerView: 3,
           spaceBetween: 24,
         },
         993: {
-          slidesPerView: 4,
           spaceBetween: 30,
         },
         1201: {
-          slidesPerView: 3.6,
           spaceBetween: 40,
         },
       },
-
+     
       // 前後の矢印
       navigation: {
         nextEl: ".swiper-button-next",
