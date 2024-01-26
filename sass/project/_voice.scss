@@ -99,15 +99,14 @@
 
 .swiper-beforeWeight {
   text-align: left;
-  font-size: 16px;
+  font-size: rm(16);
   font-weight: 400;
   line-height: 1.25; /* 125% */
   letter-spacing: math.div(1.28px, 16px) * 1em;
 }
 
 .swiper-afterWeight {
-  // width: 50%;
-  font-size: 32px;
+  font-size: rm(32);
   font-weight: 400;
   line-height: 0.625; /* 62.5% */
   letter-spacing: math.div(2.56px, 32px) * 1em;
@@ -119,7 +118,7 @@
   font-weight: 400;
   line-height: 1.66; /* 166.667% */
   letter-spacing: math.div(0.96px, 12px) * 1em;
-  margin-top: rm(30);
+  margin-top: rm(20);
   margin-left: rm(14);
 }
 

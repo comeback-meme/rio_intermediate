@@ -49,7 +49,8 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -75,8 +76,10 @@ select {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -86,7 +89,8 @@ input[type=button] {
   border-radius: 0px;
   -webkit-box-sizing: content-box;
   -webkit-appearance: button;
-  appearance: button;
+  -moz-appearance: button;
+       appearance: button;
   border: none;
   box-sizing: border-box;
   cursor: pointer;
@@ -112,12 +116,6 @@ body {
   color: #4E4E4E;
   background-color: #7FB0BF;
   -webkit-text-size-adjust: "none" "100%" "auto";
-}
-
-*,
-*::before,
-*::after {
-  outline: 1px solid #f00;
 }
 
 a {
@@ -394,7 +392,8 @@ a {
 .loading__img img {
   width: clamp(72px, 20vw, 120px);
   height: auto;
-  animation: loading 1s forwards ease-in-out;
+  -webkit-animation: loading 1s forwards ease-in-out;
+          animation: loading 1s forwards ease-in-out;
 }
 
 .loading__img.is-active {
@@ -408,7 +407,19 @@ a {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.08em;
-  animation: loading 1.5s forwards ease-in-out;
+  -webkit-animation: loading 1.5s forwards ease-in-out;
+          animation: loading 1.5s forwards ease-in-out;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
+    transform: translateY(3.75rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes loading {
@@ -953,15 +964,15 @@ a {
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 29.9375rem;
-  aspect-ratio: 479/318;
+  width: 100%;
+  height: 19.875rem;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
   background-image: url(/images/top/beyouself.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 @media screen and (min-width: 769px) {
   .about__content {
@@ -1417,14 +1428,14 @@ a {
 
 .swiper-beforeWeight {
   text-align: left;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.25; /* 125% */
   letter-spacing: 0.08em;
 }
 
 .swiper-afterWeight {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 0.625; /* 62.5% */
   letter-spacing: 0.08em;
@@ -1436,7 +1447,7 @@ a {
   font-weight: 400;
   line-height: 1.66; /* 166.667% */
   letter-spacing: 0.08em;
-  margin-top: 1.875rem;
+  margin-top: 1.25rem;
   margin-left: 0.875rem;
 }
 
@@ -2294,6 +2305,8 @@ a {
 }
 
 .contact__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
   font-size: clamp(16px, 3.125vw, 40px);
@@ -2430,6 +2443,9 @@ a {
 .form__data input[type=tel]:focus {
   outline: 1px solid #000;
 }
+.form__data input[type=text]::-moz-placeholder, .form__data input[type=email]::-moz-placeholder, .form__data input[type=tel]::-moz-placeholder {
+  color: #a7a5a5;
+}
 .form__data input[type=text]::placeholder,
 .form__data input[type=email]::placeholder,
 .form__data input[type=tel]::placeholder {
@@ -2534,7 +2550,7 @@ a {
   width: 15.1875rem;
   height: 2.875rem;
   background: #7FB0BF;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   border-radius: 0.625rem;
 }

@@ -8,8 +8,6 @@
   width: 100%;
   // 追記
  height:rm(407);
-  // overflow-x: hidden;
-  // padding: rm(30) 8% rm(30);
   @include mq(md) {
       height:rm(480);
   }
@@ -17,7 +15,6 @@
     max-width: 920px;
     margin-top: rm(125);
     margin-inline: auto;
-    // margin-left: rm(144);
   }
 }
 
@@ -26,9 +23,11 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  width: rm(479);
+  // width: rm(479);
+  width: 100%;
   // height: rm(318);
-  aspect-ratio: 479/318;
+  height:rm(318);
+  // aspect-ratio: 479/318;
   // max-width:100%;
   left: 50%;
   transform: translateX(-50%);
@@ -37,7 +36,7 @@
   background-image: url(/images/top/beyouself.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   @include mq(md) {
     width: rm(560);
   }
