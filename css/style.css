@@ -945,12 +945,6 @@ a {
   position: relative;
   margin-top: 2rem;
   width: 100%;
-  height: 25.4375rem;
-}
-@media screen and (min-width: 769px) {
-  .about__inner {
-    height: 30rem;
-  }
 }
 @media screen and (min-width: 993px) {
   .about__inner {
@@ -969,15 +963,23 @@ a {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0 1.5rem;
+  padding: 0 0.625rem;
   background-image: url(/images/top/beyouself.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 479px) {
+  .about__content {
+    width: 29.9375rem;
+    height: auto;
+    aspect-ratio: 479/318;
+    padding: 0;
+  }
+}
 @media screen and (min-width: 769px) {
   .about__content {
-    width: 35rem;
+    width: 32.5rem;
   }
 }
 @media screen and (min-width: 993px) {
@@ -1002,7 +1004,7 @@ a {
 @media screen and (min-width: 769px) {
   .about__content::after {
     width: 12.5rem;
-    bottom: -5rem;
+    bottom: -6.875rem;
   }
 }
 @media screen and (min-width: 993px) {
@@ -1104,16 +1106,23 @@ a {
 }
 
 .about__text .marker {
-  background: linear-gradient(transparent 70%, #F4F0F0 70%);
+  background: linear-gradient(transparent 70%, #f4f0f0 70%);
 }
 
 .feature {
   text-align: center;
-  padding: 0 7%;
+  padding-inline: 7%;
+  padding-top: 25.4375rem;
 }
 @media screen and (min-width: 577px) {
   .feature {
-    padding: 0 10%;
+    padding-top: 27.0625rem;
+    padding-inline: 10%;
+  }
+}
+@media screen and (min-width: 993px) {
+  .feature {
+    padding-top: 27.0625rem;
   }
 }
 
@@ -1894,14 +1903,13 @@ a {
 }
 @media (hover: none) and (any-pointer: coarse) {
   .plan-page__item a:active {
-    background: #4E4E4E;
+    background: pink;
     color: #fff;
   }
   .plan-page__item a:active .plan-page__number {
-    background: #4E4E4E;
+    background: red;
     color: #fff;
     border: 1px solid #fff;
-    transition: all 0.3s ease-in;
   }
 }
 @media screen and (min-width: 993px) {

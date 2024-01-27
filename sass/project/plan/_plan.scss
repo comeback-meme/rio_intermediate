@@ -111,17 +111,18 @@
   }
   @media (hover: none) and (any-pointer: coarse) {
     &:active {
-      background: $color-black;
+      // background: $color-black;
+      background: pink;
       color: #fff;
       & .plan-page__number {
-        background: $color-black;
+        // background: $color-black;
+        background: red;
         color: $color-white;
         border: 1px solid $color-white;
-        transition: all 0.3s ease-in;
+        // transition: all 0.3s ease-in;
       }
     }
   }
-
   @include mq(lg) {
     width: rm(320);
     height: auto;

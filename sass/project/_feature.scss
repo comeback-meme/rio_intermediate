@@ -3,14 +3,18 @@
 
 .feature {
   text-align: center;
-  padding: 0 7%;
+  padding-inline: 7%;
+  padding-top: rm(407);
   @include mq(sm) {
-    padding: 0 10%;
+    padding-top: rm(433);
+    padding-inline: 10%;
+  }
+  @include mq(lg) {
+      padding-top: rm(433);
   }
 }
 
 .feature__title.c-title {
-  // margin-top: rm(145);
   margin-top: rm(56);
   
   @include mq(lg) {

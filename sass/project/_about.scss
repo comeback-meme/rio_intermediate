@@ -1,16 +1,10 @@
 @use "sass:math";
 @use "../foundation" as *;
 
-
 .about__inner {
   position: relative;
   margin-top: rm(32);
   width: 100%;
-  // 追記
- height:rm(407);
-  @include mq(md) {
-      height:rm(480);
-  }
   @include mq(lg) {
     max-width: 920px;
     margin-top: rm(125);
@@ -24,24 +18,31 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height:rm(318);
+  height: rm(318);
   top: 0;
   // margin: 0 auto;←これだとSPで左をはみ出させることができない！！
   left: 50%;
   transform: translateX(-50%);
-  padding: 0 rm(24);
+  padding: 0 rm(10);
   background-image: url(/images/top/beyouself.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (min-width: 479px) {
+    width: rm(479);
+    height: auto;
+    aspect-ratio: 479/318;
+    padding: 0;
+  }
   @include mq(md) {
-    width: rm(560);
+    width: rm(520);
+    // height: rm(300);
   }
   @include mq(lg) {
-    // max-width: 651px;
     width: rm(651);
     left: 32%;
   }
+  // ダンベルを持った女性
   &::after {
     display: block;
     content: "";
@@ -57,15 +58,14 @@
     transform: translateX(-50%);
     @include mq(md) {
       width: rm(200);
-      bottom: rm(-80);
+      bottom: rm(-110);
     }
     @include mq(lg) {
       left: 90%;
       transform: translateX(0);
-        width: rm(328);
-        bottom: 50%;
-        transform: translateY(48%);
-
+      width: rm(328);
+      bottom: 50%;
+      transform: translateY(48%);
     }
   }
 }
@@ -81,12 +81,12 @@
   // z-index: 1;
   @include mq(lg) {
     margin-top: rm(90);
-      width: rm(436);
-      // top: rm(90);
+    width: rm(436);
+    // top: rm(90);
   }
 }
 
-  // 「Be yourself」
+// 「Be yourself」
 .about__title {
   position: relative;
   color: $color-white;
@@ -150,7 +150,7 @@
   letter-spacing: math.div(1.28px, 16px) * 1em;
   margin-top: rm(26);
   @include mq(md) {
-      margin-top: rm(16);
+    margin-top: rm(16);
   }
   @include mq(lg) {
     line-height: 2.5; /* 250% */
@@ -158,6 +158,6 @@
   }
 }
 
-.about__text .marker{
-  background: linear-gradient(transparent 70%, #F4F0F0 70%);
+.about__text .marker {
+  background: linear-gradient(transparent 70%, #f4f0f0 70%);
 }
