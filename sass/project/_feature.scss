@@ -10,13 +10,13 @@
     padding-inline: 10%;
   }
   @include mq(lg) {
-      padding-top: rm(433);
+    padding-top: rm(433);
   }
 }
 
 .feature__title.c-title {
   margin-top: rm(56);
-  
+
   @include mq(lg) {
     margin-top: rm(144);
   }
@@ -158,7 +158,6 @@
   @include mq(md) {
     height: 100%;
   }
-
 }
 
 // .banner__parallax-inner{
@@ -193,23 +192,54 @@
 //   background-position: center;
 // }
 
-.parallax {
-  background-attachment: fixed;
-  background-image: url(/images/top/training@2x.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: block;
-  width: 100%;
+// .parallax {
+//   background-attachment: fixed;
+//   background-image: url(/images/top/training@2x.jpg);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+//   display: block;
+//   width: 100%;
+//   height: rm(104);
+//   min-height: 104px;
+//   @include mq(sm) {
+//     height: rm(220);
+//   }
+//   @include mq(md) {
+//     height: rm(280);
+//   }
+//   @include mq(lg) {
+//     height: rm(347);
+//   }
+// }
+
+.parallax-container {
+  position: relative;
   height: rm(104);
-  min-height: 104px;
-  @include mq(sm) {
-    height: rm(220);
-  }
   @include mq(md) {
-    height: rm(280);
-  }
-  @include mq(lg) {
     height: rm(347);
+  }
+}
+.parallax-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0);
+}
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/top/training_sp@2x.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  @include mq(md) {
+    background-image: url(/images/top/training@2x.webp);
   }
 }

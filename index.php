@@ -83,8 +83,11 @@
     </section>
 
     <!-- パララックス -->
-    <aside id="parallax" class="parallax"></aside>
-
+    <div class="parallax-container">
+   <div class="parallax-inner">
+      <div class="parallax-bg"></div>
+   </div>
+</div>
 
     <section class="voice scroll-margin" id="voice">
       <h2 class="voice__title c-title">voice</h2>
@@ -237,7 +240,7 @@
           spaceBetween: 40,
         },
       },
-     
+
       // 前後の矢印
       navigation: {
         nextEl: ".swiper-button-next",
