@@ -1,10 +1,10 @@
 // グローバルナビ ハンバーガーメニュー
 // --------------------------------------------------------------
 
-const hamburgerBtn = document.querySelector('#js_hamburgerBtn');
-const hamburgerBg = document.querySelector('#js_hamburgerBg');
-const headerNav = document.querySelector('#js_headerNav');
-const headerLinks = document.querySelectorAll('#js_headerNav li a');
+const hamburgerBtn = document.querySelector('#js_hamburger_btn');
+const hamburgerBg = document.querySelector('#js_hamburger_bg');
+const headerNav = document.querySelector('#js_header_nav');
+const headerLinks = document.querySelectorAll('#js_header_nav li a');
 
 hamburgerBtn.addEventListener('click', function () {
   this.classList.toggle('is_active');
