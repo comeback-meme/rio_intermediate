@@ -216,10 +216,15 @@
 .parallax-container {
   position: relative;
   height: rm(104);
+  @include mq(sm) {
+      height:rm(240);
+  }
   @include mq(md) {
     height: rm(347);
   }
 }
+
+
 .parallax-inner {
   position: absolute;
   top: 0;

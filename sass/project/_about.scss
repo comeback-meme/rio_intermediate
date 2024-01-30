@@ -158,6 +158,13 @@
   }
 }
 
+.about__text + .about__text {
+  margin-top: rm(2);
+  @include mq(md) {
+    margin-top: rm(6);
+  }
+}
+
 .about__text .marker {
   background: linear-gradient(transparent 70%, #f4f0f0 70%);
 }

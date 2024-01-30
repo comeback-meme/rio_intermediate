@@ -2,7 +2,7 @@
     <div class="footer__inner">
       <div class="footer__logo">
         <a href="/">
-          <img src="/images/top/logo_header.png" alt="u fit" width="61" height="61">
+          <img src="/images/top/logo_footer@2x.png" alt="u fit" width="96" height="96">
           <span class="footer__title">U FIT</span>
         </a>
       </div>

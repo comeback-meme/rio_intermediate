@@ -35,8 +35,8 @@
         <div class="about__content">
           <div class="about__body">
             <h3 class="about__title">Be yourself</h3>
-            <p class="about__text">U FITは、<span class="marker">自分の好きな自分になれる場所</span><br class="pc-only">一時的なボディメイクのサポートではなく、お客様1人1<br class="pc-only">人に寄り添い、長期間における身体のあり方を「共に」<br class="pc-only">
-              作り上げていきます。</p>
+            <p class="about__text">U FITは、<span class="marker">自分の好きな自分になれる場所</span></p>
+            <p class="about__text">一時的なボディメイクのサポートではなく、お客様1人1人に寄り添い、長期間における身体のあり方を「共に」作り上げていきます。</p>
           </div>
         </div>
       </div>
@@ -218,7 +218,7 @@
   <script>
     const swiper = new Swiper(".swiper", {
 
-      // loop: true,
+      loop: true,
       // デフォルトはfalse
       centeredSlides: true,
       // アクティブなスライドを中央にする

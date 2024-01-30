@@ -109,7 +109,7 @@
       }
     }
   }
-  @media (hover: none) and (any-pointer: coarse) {
+  @media (hover: none) {
     &:active {
       // background: $color-black;
       background: pink;
