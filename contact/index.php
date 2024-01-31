@@ -15,7 +15,7 @@
   <?php include(__DIR__ . "/../inc/header.php"); ?>
   <main>
     <div class="contact-page-mv__image">
-      <h1 class="contact-page__title c-title">contact</h1>
+      <h1 class="contact-page__title primary-title">contact</h1>
     </div>
 
     <!-- CONTACTセクション -->

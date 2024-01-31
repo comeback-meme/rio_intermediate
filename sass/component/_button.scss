@@ -1,7 +1,7 @@
 @use "../foundation" as *;
 @use "sass:math";
 
-.c-btn {
+.primary-btn {
   padding: rm(21) rm(18);
   color: $color-white;
   display: inline-block;
@@ -19,7 +19,7 @@
 
 // ヘッダーの中のお問い合わせボタン
 @include mq(lg) {
-  .c-btn.c-btn--colorChange {
+  .primary-btn.primary-btn_color-change {
     font-size: 0;
     background: $color-F4F0F0;
     max-width: 208px;
@@ -37,7 +37,7 @@
 }
 
 // PLAN
-.c-btn.btn-plan {
+.primary-btn.btn-plan {
   border-radius: 30px;
   background: #edeff0;
   box-shadow: 0px 10px 10px 0px rgba(102, 158, 170, 0.25);
@@ -165,7 +165,7 @@
 }
 
 // 無料体験の申し込みはこちら（黒）
-.c-btn.btn-entry {
+.primary-btn.btn-entry {
   margin-top: rm(48);
   margin-bottom: rm(72);
   width: 100%;

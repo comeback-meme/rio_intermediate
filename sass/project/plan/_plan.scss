@@ -27,7 +27,7 @@
 }
 
 // MVのタイトル「PLAN」
-.plan-page__title.c-title {
+.plan-page__title.primary-title {
   // margin-top: rm(172);
   position: absolute;
   // margin-top: 45%;
@@ -393,7 +393,7 @@
 }
 
 // 申し込みボタン
-.c-btn.btn-entry.plan-page {
+.primary-btn.btn-entry.plan-page {
   margin-top: rm(72);
   margin-bottom: rm(72);
   @include mq(md) {

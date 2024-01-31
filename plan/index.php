@@ -15,7 +15,7 @@
   <?php include(__DIR__ . "/../inc/header.php"); ?>
   <main>
     <div class="plan-page-mv__image">
-      <h1 class="plan-page__title c-title">plan</h1>
+      <h1 class="plan-page__title primary-title">plan</h1>
     </div>
 
     <!-- PLANセクション -->
@@ -180,7 +180,7 @@
         </ul>
       </div>
 
-      <a class="c-btn btn-entry plan-page" href="/contact/">無料体験の申し込みはこちら</a>
+      <a class="primary-btn btn-entry plan-page" href="/contact/">無料体験の申し込みはこちら</a>
     </section>
 
   </main>

@@ -25,7 +25,7 @@
           <li class="header__nav-item"><a href="/#voice">voice</a></li>
           <li class="header__nav-item"><a href="/plan/">plan</a></li>
           <li class="header__nav-item"><a href="/#faq">faq</a></li>
-          <li class="header__nav-item"><a class="c-btn c-btn--colorChange" href="/contact/">無料体験の申し込みはこちら</a></li>
+          <li class="header__nav-item"><a class="primary-btn primary-btn_color-change" href="/contact/">無料体験の申し込みはこちら</a></li>
         </ul>
       </nav>
 

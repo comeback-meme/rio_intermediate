@@ -17,7 +17,7 @@
   <!-- ローディング -->
   <div class="loading">
     <div class="loading__img">
-      <img src="/images/top/logo_header.png" alt="UFIT" width="61" height="61">
+      <img src="/images/top/logo_footer@2x.png" alt="UFIT" width="96" height="96">
       <p class="loading__title">UFIT</p>
     </div>
   </div>
@@ -44,7 +44,7 @@
 
     <!-- featureセクション -->
     <section id="feature" class="feature scroll-margin">
-      <h2 class="feature__title c-title">feature</h2>
+      <h2 class="feature__title primary-title">feature</h2>
       <div class="feature__inner">
         <ul class="feature__list">
           <li class="feature__item">
@@ -90,7 +90,7 @@
 </div>
 
     <section class="voice scroll-margin" id="voice">
-      <h2 class="voice__title c-title">voice</h2>
+      <h2 class="voice__title primary-title">voice</h2>
       <!-- スワイパー -->
       <div class="swiper-container">
         <div class="swiper">
@@ -165,7 +165,7 @@
         <span class="plan-bar2"></span>
         <span class="plan-bar3"></span>
       </div>
-      <a class="c-btn btn-plan" href="/plan/">
+      <a class="primary-btn btn-plan" href="/plan/">
         <span class="btn-textTop">プランを見てみる</span>
         <p class="btn-textBottom">plan</p>
       </a>
@@ -173,7 +173,7 @@
 
     <!-- FAQセクション------>
     <section class="faq scroll-margin" id="faq">
-      <h2 class="faq__title c-title">faq</h2>
+      <h2 class="faq__title primary-title">faq</h2>
       <div class="faq__inner">
         <ul class="faq__list faq-list">
           <li class="faq-list__item">
@@ -197,7 +197,7 @@
             <p class="faq-list__item-answer"><span>A</span>男性約60％、女性約40％です。</p>
           </li>
         </ul>
-        <a class="c-btn btn-entry" href="/contact/">無料体験の申し込みはこちら</a>
+        <a class="primary-btn btn-entry" href="/contact/">無料体験の申し込みはこちら</a>
       </div>
     </section>
   </main>
