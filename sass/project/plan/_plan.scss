@@ -95,12 +95,13 @@
   height: rm(176);
   border-radius: 32px;
   padding-top: rm(34);
-  transition: background-color 0.3s ease-in;
+  // transition: background-color 0.3s ease-in;
   @media (hover: hover) {
     &:hover,
     &:focus {
       background: $color-black;
       color: #fff;
+      transition: all 0.3s ease-in;
       & .plan-page__number {
         background: $color-black;
         color: $color-white;
@@ -111,15 +112,12 @@
   }
   @media (hover: none) {
     &:active {
-      // background: $color-black;
-      background: pink;
+      background: $color-black;
       color: #fff;
       & .plan-page__number {
-        // background: $color-black;
-        background: red;
+        background: $color-black;
         color: $color-white;
         border: 1px solid $color-white;
-        // transition: all 0.3s ease-in;
       }
     }
   }

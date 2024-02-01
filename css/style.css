@@ -1914,12 +1914,12 @@ a {
   height: 11rem;
   border-radius: 32px;
   padding-top: 2.125rem;
-  transition: background-color 0.3s ease-in;
 }
 @media (hover: hover) {
   .plan-page__item a:hover, .plan-page__item a:focus {
     background: #4E4E4E;
     color: #fff;
+    transition: all 0.3s ease-in;
   }
   .plan-page__item a:hover .plan-page__number, .plan-page__item a:focus .plan-page__number {
     background: #4E4E4E;
@@ -1930,11 +1930,11 @@ a {
 }
 @media (hover: none) {
   .plan-page__item a:active {
-    background: pink;
+    background: #4E4E4E;
     color: #fff;
   }
   .plan-page__item a:active .plan-page__number {
-    background: red;
+    background: #4E4E4E;
     color: #fff;
     border: 1px solid #fff;
   }

@@ -11,9 +11,11 @@
 </head>
 
 <body>
+
   <!-- ヘッダー -->
   <?php include(__DIR__ . "/../inc/header.php"); ?>
   <main>
+  <div class="wrap" ontouchstart=""><!-- タッチデバイス対応 -->
     <div class="plan-page-mv__image">
       <h1 class="plan-page__title primary-title">plan</h1>
     </div>
@@ -183,6 +185,7 @@
       <a class="primary-btn btn-entry plan-page" href="/contact/">無料体験の申し込みはこちら</a>
     </section>
 
+  </div>
   </main>
 
   <?php include(__DIR__ . "/../inc/footer.php"); ?>

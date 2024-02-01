@@ -69,6 +69,18 @@ jQuery(function ($) {
 //   });
 // });
 
+// スムーススクロール（５秒）
+// $(function() {
+//   $('.js-scroll').on('click',(e) => {
+//     e.preventDefault();
+//     let $target = $($(e.currentTarget).attr('href'));
+//     if ($target.length > 0) {
+//       $('html, body').animate({
+//         scrollTop: $target.offset().top
+//       }, 500, 'swing');
+//     }
+//   })
+// })
 
 });
 
