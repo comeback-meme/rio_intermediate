@@ -84,10 +84,10 @@
 
     <!-- パララックス -->
     <div class="parallax-container">
-   <div class="parallax-inner">
-      <div class="parallax-bg"></div>
-   </div>
-</div>
+      <div class="parallax-inner">
+        <div class="parallax-bg"></div>
+      </div>
+    </div>
 
     <section class="voice scroll-margin" id="voice">
       <h2 class="voice__title primary-title">voice</h2>
