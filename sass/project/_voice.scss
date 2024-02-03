@@ -33,7 +33,7 @@
   height: auto;
   aspect-ratio: 1;
   flex-shrink: 0;
-  margin-inline: rm(18)!important;
+  margin-inline: rm(18) !important;
   @include mq(sm) {
     width: rm(260);
     max-width: 260px;
@@ -41,7 +41,7 @@
   @include mq(md) {
     width: rm(360);
     min-width: 280px;
-    margin-inline: rm(20)!important;
+    margin-inline: rm(20) !important;
   }
   @include mq(lg) {
     min-width: 300px;

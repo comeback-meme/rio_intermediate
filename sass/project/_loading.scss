@@ -41,7 +41,7 @@
 .loading__img img {
   width: clamp(72px, 20vw, 120px);
   height: auto;
-  animation: loading 1.0s forwards ease-in-out;
+  animation: loading 1s forwards ease-in-out;
 }
 
 // 初回表示②

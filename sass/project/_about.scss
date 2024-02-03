@@ -2,7 +2,7 @@
 @use "../foundation" as *;
 
 .about__inner {
-  position: relative;
+  // position: relative;
   margin-top: rm(32);
   width: 100%;
   @include mq(lg) {
@@ -14,7 +14,7 @@
 
 // Be yourselfの背景
 .about__content {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;

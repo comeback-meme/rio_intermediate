@@ -5,7 +5,7 @@
   padding: 0 7%;
   text-align: center;
   @include mq(sm) {
-      padding: 0 10%;
+    padding: 0 10%;
   }
   // @include mq(md) {
   //     padding: 0 12%;
@@ -83,9 +83,8 @@
   }
   @include mq(lg) {
     padding: rm(82) rm(160) rm(180);
-    border-radius:30px;
+    border-radius: 30px;
     margin-bottom: rm(160);
-    
   }
   @include mq(xl) {
     padding: rm(96) rm(210);
@@ -117,26 +116,25 @@
     top: 50%;
     transform: translateY(-50%);
     @include mq(md) {
-        width:rm(25);
-        height:rm(25);
+      width: rm(25);
+      height: rm(25);
     }
   }
   &::before {
     //配置
     left: rm(-44);
     @include mq(md) {
-        left:rm(-80);
+      left: rm(-80);
     }
   }
   &::after {
     //配置
     right: rm(-44);
     @include mq(md) {
-      right:rm(-80);
-  }
+      right: rm(-80);
+    }
   }
 }
-
 
 .form__wrap {
   margin-top: rm(18);
@@ -154,12 +152,12 @@
   @include mq(lg) {
     justify-content: space-between;
     margin-top: rm(35);
-}
-&:nth-child(n+5) {
+  }
+  &:nth-child(n + 5) {
     @include mq(lg) {
-        margin-top: rm(24);
+      margin-top: rm(24);
     }
-}
+  }
 }
 
 // ラベル
@@ -230,7 +228,6 @@
     padding-bottom: rm(8);
     padding-left: rm(20);
     margin-top: rm(0);
-    ;
   }
 }
 
@@ -244,10 +241,10 @@
   align-items: center;
   margin-top: rm(8);
   @include mq(lg) {
-   margin-top: rm(0);
-   width: 57%;
+    margin-top: rm(0);
+    width: 57%;
   }
-  }
+}
 
 .radio__wrap label {
   margin-right: rm(24);
@@ -306,7 +303,6 @@
 .radio__wrap label:hover {
   cursor: pointer;
 }
-
 
 /*----------------------------------
     送信ボタン

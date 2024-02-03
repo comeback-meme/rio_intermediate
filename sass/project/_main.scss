@@ -1,37 +1,36 @@
 @use "sass:math";
 @use "../foundation" as *;
 
-.mv__image{
+.mv__image {
   // background: url(../images/top/mv@2x.jpg) no-repeat center center / cover;
   background-image: url(../images/top/mv@2x.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 47% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 47% 0;
   width: 100vw;
   height: calc(667px - 0px);
   padding-top: calc(300px - 72px);
-  padding-right:4%;
-  padding-left:4%;
-  
- @include mq(sm) {
-  height: 600px;
-  padding-top: calc(280px - 72px);
- }
+  padding-right: 4%;
+  padding-left: 4%;
+
+  @include mq(sm) {
+    height: 600px;
+    padding-top: calc(280px - 72px);
+  }
 
   @include mq(md) {
-      height: 710px;
-      padding-top: 200px;
-      // padding-top: calc(380px - 72px);
-      padding-right:3%;
-      padding-left:3%;
+    height: 710px;
+    padding-top: 200px;
+    // padding-top: calc(380px - 72px);
+    padding-right: 3%;
+    padding-left: 3%;
   }
   @include mq(lg) {
-
-      height: 762px;
-      margin-top: 100px;
-      padding-top: 0px;
-      // padding-right: vw(36);
-      // background-position: 47% 0;
+    height: 762px;
+    margin-top: 100px;
+    padding-top: 0px;
+    // padding-right: vw(36);
+    // background-position: 47% 0;
   }
 
   @include mq(xl) {
@@ -40,7 +39,7 @@ background-position: 47% 0;
   }
 }
 
-.mv__inner{
+.mv__inner {
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
@@ -50,7 +49,7 @@ background-position: 47% 0;
   justify-content: flex-end;
 }
 
-.mv__title{
+.mv__title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,30 +60,30 @@ background-position: 47% 0;
   flex-shrink: 0;
   color: $color-black;
   // font-size: rm(40);
-font-size: clamp(40px, vw(96), 96px);
+  font-size: clamp(40px, vw(96), 96px);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: math.div(3.2px , 40px) * 1em;
+  letter-spacing: math.div(3.2px, 40px) * 1em;
   background: url(/images/top/ufit.svg) no-repeat center center / cover;
 
   @include mq(sm) {
-  max-width: 280px;
-  width: vw-sp(160);
-}
+    max-width: 280px;
+    width: vw-sp(160);
+  }
 
-@include mq(md) {
-  width: vw(428); 
-  max-width: 430px;
-}
+  @include mq(md) {
+    width: vw(428);
+    max-width: 430px;
+  }
 
   @include mq(lg) {
-      width: vw(460); 
-      max-width: 459px; 
-      padding-right: 18px;
+    width: vw(460);
+    max-width: 459px;
+    padding-right: 18px;
   }
 
   @include mq(xl) {
-    width: vw(460); 
-    max-width: 459px; 
-}
+    width: vw(460);
+    max-width: 459px;
+  }
 }

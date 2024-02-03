@@ -43,8 +43,8 @@ $breakpoints: null;
 }
 
 // デザインカンプの幅
-$screen-size-sp:375;
-$screen-size-pc:1280;
+$screen-size-sp: 375;
+$screen-size-pc: 1280;
 
 // inner
 $inner: 920;
@@ -54,10 +54,10 @@ $padding-pc: 25px; // PC用余白設定
 $padding-sp: 20px; // スマホ用余白設定
 
 // フォント
-$font-family-base: 'Roboto', sans-serif; // ベースフォント設定
-$font-family-notosans: 'Noto Sans', sans-serif;
-$font-family-notosansjp: 'Noto Sans JP', sans-serif;
-$font-family-inter: 'Inter', sans-serif;
+$font-family-base: "Roboto", sans-serif; // ベースフォント設定
+$font-family-notosans: "Noto Sans", sans-serif;
+$font-family-notosansjp: "Noto Sans JP", sans-serif;
+$font-family-inter: "Inter", sans-serif;
 
 $regular: 400;
 $medium: 500;
@@ -69,15 +69,13 @@ $extra-bold: 800;
 // $base-font-size: 16px;
 $base-font-size: 16;
 
-
 // Color
 // $color-bg-7FB0BF:#7FB0BF;
-$color-bg:#7FB0BF;
-$color-black:#4E4E4E;
-$color-white:#fff;
-$color-CFDBE1:#CFDBE1;
-$color-B7C8CA:#B7C8CA;
-$color-F4F0F0:#F4F0F0;
-$color-C6C6C6:#C6C6C6;
-$color-EDEFF0:#EDEFF0;
-
+$color-bg: #7fb0bf;
+$color-black: #4e4e4e;
+$color-white: #fff;
+$color-CFDBE1: #cfdbe1;
+$color-B7C8CA: #b7c8ca;
+$color-F4F0F0: #f4f0f0;
+$color-C6C6C6: #c6c6c6;
+$color-EDEFF0: #edeff0;

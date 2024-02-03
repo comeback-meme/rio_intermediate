@@ -209,9 +209,9 @@
 
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
   <script src="./js/style.js"></script>
-  <script src="./js/script.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
 
 
   <!-- スワイパー -->

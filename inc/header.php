@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="header__inner">
+  <div class="header__inner">
 
     <?php if ($isTopPage) : ?> <!-- トップページならheader__logoを「h1」に -->
       <h1 class="header__logo">
@@ -18,26 +18,26 @@
     <?php endif; ?>
 
 
-      <div id="js_hamburger_bg" class="hamburger_bg"></div><!-- is activeが付くとこ -->
-      <nav id="js_header_nav" class="header__nav"><!-- is activeが付くとこ -->
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="/#feature">feature</a></li>
-          <li class="header__nav-item"><a href="/#voice">voice</a></li>
-          <li class="header__nav-item"><a href="/plan/">plan</a></li>
-          <li class="header__nav-item"><a href="/#faq">faq</a></li>
-          <li class="header__nav-item"><a class="primary-btn primary-btn_color-change" href="/contact/">無料体験の申し込みはこちら</a></li>
-        </ul>
-      </nav>
+    <div id="js_hamburger_bg" class="hamburger_bg"></div><!-- is activeが付くとこ -->
+    <nav id="js_header_nav" class="header__nav"><!-- is activeが付くとこ -->
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="/#feature">feature</a></li>
+        <li class="header__nav-item"><a href="/#voice">voice</a></li>
+        <li class="header__nav-item"><a href="/plan/">plan</a></li>
+        <li class="header__nav-item"><a href="/#faq">faq</a></li>
+        <li class="header__nav-item"><a class="primary-btn primary-btn_color-change" href="/contact/">無料体験の申し込みはこちら</a></li>
+      </ul>
+    </nav>
 
-      <div class="header__contact-wrapper">
-        <a class="header__contact" href="/contact/"></a>
+    <div class="header__contact-wrapper">
+      <a class="header__contact" href="/contact/"></a>
 
-        <button id="js_hamburger_btn" class="hamburger_menu"><!-- is activeが付くとこ -->
-          <span class="hamburger_bar1"></span>
-          <span class="hamburger_bar2"></span>
-          <span class="hamburger_bar3"></span>
-        </button>
-      </div>
-      </div>
+      <button id="js_hamburger_btn" class="hamburger_menu"><!-- is activeが付くとこ -->
+        <span class="hamburger_bar1"></span>
+        <span class="hamburger_bar2"></span>
+        <span class="hamburger_bar3"></span>
+      </button>
+    </div>
+  </div>
 
-  </header>
+</header>

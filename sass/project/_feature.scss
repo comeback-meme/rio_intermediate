@@ -1,16 +1,20 @@
 @use "sass:math";
 @use "../foundation" as *;
 
+// .feature.scroll-margin{
+//   scroll-margin-top: rm(407);
+// }
+
 .feature {
   text-align: center;
   padding-inline: 7%;
-  padding-top: rm(407);
+  padding-top: rm(90);
   @include mq(sm) {
-    padding-top: rm(433);
+    padding-top: rm(110);
     padding-inline: 10%;
   }
   @include mq(lg) {
-    padding-top: rm(433);
+    padding-top: rm(0);
   }
 }
 
@@ -217,13 +221,12 @@
   position: relative;
   height: rm(104);
   @include mq(sm) {
-      height:rm(240);
+    height: rm(240);
   }
   @include mq(md) {
     height: rm(347);
   }
 }
-
 
 .parallax-inner {
   position: absolute;

@@ -58,7 +58,6 @@
   }
 }
 
-
 // planの中の「プランを見てみる」
 .btn-textTop {
   font-size: clamp(16px, vw(24), 24px);
@@ -99,7 +98,7 @@
     top: rm(6);
     @include mq(lg) {
       width: rm(30);
-      height:rm(30);
+      height: rm(30);
       top: rm(0);
     }
   }
@@ -123,21 +122,21 @@
 }
 
 // プランの上の三本線------------------//
-.plan-barWrap{
+.plan-barWrap {
   margin-top: rm(56);
   margin-bottom: rm(16);
   margin-inline: auto;
-  width:rm(136);
-  height:rm(32);
+  width: rm(136);
+  height: rm(32);
   max-width: 100%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   @include mq(lg) {
-      width:rm(264);
-      max-width: 264px;
-      height:rm(64);
-      margin-top: rm(112);
-      margin-bottom: rm(56);
+    width: rm(264);
+    max-width: 264px;
+    height: rm(64);
+    margin-top: rm(112);
+    margin-bottom: rm(56);
   }
 }
 

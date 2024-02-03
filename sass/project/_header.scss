@@ -5,23 +5,22 @@
   // height: 72px;
   height: rm(72);
   background: $color-bg;
-  padding-left:rm(24);
-  padding-right:rm(34);
+  padding-left: rm(24);
+  padding-right: rm(34);
   position: fixed;
   width: 100%;
   top: 0px;
   z-index: 999;
   @include mq(sm) {
     height: rm(86);
-    padding-left:rm(34);
-    padding-right:rm(44);
+    padding-left: rm(34);
+    padding-right: rm(44);
   }
   @include mq(md) {
     // height: 100px;
     height: rm(100);
-    padding-left:rm(64);
-    padding-right:rm(74);
-    
+    padding-left: rm(64);
+    padding-right: rm(74);
   }
   @include mq(lg) {
     // padding-left: vw(140);
@@ -29,7 +28,7 @@
     // padding-right: vw(140);
     padding-right: rm(102);
   }
-  
+
   @include mq(xl) {
     // padding-left: vw(140);
     padding-left: rm(140);
@@ -70,7 +69,7 @@
   align-items: center;
   gap: rm(10);
   @include mq(md) {
-      gap: rm(14);
+    gap: rm(14);
   }
   @include mq(lg) {
     gap: rm(20);
@@ -115,7 +114,7 @@
   @include mq(lg) {
     transform: translateX(0);
     // opacity: 1;
-    // pointer-events: auto; 
+    // pointer-events: auto;
     width: auto;
     height: 100%;
     padding-top: 0;
@@ -132,7 +131,7 @@
     height: rm(66);
   }
 
-  & .header__nav-item:last-child{
+  & .header__nav-item:last-child {
     margin-top: rm(18);
   }
 
@@ -140,7 +139,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 }
 
@@ -197,9 +195,8 @@
   transition: background-color 0.4s ease-in, color 0.4s ease-in;
   // font-size: 16px;
   font-weight: 400;
-line-height: 1.5; /* 150% */
-letter-spacing: math.div(1.28px , 16px) * 1em;
-
+  line-height: 1.5; /* 150% */
+  letter-spacing: math.div(1.28px, 16px) * 1em;
 }
 
 // リストのhoverできる領域を広く設定
@@ -249,7 +246,6 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   transform: translateY(-10%);
   flex-shrink: 0;
 
-
   @include mq(sm) {
     width: rm(42);
     max-width: 42px;
@@ -259,15 +255,14 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
     max-width: 52px;
   }
 
-  @media(hover: hover) {
-      &:hover,
-      &:focus {
+  @media (hover: hover) {
+    &:hover,
+    &:focus {
       opacity: 0.7;
       cursor: pointer;
       transition: all 0.3s ease;
-      }
+    }
   }
-
 }
 
 .header__contact {
@@ -320,7 +315,6 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   }
 }
 
-
 // ハンバーガーメニューの三本線
 .hamburger_bar1,
 .hamburger_bar2,
@@ -330,7 +324,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   width: rm(13.88);
   height: 2px;
   margin: 0 auto;
-  transition: transform 0.3s , width 0.2s , opacity 0.2s;
+  transition: transform 0.3s, width 0.2s, opacity 0.2s;
   // transform-origin: 1px 1px;
   @include mq(sm) {
     max-width: 20px;
@@ -354,12 +348,12 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 }
 
 // ハンバーガーメニューが押された時
-.hamburger_menu.is_active{
+.hamburger_menu.is_active {
   position: relative;
   z-index: 1002;
   top: rm(21);
   right: rm(10);
-  &::after{
+  &::after {
     content: "";
   }
 }
@@ -394,10 +388,10 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
 }
 
 // ハンバーガーメニューの後ろのページを覆って操作できなくする
-.hamburger_bg{
+.hamburger_bg {
   opacity: 0;
   pointer-events: none;
-// display: none;
+  // display: none;
   // position: fixed;
   // top: 0px;
   // left: 0px;
@@ -409,7 +403,7 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   transition: opacity 0.6s;
 }
 
-.hamburger_bg.is_active{
+.hamburger_bg.is_active {
   opacity: 1;
   pointer-events: auto;
   // display: block;
@@ -419,5 +413,5 @@ letter-spacing: math.div(1.28px , 16px) * 1em;
   width: 100vw;
   height: 100vh;
   background: $color-bg;
-  z-index:1000;
+  z-index: 1000;
 }

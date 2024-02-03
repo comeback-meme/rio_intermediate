@@ -8,7 +8,7 @@
 .footer__inner {
   width: 100%;
   // max-width: vw-sp(276);
-  background: #BBCCD1;
+  background: #bbccd1;
   display: flex;
   // justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@
 }
 
 .footer__nav-list {
-    display: flex;
+  display: flex;
   gap: rm(32);
 }
 
@@ -99,18 +99,18 @@
   align-items: center;
   width: 100%;
   height: rm(72);
-  @include mq(lg) { 
+  @include mq(lg) {
     height: rm(110.6);
   }
 }
 
-.footer__copy-text{
-font-family: $font-family-notosans;
-font-size: clamp(8px, vw(10), 10px);
-font-weight: 500;
-line-height: 1;
-letter-spacing: math.div(0.64px, 8px) * 1em;
-@include mq(lg) {
-  letter-spacing: math.div(0.64px, 10px) * 1em;
-}
+.footer__copy-text {
+  font-family: $font-family-notosans;
+  font-size: clamp(8px, vw(10), 10px);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: math.div(0.64px, 8px) * 1em;
+  @include mq(lg) {
+    letter-spacing: math.div(0.64px, 10px) * 1em;
+  }
 }
