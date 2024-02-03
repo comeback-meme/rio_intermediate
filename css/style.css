@@ -1121,11 +1121,9 @@ a {
 .feature {
   text-align: center;
   padding-inline: 7%;
-  padding-top: 5.625rem;
 }
 @media screen and (min-width: 577px) {
   .feature {
-    padding-top: 6.875rem;
     padding-inline: 10%;
   }
 }
@@ -1136,7 +1134,7 @@ a {
 }
 
 .feature__title.primary-title {
-  margin-top: 3.5rem;
+  margin-top: 9.375rem;
 }
 @media screen and (min-width: 993px) {
   .feature__title.primary-title {

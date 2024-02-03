@@ -8,9 +8,9 @@
 .feature {
   text-align: center;
   padding-inline: 7%;
-  padding-top: rm(90);
+  // padding-top: rm(90);
   @include mq(sm) {
-    padding-top: rm(110);
+    // padding-top: rm(110);
     padding-inline: 10%;
   }
   @include mq(lg) {
@@ -19,7 +19,8 @@
 }
 
 .feature__title.primary-title {
-  margin-top: rm(56);
+  // margin-top: rm(56);
+  margin-top: rm(150);
 
   @include mq(lg) {
     margin-top: rm(144);
