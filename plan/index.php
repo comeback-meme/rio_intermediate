@@ -6,8 +6,6 @@
   <meta name="description" content="トレーニングプランには３つのコースがあります。" />
   <meta name="keywords" content="キーワード" />
   <title>選べる３つのプラン | U FIT</title>
-  <link rel="stylesheet" href="/css/swiper-bundle.min.css" media="all">
-  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
