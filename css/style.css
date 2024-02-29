@@ -913,7 +913,7 @@ a {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.08em;
-  background: url(/images/top/ufit.svg) no-repeat center center/cover;
+  background: url(../images/top/mv__title-ufit.svg) no-repeat center center/cover;
 }
 @media screen and (min-width: 577px) {
   .mv__title {
@@ -963,7 +963,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
   padding: 0 0.625rem;
-  background-image: url(/images/top/beyouself.png);
+  background-image: url(../images/top/about__beyouself-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -995,7 +995,7 @@ a {
   height: auto;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background: url(/images/top/about_img@2x.jpg) no-repeat center center/cover;
+  background: url(../images/top/about__img@2x.jpg) no-repeat center center/cover;
   bottom: -5.625rem;
   left: 50%;
   transform: translateX(-50%);
@@ -2252,7 +2252,7 @@ a {
 }
 
 .contact-page-mv__image {
-  background: url(/images/contact/mv_contact_sp@2x.jpg) no-repeat center center/cover;
+  background: url(/images/contact/contact__mv-sp@2x.jpg) no-repeat center center/cover;
   width: 100%;
   height: auto;
   aspect-ratio: 375/344;

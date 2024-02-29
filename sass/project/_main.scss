@@ -2,7 +2,6 @@
 @use "../foundation" as *;
 
 .mv__image {
-  // background: url(../images/top/mv@2x.jpg) no-repeat center center / cover;
   background-image: url(../images/top/mv@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +20,6 @@
   @include mq(md) {
     height: 710px;
     padding-top: 200px;
-    // padding-top: calc(380px - 72px);
     padding-right: 3%;
     padding-left: 3%;
   }
@@ -29,13 +27,10 @@
     height: 762px;
     margin-top: 100px;
     padding-top: 0px;
-    // padding-right: vw(36);
-    // background-position: 47% 0;
   }
 
   @include mq(xl) {
     margin-top: 100px;
-    // padding-top: 8vh;
   }
 }
 
@@ -59,12 +54,11 @@
   aspect-ratio: 191/155;
   flex-shrink: 0;
   color: $color-black;
-  // font-size: rm(40);
   font-size: clamp(40px, vw(96), 96px);
   font-weight: 400;
   line-height: 1;
   letter-spacing: math.div(3.2px, 40px) * 1em;
-  background: url(/images/top/ufit.svg) no-repeat center center / cover;
+  background: url(../images/top/mv__title-ufit.svg) no-repeat center center / cover;
 
   @include mq(sm) {
     max-width: 280px;

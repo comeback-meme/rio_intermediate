@@ -24,7 +24,7 @@
   left: 50%;
   transform: translateX(-50%);
   padding: 0 rm(10);
-  background-image: url(/images/top/beyouself.png);
+  background-image: url(../images/top/about__beyouself-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +51,7 @@
     height: auto;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: url(/images/top/about_img@2x.jpg) no-repeat center center /
+    background: url(../images/top/about__img@2x.jpg) no-repeat center center /
       cover;
     bottom: rm(-90);
     left: 50%;
