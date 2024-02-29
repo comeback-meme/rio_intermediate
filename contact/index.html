@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="無料体験受付中　ご希望の日程をお選びください。" />
+  <meta name="keywords" content="キーワード" />
+  <!-- ogp -->
+  <meta property="og:type" content="article">
+  <!-- ファビコン -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans:wght@500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/destyle.min.css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- タイトル -->
+  <title>無料体験受付 | U FIT</title>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header__inner">
+      <p class="header__logo">
+        <a href="/">
+          <img src="/images/top/logo_header.png" alt="u fit" width="61" height="61">
+          <span class="header__title">U FIT</span>
+        </a>
+      </p>
+
+      <div id="js_hamburger_bg" class="hamburger_bg"></div><!-- is activeが付くとこ -->
+      <nav id="js_header_nav" class="header__nav"><!-- is activeが付くとこ -->
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="/#feature">feature</a></li>
+          <li class="header__nav-item"><a href="/#voice">voice</a></li>
+          <li class="header__nav-item"><a href="/plan/">plan</a></li>
+          <li class="header__nav-item"><a href="/#faq">faq</a></li>
+          <li class="header__nav-item"><a class="primary-btn primary-btn_color-change"
+              href="/contact/">無料体験の申し込みはこちら</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__contact-wrapper">
+        <a class="header__contact" href="/contact/"></a>
+
+        <button id="js_hamburger_btn" class="hamburger_menu"><!-- is activeが付くとこ -->
+          <span class="hamburger_bar1"></span>
+          <span class="hamburger_bar2"></span>
+          <span class="hamburger_bar3"></span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <div class="contact-page-mv__image">
+      <h1 class="contact-page__title primary-title">contact</h1>
+    </div>
+
+    <!-- CONTACTセクション -->
+    <section class="contact">
+      <div class="contact__inner">
+        <h2 class="contact__title">無料体験受付</h2>
+
+        <form class="contact__form form" action="" method="post">
+          <!-- 体験日程 -->
+          <div class="form__wrap">
+            <label class="form__label" for="date">体験日程<span>必須</span>
+            </label>
+            <div class="form__data">
+              <input type="text" id="date" name="date" autocomplete="date" placeholder="日時を選択してください">
+            </div>
+          </div>
+          <!-- お名前 -->
+          <div class="form__wrap">
+            <label class="form__label" for="name">お名前<span>必須</span></label>
+            <div class="form__data">
+              <input type="text" id="name" name="your_name" autocomplete="name">
+            </div>
+          </div>
+          <!-- 性別---ラジオボタン -->
+          <div class="form__wrap radio">
+            <div class="form__label">性別</div>
+            <div class="radio__wrap">
+              <label><input type="radio" name="gender" value="女性"><span>女性</span></label>
+              <label><input type="radio" name="gender" value="男性"><span>男性</span></label>
+            </div>
+          </div>
+          <!-- 住所 -->
+          <div class="form__wrap">
+            <label class="form__label" for="address">ご住所<span>必須</span> </label>
+            <div class="form__data">
+              <input type="text" id="address" name="your_address" autocomplete="name">
+            </div>
+          </div>
+          <!-- メールアドレス -->
+          <div class="form__wrap">
+            <label class="form__label" for="mail">メールアドレス<span>必須</span></label>
+            <div class="form__data">
+              <input type="email" id="mail" name="email" autocomplete="email" placeholder="info@example.com">
+            </div>
+          </div>
+          <!--  電話番号 -->
+          <div class="form__wrap">
+            <label class="form__label" for="tel">電話番号<span>必須</span></label>
+            <div class="form__data">
+              <input type="tel" id="tel" name="tel" autocomplete="tel" placeholder="090-1234-5678">
+            </div>
+          </div>
+          <!-- 送信ボタン -->
+          <div class="form__submit">
+            <input type="submit" value="送信する">
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <a href="/">
+          <img src="/images/top/logo_footer@2x.png" alt="u fit" width="96" height="96">
+          <span class="footer__title">U FIT</span>
+        </a>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="/#feature">feature</a></li>
+          <li class="footer__nav-item"><a href="/#voice">voice</a></li>
+          <li class="footer__nav-item"><a href="/plan/">plan</a></li>
+          <li class="footer__nav-item"><a href="/#faq">faq</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy">
+      <small class="footer__copy-text">Copyright &copy; U FIT All Rights Reserved.</small>
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="/js/style.js"></script>
+</body>
+
+</html>

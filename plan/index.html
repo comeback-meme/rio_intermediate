@@ -2,16 +2,67 @@
 <html lang="ja">
 
 <head>
-  <?php include(__DIR__ . "/../inc/head.php"); ?>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
   <meta name="description" content="トレーニングプランには３つのコースがあります。" />
   <meta name="keywords" content="キーワード" />
+  <!-- ogp -->
+  <meta property="og:type" content="article">
+  <!-- ファビコン -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans:wght@500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/destyle.min.css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- タイトル -->
   <title>選べる３つのプラン | U FIT</title>
 </head>
 
 <body>
-
   <!-- ヘッダー -->
-  <?php include(__DIR__ . "/../inc/header.php"); ?>
+  <header class="header">
+    <div class="header__inner">
+      <p class="header__logo">
+        <a href="/">
+          <img src="/images/top/logo_header.png" alt="u fit" width="61" height="61">
+          <span class="header__title">U FIT</span>
+        </a>
+      </p>
+
+      <div id="js_hamburger_bg" class="hamburger_bg"></div><!-- is activeが付くとこ -->
+      <nav id="js_header_nav" class="header__nav"><!-- is activeが付くとこ -->
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="/#feature">feature</a></li>
+          <li class="header__nav-item"><a href="/#voice">voice</a></li>
+          <li class="header__nav-item"><a href="/plan/">plan</a></li>
+          <li class="header__nav-item"><a href="/#faq">faq</a></li>
+          <li class="header__nav-item"><a class="primary-btn primary-btn_color-change"
+              href="/contact/">無料体験の申し込みはこちら</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__contact-wrapper">
+        <a class="header__contact" href="/contact/"></a>
+
+        <button id="js_hamburger_btn" class="hamburger_menu"><!-- is activeが付くとこ -->
+          <span class="hamburger_bar1"></span>
+          <span class="hamburger_bar2"></span>
+          <span class="hamburger_bar3"></span>
+        </button>
+      </div>
+    </div>
+
+  </header>
   <main>
     <div class="wrap" ontouchstart=""><!-- タッチデバイス対応 -->
       <div class="plan-page-mv__image">
@@ -186,14 +237,31 @@
     </div>
   </main>
 
-  <?php include(__DIR__ . "/../inc/footer.php"); ?>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <a href="/">
+          <img src="/images/top/logo_footer@2x.png" alt="u fit" width="96" height="96">
+          <span class="footer__title">U FIT</span>
+        </a>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="/#feature">feature</a></li>
+          <li class="footer__nav-item"><a href="/#voice">voice</a></li>
+          <li class="footer__nav-item"><a href="/plan/">plan</a></li>
+          <li class="footer__nav-item"><a href="/#faq">faq</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy">
+      <small class="footer__copy-text">Copyright &copy; U FIT All Rights Reserved.</small>
+    </p>
+  </footer>
 
   <!-- JS -->
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="/js/style.js"></script>
-  <script src="/js/script.js"></script>
 
 
 
