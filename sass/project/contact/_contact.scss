@@ -13,8 +13,8 @@
 }
 
 .contact-page-mv__image {
-  background: url(/images/contact/contact__mv-sp@2x.jpg) no-repeat center center /
-    cover;
+  background: url(../images/contact/contact__mv-sp@2x.jpg) no-repeat center
+    center / cover;
   width: 100%;
   height: auto;
   aspect-ratio: 375/344;
@@ -25,7 +25,7 @@
   @include mq(sm) {
   }
   @include mq(md) {
-    background: url(/images/contact/mv_contact@2x.jpg) no-repeat right center /
+    background: url(../images/contact/mv_contact@2x.jpg) no-repeat right center /
       cover;
     margin-top: rm(100);
     aspect-ratio: 1280/456;

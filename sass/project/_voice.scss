@@ -45,7 +45,6 @@
   }
   @include mq(lg) {
     min-width: 300px;
-    // width:rm(500);
   }
   @include mq(xl) {
     max-width: 323px;
@@ -53,7 +52,6 @@
 }
 
 .swiper-head {
-  // width: rm(155);
   text-align: left;
   font-size: rm(16);
   font-weight: 400;
@@ -126,13 +124,8 @@
 
 .swiper-image {
   margin-left: rm(14);
-  // width: 91px;
   width: rm(91);
 }
-
-// .swiper-pagination{
-//   bottom:-40px  !important;
-// }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {

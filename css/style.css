@@ -1337,7 +1337,7 @@ a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/top/training_sp@2x.webp);
+  background-image: url(../images/top/training_sp@2x.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1345,7 +1345,7 @@ a {
 }
 @media screen and (min-width: 769px) {
   .parallax-bg {
-    background-image: url(/images/top/training@2x.webp);
+    background-image: url(../images/top/training@2x.webp);
   }
 }
 
@@ -2252,7 +2252,7 @@ a {
 }
 
 .contact-page-mv__image {
-  background: url(/images/contact/contact__mv-sp@2x.jpg) no-repeat center center/cover;
+  background: url(../images/contact/contact__mv-sp@2x.jpg) no-repeat center center/cover;
   width: 100%;
   height: auto;
   aspect-ratio: 375/344;
@@ -2263,7 +2263,7 @@ a {
 }
 @media screen and (min-width: 769px) {
   .contact-page-mv__image {
-    background: url(/images/contact/mv_contact@2x.jpg) no-repeat right center/cover;
+    background: url(../images/contact/mv_contact@2x.jpg) no-repeat right center/cover;
     margin-top: 6.25rem;
     aspect-ratio: 1280/456;
   }

@@ -1,22 +1,15 @@
 @use "sass:math";
 @use "../foundation" as *;
 
-// .footer {
-//   padding: 0 5%;
-// }
-
 .footer__inner {
   width: 100%;
-  // max-width: vw-sp(276);
   background: #bbccd1;
   display: flex;
-  // justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: rm(18);
   padding-bottom: rm(41);
   margin: 0 auto;
-  // gap: 16px;
   @include mq(sm) {
     padding-top: rm(32);
   }
@@ -26,7 +19,6 @@
   @include mq(lg) {
     padding-top: rm(64);
     padding-bottom: rm(80);
-    // gap: 40px;
   }
 }
 

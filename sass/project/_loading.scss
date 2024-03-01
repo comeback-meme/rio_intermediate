@@ -62,7 +62,7 @@
 @keyframes loading {
   0% {
     opacity: 0;
-    transform: translateY(#{rm(60)});
+    transform: translateY(rm(60));
   }
   100% {
     opacity: 1;
