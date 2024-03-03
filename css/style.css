@@ -696,7 +696,7 @@ a {
 
 .header__contact {
   display: block;
-  background: #f1f7f8 url(../images/top/mail_icon.png) no-repeat center center/60%;
+  background: #f1f7f8 url(../images/mail_icon.png) no-repeat center center/60%;
 }
 
 .hamburger_menu {
@@ -1337,7 +1337,7 @@ a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/top/training_sp@2x.webp);
+  background-image: url(../images/top/parallax-bg_sp@2x.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1345,7 +1345,7 @@ a {
 }
 @media screen and (min-width: 769px) {
   .parallax-bg {
-    background-image: url(../images/top/training@2x.webp);
+    background-image: url(../images/top/parallax-bg@2x.jpg);
   }
 }
 
@@ -1644,13 +1644,12 @@ a {
 .faq-list__item-answer {
   color: #4e4e4e;
   font-size: 1rem;
-  padding: 1rem 1.875rem 0.9375rem 3.75rem;
   display: none;
   text-indent: -1.25rem;
   font-weight: 400;
   line-height: 1.5;
   background: #7fb0bf;
-  padding: 0.75rem 0.25rem 0rem 2rem;
+  padding: 0.75rem 0.25rem 0rem 0rem;
   position: relative;
   text-indent: 0rem;
 }
@@ -1659,27 +1658,6 @@ a {
     text-indent: 0rem;
     padding: 0.9375rem 0.625rem 0.875rem 4.125rem;
     font-size: 1.125rem;
-  }
-}
-
-.faq-list__item-answer span {
-  font-size: clamp(20px, 1.875vw, 24px);
-  display: inline-block;
-  position: absolute;
-  margin-right: 1.25rem;
-  left: 0.625rem;
-  font-weight: 500;
-  top: 0.5625rem;
-}
-@media screen and (min-width: 769px) {
-  .faq-list__item-answer span {
-    left: 1.125rem;
-    top: 0.875rem;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .faq-list__item-answer span {
-    top: 0.75rem;
   }
 }
 

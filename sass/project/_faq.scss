@@ -111,13 +111,14 @@
 .faq-list__item-answer {
   color: $color-black;
   font-size: rm(16);
-  padding: rm(16) rm(30) rm(15) rm(60);
+  // padding: rm(16) rm(30) rm(15) rm(60);
   display: none;
   text-indent: rm(-20);
   font-weight: 400;
   line-height: 1.5;
   background: $color-bg;
-  padding: rm(12) rm(4) rm(0) 2rem;
+  padding: rm(12) rm(4) rm(0) rm(0);
+  ;
   position: relative;
   text-indent: rm(0);
   @include mq(md) {
@@ -127,20 +128,4 @@
   }
 }
 
-// アンサーの「A」
-.faq-list__item-answer span {
-  font-size: clamp(20px, vw(24), 24px);
-  display: inline-block;
-  position: absolute;
-  margin-right: rm(20);
-  left: rm(10);
-  font-weight: 500;
-  top: rm(9);
-  @include mq(md) {
-    left: rm(18);
-    top: rm(14);
-  }
-  @include mq(xl) {
-    top: rm(12);
-  }
-}
+

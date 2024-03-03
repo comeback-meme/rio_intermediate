@@ -14,7 +14,6 @@
 
 .feature__title.primary-title {
   margin-top: rm(150);
-
   @include mq(lg) {
     margin-top: rm(144);
   }
@@ -130,7 +129,6 @@
     order: 2;
     width: rm(248);
     margin-top: rm(24);
-    // width: 55%;
   }
 }
 
@@ -183,12 +181,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/top/training_sp@2x.webp);
+  background-image: url(../images/top/parallax-bg_sp@2x.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
   @include mq(md) {
-    background-image: url(../images/top/training@2x.webp);
+    background-image: url(../images/top/parallax-bg@2x.jpg);
   }
 }
