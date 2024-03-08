@@ -35,10 +35,7 @@
   text-align: left;
 }
 
-.faq-list__item {
-  background-color: $color-F4F0F0;
-  box-shadow: 0 0 rm(40) 0 rgba(0, 0, 0, 0.05);
-}
+
 
 .faq-list__item + .faq-list__item {
   margin-top: rm(24);
@@ -49,6 +46,8 @@
 
 // Question
 .faq-list__item-question {
+  background-color: $color-F4F0F0;
+  box-shadow: 0 0 rm(40) 0 rgba(0, 0, 0, 0.05);
   font-size: clamp(14px, vw(18), 18px);
   font-weight: 700;
   line-height: math.div(16px, 14px);
@@ -111,7 +110,6 @@
 .faq-list__item-answer {
   color: $color-black;
   font-size: rm(16);
-  // padding: rm(16) rm(30) rm(15) rm(60);
   display: none;
   text-indent: rm(-20);
   font-weight: 400;
@@ -123,7 +121,8 @@
   text-indent: rm(0);
   @include mq(md) {
     text-indent: rm(0);
-    padding: rm(15) rm(10) rm(14) rm(66);
+    padding: rm(15) rm(10) rm(14) rm(0);
+    // padding: rm(15) rm(10) rm(14) rm(66);
     font-size: rm(18);
   }
 }

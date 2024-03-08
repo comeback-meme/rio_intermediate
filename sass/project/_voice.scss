@@ -12,17 +12,35 @@
   }
 }
 
+.swiper-inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
 .swiper-container {
+  // border: 1px solid blue; .swiper-containerの枠
   position: relative;
   margin-top: rm(32);
+  padding-bottom: rm(40); //ページネーションが外に出てるように見せる
   @include mq(lg) {
     margin-top: rm(74);
   }
+  @media screen and (min-width: 1000px) {
+    padding-inline: rm(50); //矢印ボタンが外に出てるように見せる
+  }
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-wrapper {
+  position: relative;
 }
 
 .swiper-slide {
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -33,7 +51,6 @@
   height: auto;
   aspect-ratio: 1;
   flex-shrink: 0;
-  margin-inline: rm(18) !important;
   @include mq(sm) {
     width: rm(260);
     max-width: 260px;
@@ -41,7 +58,6 @@
   @include mq(md) {
     width: rm(360);
     min-width: 280px;
-    margin-inline: rm(20) !important;
   }
   @include mq(lg) {
     min-width: 300px;
@@ -127,13 +143,15 @@
   width: rm(91);
 }
 
+//矢印ボタン
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: "";
+  content: ""; //デフォルトの削除
   width: rm(20);
-  height: rm(20);
-  border-top: solid 2px #bbccd1;
-  border-right: solid 2px #bbccd1;
+  height: auto;
+  aspect-ratio: 1;
+  border-top: solid 4px #bbccd1;
+  border-right: solid 4px #bbccd1;
   position: absolute;
   top: rm(12);
 }
@@ -148,12 +166,44 @@
   right: rm(10);
 }
 
+// pagination ---------------
+
 //paginationの位置
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: rm(-40);
+  bottom: rm(0);
+  //containerのpadding-bottomで外に出す
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//色と大きさ指定
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: gray;
+  width: rm(10);
+  height: rm(10);
+  border-radius: 50%; //円にする
+}
+
+//activeな時
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: blue;
+}
+//paginationの余白指定
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 rm(8);
+}
+//paginationの位置
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -92,25 +92,35 @@
 // ハンバーガーメニューを押される前の状態（右に移動させておく）
 .header__nav {
   position: fixed;
-  // opacity: 0;
-  // pointer-events: none;
   top: 0;
-  right: 0px;
+  right: 0;
   width: 76.5vw;
   height: 100vh;
   padding-top: rm(180);
   background: $color-white;
   z-index: 1001;
-  transform: translateX(100vw);
+  translate: 100vw;
   transition: all 0.5s;
+  // & .header__nav-item:not(:last-child) {
+  //   height: rm(66);
+  // }
+
+  // & .header__nav-item:last-child {
+  //   margin-top: rm(18);
+  // }
+
+  // & .header__nav-item:not(:last-child) a {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 
   @include mq(lg) {
-    transform: translateX(0);
-    // opacity: 1;
-    // pointer-events: auto;
+    translate: 0;
     width: auto;
     height: 100%;
     padding-top: 0;
+    margin-top: 0;
     position: static;
     background: inherit;
   }
@@ -118,21 +128,7 @@
 
 // ハンバーガーメニューを押された時に出てくるメニュー
 .header__nav.is_active {
-  transform: translateX(0);
-
-  & .header__nav-item:not(:last-child) {
-    height: rm(66);
-  }
-
-  & .header__nav-item:last-child {
-    margin-top: rm(18);
-  }
-
-  & .header__nav-item:not(:last-child) a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  translate: 0;
 }
 
 .header__nav-list {
@@ -150,9 +146,19 @@
 }
 
 .header__nav-item {
-  text-transform: uppercase;
+  text-transform: uppercase; //小文字を大文字に
   width: 100%;
-
+  &:not(:last-child) {
+    height: rm(66);
+  }
+  &:last-child {
+    margin-top: rm(18);
+  }
+  &:not(:last-child) a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @include mq(lg) {
     height: inherit;
     &:not(:last-child) a {
@@ -181,7 +187,7 @@
   }
 }
 
-// pcの時のnavの挙動
+// pcの時のnavをふわっと色替え
 .header__nav-item a {
   transition: background-color 0.4s ease-in, color 0.4s ease-in;
   font-weight: 400;
@@ -202,6 +208,7 @@
 // 「無料体験お申込み」の文字を中央に配置
 .header__nav-item:last-child {
   @include mq(lg) {
+    margin-top: 0;
     display: flex;
     align-items: center;
   }
@@ -257,8 +264,7 @@
 
 .header__contact {
   display: block;
-  background: #f1f7f8 url(../images/mail_icon.png) no-repeat center center /
-    60%;
+  background: #f1f7f8 url(../images/mail_icon.png) no-repeat center center / 60%;
 }
 
 .hamburger_menu {

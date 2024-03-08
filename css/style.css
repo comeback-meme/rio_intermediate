@@ -279,7 +279,7 @@ a {
 }
 
 .plan-barWrap {
-  margin-top: 3.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   margin-inline: auto;
   width: 8.5rem;
@@ -293,7 +293,7 @@ a {
     width: 16.5rem;
     max-width: 264px;
     height: 4rem;
-    margin-top: 7rem;
+    margin-top: 4.5rem;
     margin-bottom: 3.5rem;
   }
 }
@@ -539,39 +539,29 @@ a {
 .header__nav {
   position: fixed;
   top: 0;
-  right: 0px;
+  right: 0;
   width: 76.5vw;
   height: 100vh;
   padding-top: 11.25rem;
   background: #fff;
   z-index: 1001;
-  transform: translateX(100vw);
+  translate: 100vw;
   transition: all 0.5s;
 }
 @media screen and (min-width: 993px) {
   .header__nav {
-    transform: translateX(0);
+    translate: 0;
     width: auto;
     height: 100%;
     padding-top: 0;
+    margin-top: 0;
     position: static;
     background: inherit;
   }
 }
 
 .header__nav.is_active {
-  transform: translateX(0);
-}
-.header__nav.is_active .header__nav-item:not(:last-child) {
-  height: 4.125rem;
-}
-.header__nav.is_active .header__nav-item:last-child {
-  margin-top: 1.125rem;
-}
-.header__nav.is_active .header__nav-item:not(:last-child) a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  translate: 0;
 }
 
 .header__nav-list {
@@ -592,6 +582,17 @@ a {
 .header__nav-item {
   text-transform: uppercase;
   width: 100%;
+}
+.header__nav-item:not(:last-child) {
+  height: 4.125rem;
+}
+.header__nav-item:last-child {
+  margin-top: 1.125rem;
+}
+.header__nav-item:not(:last-child) a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 993px) {
   .header__nav-item {
@@ -640,6 +641,7 @@ a {
 
 @media screen and (min-width: 993px) {
   .header__nav-item:last-child {
+    margin-top: 0;
     display: flex;
     align-items: center;
   }
@@ -1362,14 +1364,34 @@ a {
   }
 }
 
+.swiper-inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
 .swiper-container {
   position: relative;
   margin-top: 2rem;
+  padding-bottom: 2.5rem;
 }
 @media screen and (min-width: 993px) {
   .swiper-container {
     margin-top: 4.625rem;
   }
+}
+@media screen and (min-width: 1000px) {
+  .swiper-container {
+    padding-inline: 3.125rem;
+  }
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-wrapper {
+  position: relative;
 }
 
 .swiper-slide {
@@ -1384,7 +1406,6 @@ a {
   height: auto;
   aspect-ratio: 1;
   flex-shrink: 0;
-  margin-inline: 1.125rem !important;
 }
 @media screen and (min-width: 577px) {
   .swiper-slide {
@@ -1396,7 +1417,6 @@ a {
   .swiper-slide {
     width: 22.5rem;
     min-width: 280px;
-    margin-inline: 1.25rem !important;
   }
 }
 @media screen and (min-width: 993px) {
@@ -1495,9 +1515,10 @@ a {
 .swiper-button-next::after {
   content: "";
   width: 1.25rem;
-  height: 1.25rem;
-  border-top: solid 2px #bbccd1;
-  border-right: solid 2px #bbccd1;
+  height: auto;
+  aspect-ratio: 1;
+  border-top: solid 4px #bbccd1;
+  border-right: solid 4px #bbccd1;
   position: absolute;
   top: 0.75rem;
 }
@@ -1516,7 +1537,33 @@ a {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: -2.5rem;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: gray;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: blue;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 0.5rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1563,11 +1610,6 @@ a {
   text-align: left;
 }
 
-.faq-list__item {
-  background-color: #f4f0f0;
-  box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.05);
-}
-
 .faq-list__item + .faq-list__item {
   margin-top: 1.5rem;
 }
@@ -1578,6 +1620,8 @@ a {
 }
 
 .faq-list__item-question {
+  background-color: #f4f0f0;
+  box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.05);
   font-size: clamp(14px, 1.40625vw, 18px);
   font-weight: 700;
   line-height: 1.1428571429;
@@ -1656,7 +1700,7 @@ a {
 @media screen and (min-width: 769px) {
   .faq-list__item-answer {
     text-indent: 0rem;
-    padding: 0.9375rem 0.625rem 0.875rem 4.125rem;
+    padding: 0.9375rem 0.625rem 0.875rem 0rem;
     font-size: 1.125rem;
   }
 }

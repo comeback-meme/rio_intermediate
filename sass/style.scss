@@ -1,7 +1,6 @@
 // ファイルごとに一括読み込み
 @use "./foundation";
 @use "./component";
-@use "./project";// トップページ
-@use "./project/plan";//プランページ
-@use "./project/contact";//コンタクトページ
-
+@use "./project"; // トップページ
+@use "./project/plan"; //プランページ
+@use "./project/contact"; //コンタクトページ
