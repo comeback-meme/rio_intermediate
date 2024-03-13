@@ -1431,6 +1431,7 @@ a {
 }
 
 .swiper-head {
+  width: 9.75rem;
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
@@ -1838,7 +1839,7 @@ a {
 }
 
 .plan-page-mv__image {
-  background: url(/images/plan/mv_plan_sp@2x.jpg) no-repeat center center/cover;
+  background: url(../images/plan/mv_plan_sp@2x.jpg) no-repeat center center/cover;
   width: 100%;
   height: auto;
   aspect-ratio: 375/344;
@@ -1849,7 +1850,7 @@ a {
 }
 @media screen and (min-width: 769px) {
   .plan-page-mv__image {
-    background: url(/images/plan/mv_plan@2x.jpg) no-repeat right center/cover;
+    background: url(../images/plan/mv_plan@2x.jpg) no-repeat right center/cover;
     margin-top: 6.25rem;
     aspect-ratio: 1280/456;
   }

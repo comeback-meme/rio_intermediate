@@ -7,7 +7,7 @@
 }
 
 .plan-page-mv__image {
-  background: url(/images/plan/mv_plan_sp@2x.jpg) no-repeat center center /
+  background: url(../images/plan/mv_plan_sp@2x.jpg) no-repeat center center /
     cover;
   width: 100%;
   height: auto;
@@ -17,7 +17,7 @@
   align-items: flex-start;
   position: relative;
   @include mq(md) {
-    background: url(/images/plan/mv_plan@2x.jpg) no-repeat right center / cover;
+    background: url(../images/plan/mv_plan@2x.jpg) no-repeat right center / cover;
     margin-top: rm(100);
     aspect-ratio: 1280/456;
   }
